@@ -19,7 +19,6 @@ interface TaskChooseItem_Params {
 }
 import type { ITaskItem } from '../../model/TaskInitList';
 import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry/ets/common/constants/CommonConstants";
-import { taskType } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/TaskInfo";
 function __Text__targetSetCommon(): void {
     Text.fontSize(Const.DEFAULT_16);
     Text.flexGrow(1);
@@ -27,7 +26,7 @@ function __Text__targetSetCommon(): void {
     Text.align(Alignment.End);
 }
 function __Text__targetSettingStyle(isOpen: boolean, taskID: number): void {
-    Text.fontColor(isOpen && taskID !== taskType.smile && taskID !== taskType.brushTeeth ? { "id": 16777289, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777272, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+    Text.fontColor(isOpen ? { "id": 16777289, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777272, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
 }
 function __Text__remindTimeStyle(isOpen: boolean, isAlarm: boolean): void {
     Text.fontColor(isOpen && isAlarm ? { "id": 16777289, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777272, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
