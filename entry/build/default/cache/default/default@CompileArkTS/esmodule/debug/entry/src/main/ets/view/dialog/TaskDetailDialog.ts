@@ -109,12 +109,16 @@ export class TaskDetailDialog extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new TaskBaseInfo(this, {
+                    let componentCall = new 
+                    // 任务的基本信息
+                    TaskBaseInfo(this, {
+                        // 根据当前的ID获取任务名称
                         taskName: TaskMapById[this.currentTask?.taskID - 1].taskName
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/dialog/TaskDetailDialog.ets", line: 43 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/dialog/TaskDetailDialog.ets", line: 44 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
+                            // 根据当前的ID获取任务名称
                             taskName: TaskMapById[this.currentTask?.taskID - 1].taskName
                         };
                     };
@@ -128,7 +132,9 @@ export class TaskDetailDialog extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new TaskClock(this, {
+                    let componentCall = new 
+                    // 打卡组件功能 任务打卡 关闭弹窗
+                    TaskClock(this, {
                         confirm: () => {
                             this.dialogCallBack.confirmCallback(ObservedObject.GetRawObject(this.currentTask));
                             this.controller.close();
@@ -137,7 +143,7 @@ export class TaskDetailDialog extends ViewPU {
                             this.controller.close();
                         },
                         showButton: this.showButton
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/dialog/TaskDetailDialog.ets", line: 47 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/dialog/TaskDetailDialog.ets", line: 49 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {

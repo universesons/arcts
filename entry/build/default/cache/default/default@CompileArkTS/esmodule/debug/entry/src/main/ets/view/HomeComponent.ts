@@ -144,7 +144,7 @@ export default class HomeIndex extends ViewPU {
             this.broadCast.emit(BroadCastType.SHOW_TASK_DETAIL_DIALOG, [item, callback]);
         }
         else {
-            // edit task
+            // edit task 长按编辑任务
             let editTaskStr: string = JSON.stringify(TaskMapById[item.taskID - 1]);
             let editTask: ITaskItem = JSON.parse(editTaskStr);
             editTask.targetValue = item?.targetValue;
@@ -158,8 +158,10 @@ export default class HomeIndex extends ViewPU {
     //confirm clockL
     onConfirm(task: TaskInfo) {
         this.homeStore.taskClock(task).then((res: AchievementInfo) => {
+            // 打卡成功后，根据连续打卡情况判断是否弹出成就勋章以及成就勋章级别
             if (res.showAchievement) {
                 let achievementLevel = res.achievementLevel;
+                // 触发弹出成就勋章SHOW_ACHIEVEMENT_DIALOG 事件， 并透传勋章类型级别
                 if (achievementLevel) {
                     this.broadCast.emit(BroadCastType.SHOW_ACHIEVEMENT_DIALOG, achievementLevel);
                 }
@@ -184,6 +186,7 @@ export default class HomeIndex extends ViewPU {
             router.pushUrl({ url: 'pages/TaskListPage' });
         }
     }
+    // 任务列表
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Stack.create();
@@ -207,7 +210,7 @@ export default class HomeIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new HomeTopView(this, { homeStore: this.__homeStore }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 126 });
+                    let componentCall = new HomeTopView(this, { homeStore: this.__homeStore }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 128 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -257,7 +260,7 @@ export default class HomeIndex extends ViewPU {
                                         let componentCall = new TaskCard(this, {
                                             taskInfoStr: JSON.stringify(item),
                                             clickAction: (isClick: boolean) => this.taskItemAction(item, isClick)
-                                        }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 131 });
+                                        }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 133 });
                                         ViewPU.create(componentCall);
                                         let paramsLambda = () => {
                                             return {
@@ -300,7 +303,7 @@ export default class HomeIndex extends ViewPU {
                     {
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             if (isInitialRender) {
-                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777245, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777306, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 153 });
+                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777245, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777306, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 155 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
@@ -333,7 +336,7 @@ export default class HomeIndex extends ViewPU {
                         clickAction: () => {
                             this.editTaskAction();
                         }
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 167 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 169 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -367,7 +370,7 @@ export default class HomeIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new CustomDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 183 });
+                    let componentCall = new CustomDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 185 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {};

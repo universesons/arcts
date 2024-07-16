@@ -755,5 +755,9 @@
 			"type":	"media",
 			"name":	"ic_task_apple",
 			"id":	"0x010000BC"
+		}, {
+			"type":	"string",
+			"name":	"task_undone",
+			"id":	"0x010000BD"
 		}]
 }

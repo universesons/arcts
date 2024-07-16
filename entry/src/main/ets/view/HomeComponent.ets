@@ -77,7 +77,7 @@ export default struct HomeIndex {
       };
       this.broadCast.emit(BroadCastType.SHOW_TASK_DETAIL_DIALOG, [item, callback]);
     } else {
-      // edit task
+      // edit task 长按编辑任务
       let editTaskStr: string = JSON.stringify(TaskMapById[item.taskID - 1]);
       let editTask: ITaskItem = JSON.parse(editTaskStr);
       editTask.targetValue = item?.targetValue;
@@ -92,8 +92,10 @@ export default struct HomeIndex {
   //confirm clockL
   onConfirm(task: TaskInfo) {
     this.homeStore.taskClock(task).then((res: AchievementInfo) => {
+      // 打卡成功后，根据连续打卡情况判断是否弹出成就勋章以及成就勋章级别
       if (res.showAchievement) {
         let achievementLevel = res.achievementLevel;
+        // 触发弹出成就勋章SHOW_ACHIEVEMENT_DIALOG 事件， 并透传勋章类型级别
         if (achievementLevel) {
           this.broadCast.emit(BroadCastType.SHOW_ACHIEVEMENT_DIALOG, achievementLevel);
         } else {
@@ -118,7 +120,7 @@ export default struct HomeIndex {
       router.pushUrl({ url: 'pages/TaskListPage' });
     }
   }
-
+// 任务列表
   build() {
     Stack() {
       Scroll(this.scroller) {

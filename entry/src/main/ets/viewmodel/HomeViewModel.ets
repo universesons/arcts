@@ -118,10 +118,11 @@ export class HomeStore {
     }
     Logger.info("selectedDayTaskInfo: ", JSON.stringify(selectedDayInfo.taskList));
   }
-
+// 更新任务
   public updateTaskInfoList(editedTaskInfo: ITaskItem) {
     if (editedTaskInfo?.taskID) {
       // edited task
+      // 将刚才新建好的任务的属性拽出来
       let taskID = editedTaskInfo.taskID;
       let targetValue = editedTaskInfo.targetValue;
       let isAlarm = editedTaskInfo.isAlarm;
@@ -129,8 +130,10 @@ export class HomeStore {
       let startTime = editedTaskInfo.startTime;
       let endTime = editedTaskInfo.endTime;
       let isOpen = editedTaskInfo.isOpen;
+      // 开一个新的任务对象，这里应该将IsDone设置为false，有趣的是，在调试的时候  传的参数并没有isDone,先改成false，后续看看需不需要更新
       let task = new TaskInfo(0, dateToStr(new Date()), taskID, targetValue, isAlarm,
-        startTime, endTime, frequency, true, targetValue, isOpen);
+        startTime, endTime, frequency, false, targetValue, isOpen);
+      // 遍历包含任务信息的日期数组，找到与任务日期匹配的项
       this.dateArr = this.dateArr.map((item: WeekDateModel) => {
         if (task.date === item.dateStr) {
           Logger.info('item', JSON.stringify(item));
@@ -138,6 +141,7 @@ export class HomeStore {
           const dayInfo: DayInfo = item.dayInfo;
           if (editedTaskInfo.isOpen) {
             // add task
+            // 从任务列表中删除具有相同 taskID 的任务，然后将新任务添加到任务列表中，并按 taskID 排序。统计已完成的任务数量（count），并更新 dayInfo.finTaskNum。
             taskList = taskList.filter((taskItem) => taskItem.taskID != taskID)
               .concat(task)
               .sort((a, b) => a.taskID - b.taskID);
@@ -152,6 +156,9 @@ export class HomeStore {
             }
           } else {
             // delete task
+            // 查找任务列表中具有相同 taskID 的任务索引。
+            // 如果该任务已完成，则减少 dayInfo.finTaskNum。
+            // 从任务列表中删除该任务。
             let taskIndex = taskList.findIndex((taskItem) => taskItem.taskID === taskID);
             Logger.info('taskList[taskIndex]', JSON.stringify(taskList[taskIndex]));
             if (taskList[taskIndex]?.isDone) {

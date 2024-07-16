@@ -47,6 +47,7 @@ string task_morning 0x01000051
 string task_night 0x01000052
 string task_reason 0x0100000e
 string task_smile 0x01000053
+string task_undone 0x010000bd
 string task_water 0x01000054
 color black 0x0100009b
 color blueColor 0x0100009c

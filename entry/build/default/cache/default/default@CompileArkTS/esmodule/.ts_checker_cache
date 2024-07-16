@@ -3933,7 +3933,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\HomeComponent.ets": {
-      "mtimeMs": 1718607523066.6213,
+      "mtimeMs": 1721128551780.6345,
       "children": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\HealthTextComponent.ets",
@@ -3983,7 +3983,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\HomeViewModel.ets": {
-      "mtimeMs": 1718607523084.621,
+      "mtimeMs": 1721133281291.077,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\model\\AchieveModel.ets",
@@ -4092,7 +4092,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\home\\TaskCardComponent.ets": {
-      "mtimeMs": 1718607523074.6223,
+      "mtimeMs": 1721127471275.8513,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\model\\TaskInitList.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\HealthTextComponent.ets",
@@ -4281,7 +4281,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\dialog\\TaskDetailDialog.ets": {
-      "mtimeMs": 1718607523071.6243,
+      "mtimeMs": 1721128850791.2412,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\dialog\\CustomDialogView.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\TaskInfo.ets",
@@ -4399,7 +4399,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\TaskViewModel.ets": {
-      "mtimeMs": 1721117179730.128,
+      "mtimeMs": 1721131718899.6584,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\utils\\Logger.ets",
@@ -4576,7 +4576,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\task\\TaskDetailComponent.ets": {
-      "mtimeMs": 1721115532447.1494,
+      "mtimeMs": 1721131427236.8635,
       "children": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
@@ -4607,7 +4607,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\task\\TaskEditListItem.ets": {
-      "mtimeMs": 1721121419221.286,
+      "mtimeMs": 1721121486752.9272,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\model\\TaskInitList.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",

@@ -189,6 +189,17 @@ export const formatTime = (value: TimePickerResult) => {
     let minute = value?.minute ? value?.minute : 0;
     return `${padTo2Digits(hour)}:${padTo2Digits(minute)}`;
 };
+/*
+ *  @description Range of generated brush teeth and smile 1 - 3 times
+ *  @return Array<string>
+ * */
+export const createBrushTeethAndSmile = () => {
+    const brushSmileRangeArr: Array<string> = [];
+    for (let i = Const.BRUSH_TEETH_AND_SMILE_RANGE; i <= Const.BRUSH_TEETH_AND_SMILE; i += Const.BRUSH_TEETH_AND_SMILE_RANGE) {
+        brushSmileRangeArr.push(`${i} 次`);
+    }
+    return brushSmileRangeArr;
+};
 /**
  * @description Range of generated drinking water 0.25 - 5 L
  * @return Array<string>

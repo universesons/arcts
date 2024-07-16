@@ -144,6 +144,7 @@ export class CommonConstants {
     static readonly TIMES_50: number = 50;
     static readonly TIMES_100: number = 100;
     static readonly EAT_APPLE_RANGE: number = 100;
+    static readonly BRUSH_TEETH_AND_SMILE_RANGE: number = 1;
     // letter spacing
     static readonly LETTER_1: number = 0.1;
     static readonly LETTER_34: number = 3.4;
@@ -167,6 +168,8 @@ export class CommonConstants {
     static readonly DEFAULT_DIMENSION_2X4 = 3;
     static readonly WIDGET_NAME_AGENCY = "agency";
     static readonly WIDGET_NAME_PROGRESS = "progress";
+    //任务一 每日刷牙 每日微笑 目标都是1-3次
+    static readonly BRUSH_TEETH_AND_SMILE = 3;
 }
 export enum TaskType {
     Getup = "getup",
