@@ -24,6 +24,8 @@ export class TaskCard extends ViewPU {
         }
         this.__taskInfoStr = new SynchedPropertySimpleOneWayPU(params.taskInfoStr, this, "taskInfoStr");
         this.clickAction = (isClick: boolean) => {
+            // 点击`打卡`按钮之后，表示已经完成
+            this.taskInfo.isDone = true;
         };
         this.__taskInfo = new ObservedPropertyObjectPU(new TaskInfo(-1, '', -1, '', false, '', '', '', false, '', false), this, "taskInfo");
         this.setInitiallyProvidedValue(params);
@@ -79,12 +81,14 @@ export class TaskCard extends ViewPU {
                     {
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             if (isInitialRender) {
-                                let componentCall = new HealthText(ViewPU.__proto__ !== NativeViewPartialUpdate && parent instanceof PUV2ViewBase ? parent : this, { title: '', titleResource: { "id": 16777260, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/home/TaskCardComponent.ets", line: 49 });
+                                let componentCall = new 
+                                // 修改问题1： 当不打卡的时候，是未完成
+                                HealthText(ViewPU.__proto__ !== NativeViewPartialUpdate && parent instanceof PUV2ViewBase ? parent : this, { title: '', titleResource: { "id": -1, "type": -1, params: [this.taskInfo.isDone ? 'app.string.task_done' : 'app.string.task_undone'], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/home/TaskCardComponent.ets", line: 51 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
                                         title: '',
-                                        titleResource: { "id": 16777260, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
+                                        titleResource: { "id": -1, "type": -1, params: [this.taskInfo.isDone ? 'app.string.task_done' : 'app.string.task_undone'], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
                                     };
                                 };
                                 componentCall.paramsGenerator_ = paramsLambda;
@@ -109,7 +113,7 @@ export class TaskCard extends ViewPU {
                                 let componentCall = new HealthText(ViewPU.__proto__ !== NativeViewPartialUpdate && parent instanceof PUV2ViewBase ? parent : this, {
                                     title: this.taskInfo.finValue || `--`,
                                     fontSize: { "id": 16777312, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
-                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/home/TaskCardComponent.ets", line: 52 });
+                                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/home/TaskCardComponent.ets", line: 54 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
@@ -170,7 +174,7 @@ export class TaskCard extends ViewPU {
                         title: '',
                         titleResource: TaskMapById[this.taskInfo.taskID - 1].taskName,
                         fontFamily: { "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/home/TaskCardComponent.ets", line: 69 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/home/TaskCardComponent.ets", line: 71 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {

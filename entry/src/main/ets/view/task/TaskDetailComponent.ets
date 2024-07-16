@@ -71,6 +71,7 @@ export default struct TaskDetail {
       let taskInfo: TaskInfo = new TaskInfo(Const.ZERO, Const.GLOBAL_KEY, this.settingParams.taskID,
         this.settingParams.targetValue, this.settingParams.isAlarm, this.settingParams.startTime,
         this.settingParams.endTime, this.settingParams.frequency, false, '', this.settingParams.isOpen);
+      // 添加task
       addTask(taskInfo, context).then((res: number) => {
         GlobalContext.getContext().setObject('taskListChange', true);
         router.back({
@@ -115,12 +116,6 @@ export default struct TaskDetail {
             TargetSetItem()
           }
           .listItemStyle()
-          // 对特殊情况的禁用，任务一
-          // .enabled(
-          //   this.settingParams?.isOpen
-          //     && this.settingParams?.taskID !== taskType.smile
-          //     && this.settingParams?.taskID !== taskType.brushTeeth
-          // )
           .onClick(() => {
             this.broadCast.emit(
               BroadCastType.SHOW_TARGET_SETTING_DIALOG);

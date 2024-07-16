@@ -103,6 +103,7 @@ export default class TaskDetail extends ViewPU {
         if (this.isChanged) {
             let context: Context = getContext(this) as common.Context;
             let taskInfo: TaskInfo = new TaskInfo(Const.ZERO, Const.GLOBAL_KEY, this.settingParams.taskID, this.settingParams.targetValue, this.settingParams.isAlarm, this.settingParams.startTime, this.settingParams.endTime, this.settingParams.frequency, false, '', this.settingParams.isOpen);
+            // 添加task
             addTask(taskInfo, context).then((res: number) => {
                 GlobalContext.getContext().setObject('taskListChange', true);
                 router.back({
@@ -165,7 +166,7 @@ export default class TaskDetail extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new TaskChooseItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 110 });
+                            let componentCall = new TaskChooseItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 111 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {};
@@ -206,7 +207,7 @@ export default class TaskDetail extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new TargetSetItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 115 });
+                            let componentCall = new TargetSetItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 116 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {};
@@ -245,7 +246,7 @@ export default class TaskDetail extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new OpenRemindItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 130 });
+                            let componentCall = new OpenRemindItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 125 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {};
@@ -287,7 +288,7 @@ export default class TaskDetail extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new RemindTimeItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 136 });
+                            let componentCall = new RemindTimeItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 131 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {};
@@ -329,7 +330,7 @@ export default class TaskDetail extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new FrequencyItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 145 });
+                            let componentCall = new FrequencyItem(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 140 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {};
@@ -370,7 +371,7 @@ export default class TaskDetail extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new TaskDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 170 });
+                    let componentCall = new TaskDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/task/TaskDetailComponent.ets", line: 165 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {};

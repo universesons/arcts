@@ -36,9 +36,10 @@ function labelTextStyle() {
 export struct TaskCard {
   @Prop taskInfoStr: string = '';
   clickAction: Function = (isClick: boolean) => {
+    // 点击`打卡`按钮之后，表示已经完成
+    this.taskInfo.isDone = true;
   };
   @State taskInfo: TaskInfo = new TaskInfo(-1, '', -1, '', false, '', '', '', false, '', false);
-
   aboutToAppear() {
     this.taskInfo = JSON.parse(this.taskInfoStr);
   }
@@ -46,7 +47,8 @@ export struct TaskCard {
   @Builder
   targetValueBuilder() {
     if (this.taskInfo.isDone) {
-      HealthText({ title: '', titleResource: $r('app.string.task_done') })
+      // 修改问题1： 当不打卡的时候，是未完成
+      HealthText({ title: '', titleResource: $r(this.taskInfo.isDone ? 'app.string.task_done' : 'app.string.task_undone') })
     } else {
       Row() {
         HealthText({

@@ -90,6 +90,7 @@ export const addTask = (params: TaskInfo, context: Context) => {
                 useReminder(params, context);
             }
             else {
+                // 任务是否有通知id
                 isHasNotificationId(params?.taskID).then((flag: boolean) => {
                     if (flag) {
                         useCancelReminder(params.taskID, context);
@@ -114,7 +115,8 @@ export const addTask = (params: TaskInfo, context: Context) => {
         let taskInfoStr = JSON.stringify(params);
         let taskInfo: TaskInfo = JSON.parse(taskInfoStr);
         taskInfo.date = new Date().toDateString();
-        taskInfo.isDone = true;
+        // 用户刚开始添加，这个时候是没有完成的，因此isDone应该修改为false
+        taskInfo.isDone = false;
         TaskInfoApi.updateDataByDate(taskInfo, (flag: number) => {
             if (!flag) {
                 Logger.error('insertTaskSetting', 'updateTaskSetting Error!');

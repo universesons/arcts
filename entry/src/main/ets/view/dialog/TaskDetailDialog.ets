@@ -40,10 +40,12 @@ export struct TaskDetailDialog {
 
   build() {
     Column() {
+      // 任务的基本信息
       TaskBaseInfo({
+        // 根据当前的ID获取任务名称
         taskName: TaskMapById[this.currentTask?.taskID - 1].taskName
       });
-
+      // 打卡组件功能 任务打卡 关闭弹窗
       TaskClock({
         confirm: () => {
           this.dialogCallBack.confirmCallback(this.currentTask);
