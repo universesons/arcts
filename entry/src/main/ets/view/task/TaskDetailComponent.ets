@@ -41,7 +41,9 @@ function listItemStyle() {
   .borderRadius(Const.DEFAULT_10)
   .padding({ left: Const.DEFAULT_12, right: Const.DEFAULT_12 })
 }
-
+@Preview({
+  'title':'TaskDetail'
+})
 @Component
 export default struct TaskDetail {
   @Provide broadCast: BroadCast = HealthDataSrcMgr.getInstance().getBroadCast();
@@ -113,11 +115,12 @@ export default struct TaskDetail {
             TargetSetItem()
           }
           .listItemStyle()
-          .enabled(
-            this.settingParams?.isOpen
-              && this.settingParams?.taskID !== taskType.smile
-              && this.settingParams?.taskID !== taskType.brushTeeth
-          )
+          // 对特殊情况的禁用，任务一
+          // .enabled(
+          //   this.settingParams?.isOpen
+          //     && this.settingParams?.taskID !== taskType.smile
+          //     && this.settingParams?.taskID !== taskType.brushTeeth
+          // )
           .onClick(() => {
             this.broadCast.emit(
               BroadCastType.SHOW_TARGET_SETTING_DIALOG);
