@@ -168,43 +168,13 @@ export class TargetSettingDialog extends ViewPU {
             else {
                 this.ifElseBranchUpdateFunction(1, () => {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        // TextPicker({ range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange : this.appleRange })
-                        //   .width(Const.THOUSANDTH_900,)
-                        //   .height(Const.THOUSANDTH_800,)
-                        //   .onChange((value: string | string[]) => {
-                        //     this.currentValue = (value as string)?.split(' ')[0];
-                        //   })
                         TextPicker.create({ range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange : (taskType.brushTeeth || taskType.smile) ? this.brushAndSmileRange : this.appleRange });
-                        // TextPicker({ range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange : this.appleRange })
-                        //   .width(Const.THOUSANDTH_900,)
-                        //   .height(Const.THOUSANDTH_800,)
-                        //   .onChange((value: string | string[]) => {
-                        //     this.currentValue = (value as string)?.split(' ')[0];
-                        //   })
                         TextPicker.width(Const.THOUSANDTH_900);
-                        // TextPicker({ range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange : this.appleRange })
-                        //   .width(Const.THOUSANDTH_900,)
-                        //   .height(Const.THOUSANDTH_800,)
-                        //   .onChange((value: string | string[]) => {
-                        //     this.currentValue = (value as string)?.split(' ')[0];
-                        //   })
                         TextPicker.height(Const.THOUSANDTH_800);
-                        // TextPicker({ range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange : this.appleRange })
-                        //   .width(Const.THOUSANDTH_900,)
-                        //   .height(Const.THOUSANDTH_800,)
-                        //   .onChange((value: string | string[]) => {
-                        //     this.currentValue = (value as string)?.split(' ')[0];
-                        //   })
                         TextPicker.onChange((value: string | string[]) => {
                             this.currentValue = (value as string)?.split(' ')[0];
                         });
                     }, TextPicker);
-                    // TextPicker({ range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange : this.appleRange })
-                    //   .width(Const.THOUSANDTH_900,)
-                    //   .height(Const.THOUSANDTH_800,)
-                    //   .onChange((value: string | string[]) => {
-                    //     this.currentValue = (value as string)?.split(' ')[0];
-                    //   })
                     TextPicker.pop();
                 });
             }
