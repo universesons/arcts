@@ -94,8 +94,8 @@ export struct TargetSettingDialog {
       } else {
         TextPicker({
           range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange :
-            (taskType.brushTeeth || taskType.smile) ? this.brushAndSmileRange :
-              this.settingParams?.taskID === taskType.run ? this.runRange : this.appleRange
+            (this.settingParams?.taskID === taskType.brushTeeth || this.settingParams?.taskID === taskType.smile) ? this.brushAndSmileRange :
+            this.settingParams?.taskID === taskType.run ? this.runRange : this.appleRange
         })
           .width(Const.THOUSANDTH_900,)
           .height(Const.THOUSANDTH_800,)
