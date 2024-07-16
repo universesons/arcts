@@ -16,8 +16,14 @@
 import { promptAction } from '@kit.ArkUI';
 import { ITaskItem } from '../../model/TaskInitList';
 import { frequencyRange } from '../../common/utils/Utils';
-import { returnTimeStamp, createAppleRange, createDrinkRange, formatTime,
-  createBrushTeethAndSmile } from '../../viewmodel/TaskViewModel';
+import {
+  returnTimeStamp,
+  createAppleRange,
+  createDrinkRange,
+  createRunRange,
+  formatTime,
+  createBrushTeethAndSmile
+} from '../../viewmodel/TaskViewModel';
 import { taskType } from '../../viewmodel/TaskInfo';
 import { CommonConstants as Const } from '../..//common/constants/CommonConstants';
 import { FrequencyContentType } from '../../model/TaskInitList';
@@ -28,6 +34,7 @@ export struct TargetSettingDialog {
   controller: CustomDialogController = new CustomDialogController({ builder: '' });
   drinkRange: string[] = createDrinkRange();
   appleRange: string[] = createAppleRange();
+  runRange: string[] = createRunRange();
   brushAndSmileRange: string[] = createBrushTeethAndSmile();
   currentValue: string = this.settingParams.targetValue;
   currentTime: string = Const.DEFAULT_TIME;
@@ -73,6 +80,7 @@ export struct TargetSettingDialog {
       }
       .width(Const.THOUSANDTH_1000)
       .justifyContent(FlexAlign.Start)
+
       // 看看是不是早睡 这边先设定时间
       if ([taskType.getup, taskType.sleepEarly].indexOf(this.settingParams?.taskID) > Const.HAS_NO_INDEX) {
         TimePicker({
@@ -84,7 +92,11 @@ export struct TargetSettingDialog {
             this.currentTime = formatTime(value);
           })
       } else {
-        TextPicker({ range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange : (taskType.brushTeeth || taskType.smile) ? this.brushAndSmileRange : this.appleRange })
+        TextPicker({
+          range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange :
+            (taskType.brushTeeth || taskType.smile) ? this.brushAndSmileRange :
+              this.settingParams?.taskID === taskType.run ? this.runRange : this.appleRange
+        })
           .width(Const.THOUSANDTH_900,)
           .height(Const.THOUSANDTH_800,)
           .onChange((value: string | string[]) => {

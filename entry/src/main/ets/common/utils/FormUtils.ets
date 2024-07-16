@@ -211,7 +211,7 @@ class FormUtils {
   }
 
   private getTemp(temp: AgencyCardInfo, taskType: string, unit: string,
-                  dateType: boolean, isDone: boolean): AgencyCardInfo {
+    dateType: boolean, isDone: boolean): AgencyCardInfo {
     let agencyCardInfo: AgencyCardInfo = new AgencyCardInfo();
     agencyCardInfo.targetValue = temp.targetValue;
     agencyCardInfo.finValue = temp.finValue;
@@ -249,6 +249,9 @@ class FormUtils {
           break;
         case taskType.sleepEarly:
           temp = this.getTemp(temp, TaskType.Sleep, Unit.Empty, true, item.isDone);
+          break;
+        case taskType.run:
+          temp = this.getTemp(temp, TaskType.Run, Unit.Dist, true, item.isDone);
           break;
         default:
           break;

@@ -219,11 +219,13 @@ export const formatTime = (value: TimePickerResult) => {
  * */
 export const createBrushTeethAndSmile = () => {
   const brushSmileRangeArr: Array<string> = [];
-  for (let i = Const.BRUSH_TEETH_AND_SMILE_RANGE ; i <= Const.BRUSH_TEETH_AND_SMILE ; i += Const.BRUSH_TEETH_AND_SMILE_RANGE){
+  for (let i = Const.BRUSH_TEETH_AND_SMILE_RANGE; i <= Const.BRUSH_TEETH_AND_SMILE;
+    i += Const.BRUSH_TEETH_AND_SMILE_RANGE) {
     brushSmileRangeArr.push(`${i} 次`);
   }
   return brushSmileRangeArr;
 }
+
 /**
  * @description Range of generated drinking water 0.25 - 5 L
  * @return Array<string>
@@ -246,4 +248,12 @@ export const createAppleRange = () => {
     appleRangeArr.push(`${i} 个`);
   }
   return appleRangeArr;
+}
+
+export const createRunRange = () => {
+  const runRangeArr: Array<string> = [];
+  for (let i = Const.RUN_STEP; i <= Const.RUN_MAX_RANGE; i += Const.RUN_STEP) {
+    runRangeArr.push(`${i} 公里`);
+  }
+  return runRangeArr;
 }
