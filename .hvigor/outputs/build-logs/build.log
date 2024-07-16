@@ -1,0 +1,97 @@
+[2024-07-16T14:46:18.487] [DEBUG] debug-file - env: nodejsVersion=v18.20.1
+[2024-07-16T14:46:19.110] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: false,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' }
+}
+[2024-07-16T14:46:19.143] [DEBUG] debug-file - hvigorfile, resolving E:\studying\2\summer\huawei\Healthy_life\hvigorfile.ts
+[2024-07-16T14:46:21.989] [DEBUG] debug-file - hvigorfile, require result:  { appTasks: [Getter] }
+[2024-07-16T14:46:22.138] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2024-07-16T14:46:22.144] [DEBUG] debug-file - Product 'default' using build option: {
+  "debuggable": true
+} in this build.
+[2024-07-16T14:46:22.160] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2024-07-16T14:46:22.179] [DEBUG] debug-file - Sdk init in 33 ms 
+[2024-07-16T14:46:22.153] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native
+[2024-07-16T14:46:22.223] [DEBUG] debug-file - Project task initialization takes 42 ms 
+[2024-07-16T14:46:22.235] [DEBUG] debug-file - hvigorfile, resolving E:\studying\2\summer\huawei\Healthy_life\entry\hvigorfile.ts
+[2024-07-16T14:46:22.261] [DEBUG] debug-file - Module entry task initialization takes 3 ms 
+[2024-07-16T14:46:22.263] [DEBUG] debug-file - project has submodules:entry
+[2024-07-16T14:46:22.253] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2024-07-16T14:46:18.488] [DEBUG] debug-file - env: hvigor-config.json5 content = { modelVersion: '5.0.0', dependencies: {} }
+[2024-07-16T14:46:22.328] [DEBUG] debug-file - Executing task :entry:clean
+[2024-07-16T14:46:19.112] [DEBUG] debug-file - Since current hvigor version 5.2.3 differs from last hvigor version 
+      undefined, delete file-cache.json and task-cache.json.
+[2024-07-16T14:46:22.333] [DEBUG] debug-file - entry : clean cost memory 0.48435211181640625
+[2024-07-16T14:46:22.368] [DEBUG] debug-file - Current worker pool is stopped or closed.
+[2024-07-16T14:46:21.989] [DEBUG] debug-file - hvigorfile, binding system plugins { appTasks: [Getter] }
+[2024-07-16T14:46:22.138] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2024-07-16T14:46:22.145] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2024-07-16T14:46:22.223] [DEBUG] debug-file - hvigorfile, resolve finished E:\studying\2\summer\huawei\Healthy_life\hvigorfile.ts
+[2024-07-16T14:46:22.241] [DEBUG] debug-file - hvigorfile, require result:  { hapTasks: [Getter] }
+[2024-07-16T14:46:22.261] [DEBUG] debug-file - hvigorfile, resolve finished E:\studying\2\summer\huawei\Healthy_life\entry\hvigorfile.ts
+[2024-07-16T14:46:22.264] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2024-07-16T14:46:18.490] [DEBUG] debug-file - env: daemon=false
+[2024-07-16T14:46:22.254] [DEBUG] debug-file - Target 'default' config: {}
+[2024-07-16T14:46:22.328] [DEBUG] debug-file - clean: Worker pool is inactive.
+[2024-07-16T14:46:19.112] [DEBUG] debug-file - Cache service initialization finished in 3 ms 
+[2024-07-16T14:46:22.333] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 251 ms 
+[2024-07-16T14:46:22.374] [DEBUG] debug-file - Current worker pool is terminated.
+[2024-07-16T14:46:22.138] [DEBUG] debug-file - Product 'default' build option: {}
+[2024-07-16T14:46:22.241] [DEBUG] debug-file - hvigorfile, binding system plugins { hapTasks: [Getter] }
+[2024-07-16T14:46:22.313] [DEBUG] debug-file - load to the disk finished
+[2024-07-16T14:46:18.490] [DEBUG] debug-file - no-daemon, use the parent process.execArgv --max-old-space-size=8192,--expose-gc
+[2024-07-16T14:46:22.254] [DEBUG] debug-file - Module 'entry' target 'default' build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+}
+[2024-07-16T14:46:22.334] [INFO] debug-file - Finished :entry:clean... after 5 ms 
+[2024-07-16T14:46:22.138] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2024-07-16T14:46:22.315] [DEBUG] debug-file - Module Healthy_life Collected Dependency: 
+[2024-07-16T14:46:22.254] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2024-07-16T14:46:22.334] [DEBUG] debug-file - Executing task ::clean
+[2024-07-16T14:46:22.315] [DEBUG] debug-file - Module Healthy_life's total dependency: 0
+[2024-07-16T14:46:22.334] [DEBUG] debug-file - clean: Worker pool is inactive.
+[2024-07-16T14:46:22.254] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+} in this build.
+[2024-07-16T14:46:22.317] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2024-07-16T14:46:22.334] [DEBUG] debug-file - Healthy_life : clean cost memory 0.02817535400390625
+[2024-07-16T14:46:22.317] [DEBUG] debug-file - Module entry's total dependency: 0
+[2024-07-16T14:46:22.335] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 253 ms 
+[2024-07-16T14:46:22.321] [DEBUG] debug-file - Configuration phase cost:3 s 195 ms 
+[2024-07-16T14:46:22.335] [INFO] debug-file - Finished ::clean... after 1 ms 
+[2024-07-16T14:46:22.335] [DEBUG] debug-file - Executing task :entry:init
+[2024-07-16T14:46:22.323] [DEBUG] debug-file - Configuration task cost before running: 3 s 241 ms 
+[2024-07-16T14:46:22.335] [DEBUG] debug-file - entry : init cost memory 0.009796142578125
+[2024-07-16T14:46:22.335] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 253 ms 
+[2024-07-16T14:46:22.335] [INFO] debug-file - Finished :entry:init... after 1 ms 
+[2024-07-16T14:46:22.335] [DEBUG] debug-file - Executing task ::init
+[2024-07-16T14:46:22.335] [DEBUG] debug-file - Healthy_life : init cost memory 0.0084991455078125
+[2024-07-16T14:46:22.335] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 254 ms 
+[2024-07-16T14:46:22.335] [INFO] debug-file - Finished ::init... after 1 ms 
+[2024-07-16T14:46:22.348] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+} in this build.
+[2024-07-16T14:46:22.355] [DEBUG] debug-file - hvigor start cli arguments:{
+  prop: [ 'product=default' ],
+  sync: true,
+  parallel: true,
+  incremental: true,
+  daemon: false,
+  _: [ '--analyze=normal' ]
+}
+[2024-07-16T14:46:22.358] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2024-07-16T14:46:22.358] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
