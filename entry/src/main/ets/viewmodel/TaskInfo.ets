@@ -33,15 +33,15 @@ import { oneWeekDictFunc } from '../common/utils/Utils';
 export default class TaskInfo {
   id: number;
   date: string;
-  taskID: number;
-  targetValue: string;
-  isAlarm: boolean;
-  startTime: string;
-  endTime: string;
-  frequency: string;
-  isDone: boolean;
-  finValue: string;
-  isOpen: boolean;
+  taskID: number; //用来确定任务种类
+  targetValue: string; // 目标次数
+  isAlarm: boolean; // 是否开启了提醒
+  startTime: string;  // 开始时间
+  endTime: string;  // 结束时间
+  frequency: string;  // 提醒频率
+  isDone: boolean; // 是否完成
+  finValue: string; // 当前的进度值
+  isOpen: boolean; // 是否开启
 
   constructor(id: number, date: string, taskID: number, targetValue: string, isAlarm: boolean, startTime: string,
               endTime: string, frequency: string, isDone: boolean, finValue: string, isOpen = false) {
@@ -68,5 +68,6 @@ export enum taskType {
   'sleepEarly',
   'run'
 }
+
 
 export const oneWeek = oneWeekDictFunc();
