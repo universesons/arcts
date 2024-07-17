@@ -16,17 +16,18 @@
 import { ListInfo } from '../view/ListInfo';
 import { UserBaseInfo } from '../view/UserBaseInfo';
 import { CommonConstants as Const } from '../common/constants/CommonConstants';
+import personInfo from '../viewmodel/PersonInfo';
 
 @Component
 export struct MineIndex {
-  @State nickname: string = Const.NICK_NAME;
-  @State signature: string = Const.SIGNATURE;
+  @State userInfo: personInfo = new personInfo(); // 按照默认值初始化一个person
+  // @State nickname: string = Const.NICK_NAME;
+  // @State signature: string = Const.SIGNATURE;
 
   build() {
     Column() {
       UserBaseInfo({
-        nickname: this.nickname,
-        signature: this.signature
+        userInfo : this.userInfo // 直接将整个类下传，方便进一步整理
       });
 
       ListInfo();

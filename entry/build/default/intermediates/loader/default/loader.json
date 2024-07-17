@@ -1,10 +1,10 @@
 {
   "modulePathMap": {
-    "entry": "D:\\Course\\HMOS\\arcts\\entry"
+    "entry": "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry"
   },
   "compileMode": "esmodule",
-  "projectRootPath": "D:\\Course\\HMOS\\arcts",
-  "nodeModulesPath": "D:\\Course\\HMOS\\arcts\\entry\\build\\default\\intermediates\\loader_out\\default\\node_modules",
+  "projectRootPath": "E:\\studying\\2\\summer\\huawei\\Healthy_life",
+  "nodeModulesPath": "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\build\\default\\intermediates\\loader_out\\default\\node_modules",
   "moduleName": "entry",
   "harNameOhmMap": {},
   "packageManagerType": "ohpm",
@@ -12,9 +12,6 @@
   "dynamicImportLibInfo": {},
   "routerMap": [],
   "hspResourcesMap": {},
-  "anBuildOutPut": "D:\\Course\\HMOS\\arcts\\entry\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
-  "anBuildMode": "type",
-  "patchConfig": {
-    "changedFileList": "D:\\Course\\HMOS\\arcts\\entry\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
-  }
+  "anBuildOutPut": "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type"
 }

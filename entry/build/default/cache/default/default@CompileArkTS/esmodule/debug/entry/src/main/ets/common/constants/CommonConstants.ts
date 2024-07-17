@@ -97,8 +97,8 @@ export class CommonConstants {
     static readonly SETTING_FINISHED_MESSAGE = '设置完成！！！';
     static readonly SETTING_FINISH_FAILED_MESSAGE = '网络连接错误';
     static readonly CHOOSE_TIME_OUT_RANGE: string = '选择时间超出范围';
-    static readonly NICK_NAME = 'JoIin';
-    static readonly SIGNATURE = '这是一条简短地个人签';
+    static readonly NICK_NAME = 'Zephyr';
+    static readonly SIGNATURE = '一杯敬白朝的奔波，一杯敬夜幕的漂泊';
     static readonly HOME_BTN_Z = 2;
     // time range
     static readonly DEFAULT_TIME: string = '08:00';

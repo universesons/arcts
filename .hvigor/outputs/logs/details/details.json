@@ -36,19 +36,19 @@
       "BUILD_MODE": "debug"
     }
   },
-  "totalTime": 14938949700,
+  "totalTime": 3806143700,
   "moduleNum": 1,
   "taskTime": {
-    "compileArkTS": 12874998600,
+    "compileArkTS": 2831900200,
     "buildArkTS": 0,
     "compileJS": 0,
-    "buildJS": 4441400,
-    "compileResource": 243306900,
-    "packageHap": 895161700,
-    "signHap": 2121900
+    "buildJS": 4020800,
+    "compileResource": 0,
+    "packageHap": 601368000,
+    "signHap": 2088000
   },
   "isIncremental": true,
-  "hasIncremental": false,
+  "hasIncremental": true,
   "isParallel": true,
   "IS_DAEMON": true,
   "LOG_LEVEL": "INFO",

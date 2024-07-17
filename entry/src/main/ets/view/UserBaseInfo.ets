@@ -12,11 +12,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import personInfo from '../viewmodel/PersonInfo';
 
 @Component
 export struct UserBaseInfo {
-  @Prop nickname: string = '';
-  @Prop signature: string = '';
+  // @Prop nickname: string = '';
+  // @Prop signature: string = '';
+  @Prop userInfo:personInfo = new personInfo();
 
   build() {
     Column() {
@@ -41,7 +43,7 @@ export struct UserBaseInfo {
       .justifyContent(FlexAlign.Center)
 
       // nickname
-      Text(this.nickname)
+      Text(this.userInfo.userName)
         .fontSize($r('app.float.default_20'))
         .fontFamily($r('app.string.Helvetica'))
         .margin({ bottom: $r('app.float.default_6') })
@@ -49,7 +51,7 @@ export struct UserBaseInfo {
         .fontColor($r('app.color.black'))
 
       // signature
-      Text(this.signature).fontSize($r('app.float.default_16')).fontWeight(FontWeight.Normal)
+      Text(this.userInfo.userSignature).fontSize($r('app.float.default_16')).fontWeight(FontWeight.Normal)
         .fontFamily($r('app.string.PingFangSC_Regular'))
         .fontColor($r('app.color.signatureColor'))
     }

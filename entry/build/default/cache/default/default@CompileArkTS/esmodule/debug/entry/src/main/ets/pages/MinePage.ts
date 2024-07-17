@@ -2,57 +2,46 @@ if (!("finalizeConstruction" in ViewPU.prototype)) {
     Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
 }
 interface MineIndex_Params {
-    nickname?: string;
-    signature?: string;
+    userInfo?: personInfo;
 }
 import { ListInfo } from "@bundle:com.example.healthy_life/entry/ets/view/ListInfo";
 import { UserBaseInfo } from "@bundle:com.example.healthy_life/entry/ets/view/UserBaseInfo";
 import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry/ets/common/constants/CommonConstants";
+import personInfo from "@bundle:com.example.healthy_life/entry/ets/viewmodel/PersonInfo";
 export class MineIndex extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
         if (typeof paramsLambda === "function") {
             this.paramsGenerator_ = paramsLambda;
         }
-        this.__nickname = new ObservedPropertySimplePU(Const.NICK_NAME, this, "nickname");
-        this.__signature = new ObservedPropertySimplePU(Const.SIGNATURE, this, "signature");
+        this.__userInfo = new ObservedPropertyObjectPU(new personInfo(), this, "userInfo");
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
     setInitiallyProvidedValue(params: MineIndex_Params) {
-        if (params.nickname !== undefined) {
-            this.nickname = params.nickname;
-        }
-        if (params.signature !== undefined) {
-            this.signature = params.signature;
+        if (params.userInfo !== undefined) {
+            this.userInfo = params.userInfo;
         }
     }
     updateStateVars(params: MineIndex_Params) {
     }
     purgeVariableDependenciesOnElmtId(rmElmtId) {
-        this.__nickname.purgeDependencyOnElmtId(rmElmtId);
-        this.__signature.purgeDependencyOnElmtId(rmElmtId);
+        this.__userInfo.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
-        this.__nickname.aboutToBeDeleted();
-        this.__signature.aboutToBeDeleted();
+        this.__userInfo.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
-    private __nickname: ObservedPropertySimplePU<string>;
-    get nickname() {
-        return this.__nickname.get();
+    private __userInfo: ObservedPropertyObjectPU<personInfo>; // 按照默认值初始化一个person
+    get userInfo() {
+        return this.__userInfo.get();
     }
-    set nickname(newValue: string) {
-        this.__nickname.set(newValue);
+    set userInfo(newValue: personInfo) {
+        this.__userInfo.set(newValue);
     }
-    private __signature: ObservedPropertySimplePU<string>;
-    get signature() {
-        return this.__signature.get();
-    }
-    set signature(newValue: string) {
-        this.__signature.set(newValue);
-    }
+    // @State nickname: string = Const.NICK_NAME;
+    // @State signature: string = Const.SIGNATURE;
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
@@ -63,22 +52,22 @@ export class MineIndex extends ViewPU {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
                     let componentCall = new UserBaseInfo(this, {
-                        nickname: this.nickname,
-                        signature: this.signature
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 27 });
+                        nickname: this.userInfo.userName,
+                        signature: this.userInfo.userSignature
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 29 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
-                            nickname: this.nickname,
-                            signature: this.signature
+                            nickname: this.userInfo.userName,
+                            signature: this.userInfo.userSignature
                         };
                     };
                     componentCall.paramsGenerator_ = paramsLambda;
                 }
                 else {
                     this.updateStateVarsOfChildByElmtId(elmtId, {
-                        nickname: this.nickname,
-                        signature: this.signature
+                        nickname: this.userInfo.userName,
+                        signature: this.userInfo.userSignature
                     });
                 }
             }, { name: "UserBaseInfo" });
@@ -86,7 +75,7 @@ export class MineIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new ListInfo(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 32 });
+                    let componentCall = new ListInfo(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 34 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {};

@@ -116,8 +116,8 @@ export class CommonConstants {
   static readonly SETTING_FINISHED_MESSAGE = '设置完成！！！';
   static readonly SETTING_FINISH_FAILED_MESSAGE = '网络连接错误';
   static readonly CHOOSE_TIME_OUT_RANGE: string = '选择时间超出范围';
-  static readonly NICK_NAME = 'JoIin';
-  static readonly SIGNATURE = '这是一条简短地个人签';
+  static readonly NICK_NAME = 'Zephyr';
+  static readonly SIGNATURE = '一杯敬白朝的奔波，一杯敬夜幕的漂泊';
   static readonly HOME_BTN_Z = 2;
   // time range
   static readonly DEFAULT_TIME: string = '08:00';
@@ -195,6 +195,10 @@ export class CommonConstants {
 
   //任务一 每日刷牙 每日微笑 目标都是1-3次
   static readonly BRUSH_TEETH_AND_SMILE = 3;
+
+  // 用户信息保存
+  static readonly STORAGE_FILE = "user_file";
+  static readonly  USER_INFO    = "user_info";
 }
 
 export enum TaskType {
