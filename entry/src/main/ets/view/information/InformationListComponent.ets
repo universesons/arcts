@@ -2,7 +2,16 @@
 
 
 import { router } from '@kit.ArkUI';
+import {NameSetItem,GenderSetItem,BirthSetItem,HeightSetItem,WeightSetItem} from './InformationListItem'
+import { CommonConstants as Const } from '../../common/constants/CommonConstants';
 
+@Styles
+function listItemStyle() {
+  .backgroundColor($r('app.color.white'))
+  .height(Const.DEFAULT_56)
+  .borderRadius(Const.DEFAULT_10)
+  .padding({ left: Const.DEFAULT_12, right: Const.DEFAULT_12 })
+}
 @Component
 export default struct  InformationList {
   selectedDate: Date = new Date("2010-1-1")
@@ -34,30 +43,11 @@ export default struct  InformationList {
       Text('个人信息编辑')
       List() {
         ListItem() {
-          Row() {
-            Row() {
-              Image('src/main/resources/base/media/icon_user.png')
-                .width(24)
-                .height(24)
-                .margin(8)
-              Text('昵称')
-                .fontSize(20)
-                .fontColor($r('app.color.titleColor'))
-            }
-            .width(500)
-
-            Blank()
-              .layoutWeight(1)
-            Image($r('app.media.ic_right_grey'))
-              .width(8)
-              .height(16)
-          }
-          .width(1000)
-          .justifyContent(FlexAlign.SpaceBetween)
-          .padding({ left: 12, right: 12 })
+          NameSetItem()
         }
-        .height(80)
-        .borderRadius(12)
+        .listItemStyle()
+        // .height(80)
+        // .borderRadius(12)
         .onClick(() => {
           ActionSheet.show({
             title: 'ActionSheet title',
@@ -101,30 +91,9 @@ export default struct  InformationList {
         .height('20%')
 
         ListItem() {
-          Row() {
-            Row() {
-              Image('src/main/resources/base/media/icon_user.png')
-                .width(24)
-                .height(24)
-                .margin(8)
-              Text('性别')
-                .fontSize(20)
-                .fontColor($r('app.color.titleColor'))
-            }
-            .width(500)
-
-            Blank()
-              .layoutWeight(1)
-            Image($r('app.media.ic_right_grey'))
-              .width(8)
-              .height(16)
-          }
-          .width(1000)
-          .justifyContent(FlexAlign.SpaceBetween)
-          .padding({ left: 12, right: 12 })
+          GenderSetItem()
         }
-        .height(80)
-        .borderRadius(12)
+        .listItemStyle()
         .onClick(() => {
           TextPickerDialog.show({
             range: this.gender,
@@ -148,30 +117,9 @@ export default struct  InformationList {
         .height('20%')
 
         ListItem() {
-          Row() {
-            Row() {
-              Image('src/main/resources/base/media/icon_user.png')
-                .width(24)
-                .height(24)
-                .margin(8)
-              Text('出生日期')
-                .fontSize(20)
-                .fontColor($r('app.color.titleColor'))
-            }
-            .width(500)
-
-            Blank()
-              .layoutWeight(1)
-            Image($r('app.media.ic_right_grey'))
-              .width(8)
-              .height(16)
-          }
-          .width(1000)
-          .justifyContent(FlexAlign.SpaceBetween)
-          .padding({ left: 12, right: 12 })
+          BirthSetItem()
         }
-        .height(80)
-        .borderRadius(12)
+        .listItemStyle()
         .onClick(() => {
           DatePickerDialog.show({
             start: new Date("2000-1-1"),
@@ -195,30 +143,9 @@ export default struct  InformationList {
         .height('20%')
 
         ListItem() {
-          Row() {
-            Row() {
-              Image('src/main/resources/base/media/icon_user.png')
-                .width(24)
-                .height(24)
-                .margin(8)
-              Text('身高')
-                .fontSize(20)
-                .fontColor($r('app.color.titleColor'))
-            }
-            .width(500)
-
-            Blank()
-              .layoutWeight(1)
-            Image($r('app.media.ic_right_grey'))
-              .width(8)
-              .height(16)
-          }
-          .width(1000)
-          .justifyContent(FlexAlign.SpaceBetween)
-          .padding({ left: 12, right: 12 })
+          HeightSetItem()
         }
-        .height(80)
-        .borderRadius(12)
+        .listItemStyle()
         .onClick(() => {
           TextPickerDialog.show({
             range: this.heights,
@@ -242,30 +169,9 @@ export default struct  InformationList {
         .height('20%')
 
         ListItem() {
-          Row() {
-            Row() {
-              Image('src/main/resources/base/media/icon_user.png')
-                .width(24)
-                .height(24)
-                .margin(8)
-              Text('体重')
-                .fontSize(20)
-                .fontColor($r('app.color.titleColor'))
-            }
-            .width(500)
-
-            Blank()
-              .layoutWeight(1)
-            Image($r('app.media.ic_right_grey'))
-              .width(8)
-              .height(16)
-          }
-          .width(1000)
-          .justifyContent(FlexAlign.SpaceBetween)
-          .padding({ left: 12, right: 12 })
+            WeightSetItem()
         }
-        .height(80)
-        .borderRadius(12)
+        .listItemStyle()
         .onClick(() => {
           TextPickerDialog.show({
             range: this.weight,
