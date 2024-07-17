@@ -14,9 +14,13 @@
  */
 
 import { MineInfoList, InfoItem } from '../model/Mine';
+import { promptAction } from '@kit.ArkUI';
+import personInfo from '../viewmodel/PersonInfo';
+import router from '@ohos.router'
 
 @Component
 export struct ListInfo {
+  @Prop userInfo: personInfo = new personInfo();
   build() {
     List() {
       ForEach(MineInfoList, (item: InfoItem) => {
@@ -24,9 +28,43 @@ export struct ListInfo {
           Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
             Text(item.title).fontSize($r('app.float.default_16')).height($r('app.float.default_40'))
               .onClick(()=>{
-
+                if(item.id === '1'){
+                  router.pushUrl({
+                    url: 'pages/PersonalInfo',
+                    params: {
+                      // userName : this.userInfo.userName,
+                      // userSignature:this.userInfo.userSignature,
+                      // userAvatar: this.userInfo.userAvatar,
+                      // userSex: this.userInfo.userSex,
+                      // userYear:this.userInfo.userYear,
+                      // userMonth:this.userInfo.userMonth,
+                      // userDay:this.userInfo.userDay,
+                      // userHeight:this.userInfo.userHeight,
+                      // userWeight:this.userInfo.userWeight,
+                      // userLevel:this.userInfo.userLevel
+                      userInfo : this.userInfo
+                    }
+                  })
+                    .then(() => {
+                      // success
+                    })
+                }
+                if(item.id === '2')
+                {
+                    promptAction.showToast({
+                    message: "已经是最新版啦"
+                  })
+                }
+                if(item.id === '3'){
+                  router.pushUrl({
+                    url: 'pages/AboutPage',
+                  })
+                    .then(() => {
+                      // success
+                    })
+                }
               })
-
+            // 个人头像
             Image($r('app.media.ic_right_grey'))
               .objectFit(ImageFit.Contain)
               .height($r('app.float.default_12'))

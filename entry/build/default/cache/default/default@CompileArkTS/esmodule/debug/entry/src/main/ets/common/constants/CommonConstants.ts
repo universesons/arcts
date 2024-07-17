@@ -174,6 +174,9 @@ export class CommonConstants {
     static readonly WIDGET_NAME_PROGRESS = "progress";
     //任务一 每日刷牙 每日微笑 目标都是1-3次
     static readonly BRUSH_TEETH_AND_SMILE = 3;
+    // 用户信息保存
+    static readonly STORAGE_FILE = "user_file";
+    static readonly USER_INFO = "user_info";
 }
 export enum TaskType {
     Getup = "getup",

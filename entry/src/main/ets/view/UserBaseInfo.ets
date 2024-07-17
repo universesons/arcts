@@ -12,13 +12,75 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import personInfo from '../viewmodel/PersonInfo';
+import personInfo, { StoreUtil } from '../viewmodel/PersonInfo';
+import { promptAction } from '@kit.ArkUI';
+
+let signature:string = "";
+// 修改签名的输入框
+@CustomDialog
+struct changeSignature {
+  controller: CustomDialogController
+  onSignatureChange: (newSignature: string) => void = () =>{} // 回调函数 Initial as an empty function
+
+  build() {
+    Column() {
+      TextInput({ placeholder: "请输入你的签名" })
+        .onChange((value: string) => {
+          signature = value
+        })
+        .margin({ top: 20 })
+        .width(200)
+      Button('确定', { type: ButtonType.Normal, stateEffect: true })
+        .onClick(() => {
+          this.onSignatureChange(signature); // 调用回调函数更新签名
+          this.controller.close();
+        })
+    }
+    .height(100)
+    .width(300)
+  }
+}
 
 @Component
 export struct UserBaseInfo {
-  // @Prop nickname: string = '';
-  // @Prop signature: string = '';
-  @Prop userInfo:personInfo = new personInfo();
+  @State userInfo: personInfo = new personInfo();
+
+  userStore: StoreUtil = new StoreUtil('userStore', 'userInfo');
+  // 读取数据
+  aboutToAppear(): void {
+    // 不能使用 async await
+    this.userStore.getData<personInfo>().then((data) => {
+      if (data) {
+        this.userInfo = data;
+      } else {
+        // 如果没有数据，则使用默认值
+        this.userInfo = new personInfo();
+      }
+    }).catch(() => {
+      // 处理获取数据失败的情况，使用默认值
+      this.userInfo = new personInfo();
+    });
+  }
+
+  dialogController: CustomDialogController = new CustomDialogController({
+    builder: changeSignature({
+      onSignatureChange: (newSignature: string) => {
+        this.userInfo.userSignature = newSignature; // 更新签名
+        this.userStore.setData(this.userInfo).then(()=>{
+          promptAction.showToast({
+            message:"签名更改并保存成功",
+            duration:200,
+          });
+        }).catch((error : object)=>{
+            promptAction.showToast({
+              message :"保存失败",
+              duration:200,
+            })
+        })
+      }
+    }),
+    alignment: DialogAlignment.Default,  // 可设置dialog的对齐方式，设定显示在底部或中间等，默认为底部显示
+  })
 
   build() {
     Column() {
@@ -30,7 +92,7 @@ export struct UserBaseInfo {
         .margin({ top: $r('app.float.default_71') })
 
       Column() {
-        Text('LV.7')
+        Text('LV.8')
           .fontSize($r('app.float.default_12'))
           .fontWeight(FontWeight.Bolder)
           .fontColor($r('app.color.leveColor'))
@@ -54,6 +116,9 @@ export struct UserBaseInfo {
       Text(this.userInfo.userSignature).fontSize($r('app.float.default_16')).fontWeight(FontWeight.Normal)
         .fontFamily($r('app.string.PingFangSC_Regular'))
         .fontColor($r('app.color.signatureColor'))
+        .onClick(() => {
+          this.dialogController.open(); // 弹出对话框
+        })
     }
   }
 }

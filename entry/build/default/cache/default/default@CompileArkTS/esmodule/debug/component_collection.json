@@ -187,12 +187,20 @@
     "ListItem",
     "Flex",
     "Text",
-    "Image"
+    "Image",
+    "If"
+  ],
+  "entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets": [
+    "If"
   ],
   "entry\\src\\main\\ets\\view\\UserBaseInfo.ets": [
+    "CustomDialogController",
     "Column",
+    "TextInput",
+    "Button",
     "Image",
-    "Text"
+    "Text",
+    "If"
   ],
   "entry\\src\\main\\ets\\pages\\TaskListPage.ets": [
     "Row",
@@ -255,6 +263,25 @@
     "If"
   ],
   "entry\\src\\main\\ets\\pages\\PersonalInfo.ets": [
+    "Row",
+    "Navigation",
+    "Column"
+  ],
+  "entry\\src\\main\\ets\\view\\information\\InformationListComponent.ets": [
+    "Column",
+    "Text",
+    "List",
+    "ListItem",
+    "ActionSheet",
+    "TextPickerDialog",
+    "DatePickerDialog"
+  ],
+  "entry\\src\\main\\ets\\view\\information\\InformationListItem.ets": [
+    "Row",
+    "Text",
+    "Image"
+  ],
+  "entry\\src\\main\\ets\\pages\\AboutPage.ets": [
     "RelativeContainer",
     "Text"
   ]

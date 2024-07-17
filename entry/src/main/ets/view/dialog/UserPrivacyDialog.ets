@@ -14,6 +14,8 @@
  */
 
 import { CommonConstants as Const } from '../../common/constants/CommonConstants';
+import personInfo, { StoreUtil } from '../../viewmodel/PersonInfo';
+import { promptAction } from '@kit.ArkUI';
 
 @Extend(Text)
 function descStyle() {

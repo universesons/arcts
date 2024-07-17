@@ -2,6 +2,7 @@ import { CommonConstants as Const } from '../common/constants/CommonConstants';
 import dataStorage from '@ohos.data.storage';
 import featureAbility from '@ohos.ability.featureAbility';
 
+import preferences from '@ohos.data.preferences'
 
 
 export default class personInfo {
@@ -39,12 +40,39 @@ export default class personInfo {
     this.userWeight = userWeight;
     this.userLevel = userLevel;
   }
+}
 
-    private init(){
-      featureAbility.getContext().getFilesDir((error, path) =>{
+export class StoreUtil {
+  readonly storeName: string;
+  readonly key: string;
 
-      })
+  constructor(storeName: string, key: string) {
+    this.storeName = storeName;
+    this.key = key;
+  }
+
+  getStore() {
+    return preferences.getPreferences(getContext(this), this.storeName);
+  }
+
+  async getData<T extends personInfo>(): Promise<T> {
+    const store = await this.getStore();
+    const data = await store.get(this.key, "{}") as string;
+    if (data === "{}") {
+      return new personInfo() as T;
     }
+    return JSON.parse(data) as T;
+  }
 
+  async setData<T>(data: T): Promise<void> {
+    const store = await this.getStore();
+    await store.put(this.key, JSON.stringify(data));
+    await store.flush();
+  }
 
+  async delData() {
+    const store = await this.getStore();
+    await store.delete(this.key);
+    await store.flush();
+  }
 }

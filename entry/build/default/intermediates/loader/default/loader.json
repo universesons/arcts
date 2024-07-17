@@ -13,5 +13,8 @@
   "routerMap": [],
   "hspResourcesMap": {},
   "anBuildOutPut": "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\build\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
-  "anBuildMode": "type"
+  "anBuildMode": "type",
+  "patchConfig": {
+    "changedFileList": "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\build\\default\\intermediates\\patch\\default\\changedFileList.json"
+  }
 }

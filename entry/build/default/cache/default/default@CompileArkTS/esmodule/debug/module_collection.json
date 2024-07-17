@@ -1,1 +1,5 @@
-{}
+{
+  "entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets": [
+    "ohos.data.preferences"
+  ]
+}

@@ -2,46 +2,29 @@ if (!("finalizeConstruction" in ViewPU.prototype)) {
     Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
 }
 interface MineIndex_Params {
-    userInfo?: personInfo;
 }
 import { ListInfo } from "@bundle:com.example.healthy_life/entry/ets/view/ListInfo";
 import { UserBaseInfo } from "@bundle:com.example.healthy_life/entry/ets/view/UserBaseInfo";
 import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry/ets/common/constants/CommonConstants";
-import personInfo from "@bundle:com.example.healthy_life/entry/ets/viewmodel/PersonInfo";
 export class MineIndex extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
         if (typeof paramsLambda === "function") {
             this.paramsGenerator_ = paramsLambda;
         }
-        this.__userInfo = new ObservedPropertyObjectPU(new personInfo(), this, "userInfo");
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
     setInitiallyProvidedValue(params: MineIndex_Params) {
-        if (params.userInfo !== undefined) {
-            this.userInfo = params.userInfo;
-        }
     }
     updateStateVars(params: MineIndex_Params) {
     }
     purgeVariableDependenciesOnElmtId(rmElmtId) {
-        this.__userInfo.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
-        this.__userInfo.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
-    private __userInfo: ObservedPropertyObjectPU<personInfo>; // 按照默认值初始化一个person
-    get userInfo() {
-        return this.__userInfo.get();
-    }
-    set userInfo(newValue: personInfo) {
-        this.__userInfo.set(newValue);
-    }
-    // @State nickname: string = Const.NICK_NAME;
-    // @State signature: string = Const.SIGNATURE;
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
@@ -51,24 +34,15 @@ export class MineIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new UserBaseInfo(this, {
-                        nickname: this.userInfo.userName,
-                        signature: this.userInfo.userSignature
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 29 });
+                    let componentCall = new UserBaseInfo(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 30 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
-                        return {
-                            nickname: this.userInfo.userName,
-                            signature: this.userInfo.userSignature
-                        };
+                        return {};
                     };
                     componentCall.paramsGenerator_ = paramsLambda;
                 }
                 else {
-                    this.updateStateVarsOfChildByElmtId(elmtId, {
-                        nickname: this.userInfo.userName,
-                        signature: this.userInfo.userSignature
-                    });
+                    this.updateStateVarsOfChildByElmtId(elmtId, {});
                 }
             }, { name: "UserBaseInfo" });
         }
@@ -92,4 +66,8 @@ export class MineIndex extends ViewPU {
     rerender() {
         this.updateDirtyElements();
     }
+    static getEntryName(): string {
+        return "MineIndex";
+    }
 }
+registerNamedRoute(() => new MineIndex(undefined, {}), "", { bundleName: "com.example.healthy_life", moduleName: "entry", pagePath: "pages/MinePage", pageFullPath: "entry/src/main/ets/pages/MinePage", integratedHsp: "false" });

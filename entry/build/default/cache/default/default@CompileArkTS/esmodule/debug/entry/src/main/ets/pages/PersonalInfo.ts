@@ -1,65 +1,62 @@
 if (!("finalizeConstruction" in ViewPU.prototype)) {
     Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
 }
-interface PersonalInfo_Params {
-    message?: string;
+interface Information_Params {
 }
-class PersonalInfo extends ViewPU {
+import InformationList from "@bundle:com.example.healthy_life/entry/ets/view/information/InformationListComponent";
+class Information extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
         if (typeof paramsLambda === "function") {
             this.paramsGenerator_ = paramsLambda;
         }
-        this.__message = new ObservedPropertySimplePU('Hello World', this, "message");
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
-    setInitiallyProvidedValue(params: PersonalInfo_Params) {
-        if (params.message !== undefined) {
-            this.message = params.message;
-        }
+    setInitiallyProvidedValue(params: Information_Params) {
     }
-    updateStateVars(params: PersonalInfo_Params) {
+    updateStateVars(params: Information_Params) {
     }
     purgeVariableDependenciesOnElmtId(rmElmtId) {
-        this.__message.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
-        this.__message.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
-    private __message: ObservedPropertySimplePU<string>;
-    get message() {
-        return this.__message.get();
-    }
-    set message(newValue: string) {
-        this.__message.set(newValue);
-    }
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            RelativeContainer.create();
-            RelativeContainer.height('100%');
-            RelativeContainer.width('100%');
-        }, RelativeContainer);
+            Row.create();
+        }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create(this.message);
-            Text.id('PersonalInfoHelloWorld');
-            Text.fontSize(50);
-            Text.fontWeight(FontWeight.Bold);
-            Text.alignRules({
-                center: { anchor: '__container__', align: VerticalAlign.Center },
-                middle: { anchor: '__container__', align: HorizontalAlign.Center }
-            });
-        }, Text);
-        Text.pop();
-        RelativeContainer.pop();
+            Navigation.create({ moduleName: "entry", pagePath: "entry/src/main/ets/pages/PersonalInfo" });
+        }, Navigation);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+        }, Column);
+        {
+            this.observeComponentCreation2((elmtId, isInitialRender) => {
+                if (isInitialRender) {
+                    let componentCall = new InformationList(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/PersonalInfo.ets", line: 15 });
+                    ViewPU.create(componentCall);
+                    let paramsLambda = () => {
+                        return {};
+                    };
+                    componentCall.paramsGenerator_ = paramsLambda;
+                }
+                else {
+                    this.updateStateVarsOfChildByElmtId(elmtId, {});
+                }
+            }, { name: "InformationList" });
+        }
+        Column.pop();
+        Navigation.pop();
+        Row.pop();
     }
     rerender() {
         this.updateDirtyElements();
     }
     static getEntryName(): string {
-        return "PersonalInfo";
+        return "Information";
     }
 }
-registerNamedRoute(() => new PersonalInfo(undefined, {}), "", { bundleName: "com.example.healthy_life", moduleName: "entry", pagePath: "pages/PersonalInfo", pageFullPath: "entry/src/main/ets/pages/PersonalInfo", integratedHsp: "false" });
+registerNamedRoute(() => new Information(undefined, {}), "", { bundleName: "com.example.healthy_life", moduleName: "entry", pagePath: "pages/PersonalInfo", pageFullPath: "entry/src/main/ets/pages/PersonalInfo", integratedHsp: "false" });

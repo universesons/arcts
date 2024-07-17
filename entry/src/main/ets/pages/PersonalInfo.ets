@@ -1,24 +1,20 @@
 import { router } from '@kit.ArkUI';
 
 
+// Index.ets
+
+import InformationList from '../view/information/InformationListComponent';
 
 @Entry
 @Component
-struct PersonalInfo {
-  @State message: string = 'Hello World';
-
+struct Information {
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('PersonalInfoHelloWorld')
-        .fontSize(50)
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
+    Row() {
+      Navigation() {
+        Column() {
+          InformationList()
+        }
+      }
     }
-    .height('100%')
-    .width('100%')
   }
 }
