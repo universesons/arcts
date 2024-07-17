@@ -17,6 +17,7 @@ import { TaskMapById } from '../../model/TaskInitList';
 import HealthText from '../../view/HealthTextComponent';
 import { CommonConstants as Const } from '../../common/constants/CommonConstants';
 import TaskInfo from '../../viewmodel/TaskInfo';
+import taskType from '../../viewmodel/TaskInfo';
 
 @Styles
 function allSize() {
@@ -40,19 +41,36 @@ export struct TaskCard {
     this.taskInfo.isDone = true;
   };
   @State taskInfo: TaskInfo = new TaskInfo(-1, '', -1, '', false, '', '', '', false, '', false);
+  @State name: string = '';
+  @State taskId:number= this.taskInfo.taskID;
+  @State currentValue:string = ''; // 用户的某一个任务的当前值
   aboutToAppear() {
     this.taskInfo = JSON.parse(this.taskInfoStr);
   }
 
   @Builder
   targetValueBuilder() {
+
+
+
+
+
+    
     if (this.taskInfo.isDone) {
       // 修改问题1： 当不打卡的时候，是未完成
-      HealthText({ title: '', titleResource: $r(this.taskInfo.isDone ? 'app.string.task_done' : 'app.string.task_undone') })
+      HealthText({ title: '', titleResource:
+
+      $r(this.taskInfo.isDone ? 'app.string.task_done' : 'app.string.task_undone') })
     } else {
       Row() {
         HealthText({
-          title: this.taskInfo.finValue || `--`,
+          // 根据任务类型对最初的初始值进行渲染
+          // title: this.taskInfo.finValue || `--`,
+          title: (() => {
+            // 先判断是不是早睡早起，如果是早睡早起，说明度量是时间，用--，否则用`0`
+            const currentValue = (this.taskInfo.taskID === 1 || this.taskInfo.taskID === 6 ) ? (this.taskInfo.finValue || '--') : (this.taskInfo.finValue || '0');
+            return currentValue;
+          })(),
           fontSize: $r('app.float.default_24')
         })
         Text(` / ${this.taskInfo.targetValue} ${TaskMapById[this.taskInfo.taskID - 1].unit}`)

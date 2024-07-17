@@ -157,6 +157,7 @@ export default class HomeIndex extends ViewPU {
     }
     //confirm clockL
     onConfirm(task: TaskInfo) {
+        // 首先先调用taskClock来更新一个新的task
         this.homeStore.taskClock(task).then((res: AchievementInfo) => {
             // 打卡成功后，根据连续打卡情况判断是否弹出成就勋章以及成就勋章级别
             if (res.showAchievement) {
@@ -210,7 +211,7 @@ export default class HomeIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new HomeTopView(this, { homeStore: this.__homeStore }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 128 });
+                    let componentCall = new HomeTopView(this, { homeStore: this.__homeStore }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 129 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -260,7 +261,7 @@ export default class HomeIndex extends ViewPU {
                                         let componentCall = new TaskCard(this, {
                                             taskInfoStr: JSON.stringify(item),
                                             clickAction: (isClick: boolean) => this.taskItemAction(item, isClick)
-                                        }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 133 });
+                                        }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 134 });
                                         ViewPU.create(componentCall);
                                         let paramsLambda = () => {
                                             return {
@@ -303,7 +304,7 @@ export default class HomeIndex extends ViewPU {
                     {
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             if (isInitialRender) {
-                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777245, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777306, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 155 });
+                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777245, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777306, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 156 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
@@ -336,7 +337,7 @@ export default class HomeIndex extends ViewPU {
                         clickAction: () => {
                             this.editTaskAction();
                         }
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 169 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 170 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -370,7 +371,7 @@ export default class HomeIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new CustomDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 185 });
+                    let componentCall = new CustomDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 186 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {};

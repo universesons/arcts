@@ -3735,7 +3735,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\TaskInfo.ets": {
-      "mtimeMs": 1718607523086.6216,
+      "mtimeMs": 1721196660238.2744,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\utils\\Utils.ets"
       ],
@@ -3934,7 +3934,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\HomeComponent.ets": {
-      "mtimeMs": 1721128551780.6345,
+      "mtimeMs": 1721197003728.9392,
       "children": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\HealthTextComponent.ets",
@@ -3984,7 +3984,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\HomeViewModel.ets": {
-      "mtimeMs": 1721133281291.077,
+      "mtimeMs": 1721198622798.9514,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\model\\AchieveModel.ets",
@@ -4093,11 +4093,12 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\home\\TaskCardComponent.ets": {
-      "mtimeMs": 1721127471275.8513,
+      "mtimeMs": 1721196851096.8633,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\model\\TaskInitList.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\HealthTextComponent.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
+        "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\TaskInfo.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\TaskInfo.ets"
       ],
       "parent": [
