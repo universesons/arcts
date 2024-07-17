@@ -52,7 +52,7 @@ class TaskIndex extends ViewPU {
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.backgroundColor({ "id": 16777281, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Row.backgroundColor({ "id": 16777301, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Row.height(Const.THOUSANDTH_1000);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {

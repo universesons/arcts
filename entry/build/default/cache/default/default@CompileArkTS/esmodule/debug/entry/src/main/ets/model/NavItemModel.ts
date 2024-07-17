@@ -26,21 +26,21 @@ export enum TabId {
 }
 export const NavList: NavItem[] = [
     {
-        icon: { "id": 16777384, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        icon_selected: { "id": 16777385, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        text: { "id": 16777253, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777414, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon_selected: { "id": 16777415, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        text: { "id": 16777271, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         id: TabId.HOME
     },
     {
-        icon: { "id": 16777382, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        icon_selected: { "id": 16777383, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        text: { "id": 16777252, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777412, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon_selected: { "id": 16777413, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        text: { "id": 16777270, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         id: TabId.ACHIEVEMENT
     },
     {
-        icon: { "id": 16777386, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        icon_selected: { "id": 16777387, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        text: { "id": 16777254, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777416, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon_selected: { "id": 16777417, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        text: { "id": 16777272, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         id: TabId.MINE
     },
 ];

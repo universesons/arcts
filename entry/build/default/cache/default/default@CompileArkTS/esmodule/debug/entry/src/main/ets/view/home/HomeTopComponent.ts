@@ -9,7 +9,7 @@ import { WeekCalendar } from "@bundle:com.example.healthy_life/entry/ets/view/ho
 import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry/ets/common/constants/CommonConstants";
 import HealthText from "@bundle:com.example.healthy_life/entry/ets/view/HealthTextComponent";
 function __Text__titleTextStyle(): void {
-    Text.fontSize({ "id": 16777307, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+    Text.fontSize({ "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
     Text.fontWeight(Const.FONT_WEIGHT_500);
     Text.width(Const.THOUSANDTH_1000);
     Text.fontFamily({ "id": 16777224, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
@@ -49,28 +49,28 @@ export default class HomeTopView extends ViewPU {
             Column.create();
             Column.height(Const.THOUSANDTH_500);
             Column.backgroundImagePosition({ x: 0, y: 0 });
-            Column.backgroundImage({ "id": 16777375, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Column.backgroundImage({ "id": 16777405, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Column.backgroundImageSize({ width: Const.THOUSANDTH_1000, height: Const.THOUSANDTH_900 });
             Column.justifyContent(FlexAlign.End);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777255, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777273, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             __Text__titleTextStyle();
             Text.opacity(Const.OPACITY_6);
-            Text.padding({ left: { "id": 16777312, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+            Text.padding({ left: { "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
             Row.width(Const.THOUSANDTH_1000);
-            Row.padding({ left: { "id": 16777312, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+            Row.padding({ left: { "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
         }, Row);
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
                     let componentCall = new HealthText(this, {
                         title: this.homeStore.getDonePercent(),
-                        fontSize: { "id": 16777331, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                        fontSize: { "id": 16777351, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
                         fontFamily: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
                         fontWeight: Const.FONT_WEIGHT_700
                     }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/home/HomeTopComponent.ets", line: 41 });
@@ -78,7 +78,7 @@ export default class HomeTopView extends ViewPU {
                     let paramsLambda = () => {
                         return {
                             title: this.homeStore.getDonePercent(),
-                            fontSize: { "id": 16777331, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                            fontSize: { "id": 16777351, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
                             fontFamily: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
                             fontWeight: Const.FONT_WEIGHT_700
                         };
@@ -95,8 +95,8 @@ export default class HomeTopView extends ViewPU {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create('%');
             __Text__titleTextStyle();
-            Text.fontSize({ "id": 16777319, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.margin({ top: { "id": 16777303, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, left: { "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+            Text.fontSize({ "id": 16777339, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.margin({ top: { "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, left: { "id": 16777352, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
         }, Text);
         Text.pop();
         Row.pop();

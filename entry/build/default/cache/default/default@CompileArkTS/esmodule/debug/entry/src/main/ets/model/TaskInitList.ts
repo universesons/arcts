@@ -31,16 +31,17 @@ export const TaskList: TaskInfo[] = [
     new TaskInfo(2, '', 3, '3', true, '08: 00', '', '', false, '', true),
     new TaskInfo(3, '', 4, '1', true, '', ';', '', false, '', true),
     new TaskInfo(4, '', 5, '21:30', true, '', ';', '', false, '', true),
-    new TaskInfo(5, '', 6, '22:00', true, '', ';', '', false, '', true)
+    new TaskInfo(5, '', 6, '22:00', true, '', ';', '', false, '', true),
+    new TaskInfo(6, '', 7, '1', true, '', ';', '', false, '', true)
 ];
 let achievementMap = new AchievementMapInfo();
 export const AchievementMap = achievementMap;
 export const TaskMapById: Array<ITaskItem> = [
     {
         taskID: 1,
-        taskName: { "id": 16777262, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        icon: { "id": 16777390, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        dialogBg: { "id": 16777370, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        taskName: { "id": 16777280, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777420, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        dialogBg: { "id": 16777400, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         targetValue: '08: 00',
         isOpen: false,
         unit: '',
@@ -53,9 +54,9 @@ export const TaskMapById: Array<ITaskItem> = [
     },
     {
         taskID: 2,
-        taskName: { "id": 16777266, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        icon: { "id": 16777393, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        dialogBg: { "id": 16777368, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        taskName: { "id": 16777286, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777423, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        dialogBg: { "id": 16777398, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         targetValue: '0.25',
         isOpen: false,
         unit: 'L',
@@ -68,9 +69,9 @@ export const TaskMapById: Array<ITaskItem> = [
     },
     {
         taskID: 3,
-        taskName: { "id": 16777258, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        icon: { "id": 16777388, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        dialogBg: { "id": 16777369, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        taskName: { "id": 16777276, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777418, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        dialogBg: { "id": 16777399, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         targetValue: '1',
         isOpen: false,
         unit: '个',
@@ -83,9 +84,9 @@ export const TaskMapById: Array<ITaskItem> = [
     },
     {
         taskID: 4,
-        taskName: { "id": 16777265, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        icon: { "id": 16777392, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        dialogBg: { "id": 16777372, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        taskName: { "id": 16777284, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777422, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        dialogBg: { "id": 16777402, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         targetValue: '1',
         isOpen: false,
         unit: '次',
@@ -98,9 +99,9 @@ export const TaskMapById: Array<ITaskItem> = [
     },
     {
         taskID: 5,
-        taskName: { "id": 16777259, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        icon: { "id": 16777389, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        dialogBg: { "id": 16777367, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        taskName: { "id": 16777277, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777419, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        dialogBg: { "id": 16777397, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         targetValue: '1',
         isOpen: false,
         unit: '次',
@@ -113,12 +114,28 @@ export const TaskMapById: Array<ITaskItem> = [
     },
     {
         taskID: 6,
-        taskName: { "id": 16777263, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        icon: { "id": 16777391, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-        dialogBg: { "id": 16777371, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        taskName: { "id": 16777281, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777421, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        dialogBg: { "id": 16777401, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         targetValue: '20: 00',
         isOpen: false,
         unit: '',
+        step: 0,
+        isInit: true,
+        isAlarm: false,
+        startTime: '08: 00',
+        endTime: '00: 00',
+        frequency: '1, 2, 3, 4, 5, 6, 7'
+    },
+    {
+        taskID: 7,
+        taskName: { "id": 16777283, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        // TODO： 修改 icon 和卡片背景
+        icon: { "id": 16777420, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        dialogBg: { "id": 16777400, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        targetValue: '1',
+        isOpen: false,
+        unit: '公里',
         step: 0,
         isInit: true,
         isAlarm: false,
@@ -152,6 +169,10 @@ export const RemindContentMap: Array<RemindContentItem> = [
     {
         title: Const.SLEEP_TASK_NAME,
         content: Const.SLEEP_CONTENT
+    },
+    {
+        title: Const.RUN_TASK_NAME,
+        content: Const.RUN_CONTENT
     }
 ];
 export const ACHIEVEMENT_LEVEL_LIST = [3, 7, 30, 50, 73, 99];

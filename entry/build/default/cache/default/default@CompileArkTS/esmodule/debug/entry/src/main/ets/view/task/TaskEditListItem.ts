@@ -26,17 +26,17 @@ function __Text__targetSetCommon(): void {
     Text.align(Alignment.End);
 }
 function __Text__targetSettingStyle(isOpen: boolean, taskID: number): void {
-    Text.fontColor(isOpen ? { "id": 16777289, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777272, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+    Text.fontColor(isOpen ? { "id": 16777309, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777292, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
 }
 function __Text__remindTimeStyle(isOpen: boolean, isAlarm: boolean): void {
-    Text.fontColor(isOpen && isAlarm ? { "id": 16777289, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777272, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+    Text.fontColor(isOpen && isAlarm ? { "id": 16777309, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777292, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
 }
 function __Text__frequencyStyle(isOpen: boolean, isAlarm: boolean): void {
     Text.fontSize(Const.DEFAULT_12);
     Text.flexGrow(1);
     Text.margin({ right: Const.DEFAULT_8 });
     Text.textAlign(TextAlign.End);
-    Text.fontColor(isOpen && isAlarm ? { "id": 16777289, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777272, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+    Text.fontColor(isOpen && isAlarm ? { "id": 16777309, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777292, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
 }
 export class TaskChooseItem extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
@@ -83,7 +83,7 @@ export class TaskChooseItem extends ViewPU {
             Toggle.create({ type: ToggleType.Switch, isOn: this.settingParams.isOpen });
             Toggle.width(Const.DEFAULT_56);
             Toggle.height(Const.DEFAULT_32);
-            Toggle.selectedColor({ "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Toggle.selectedColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Toggle.onChange((isOn) => {
                 this.settingParams.isOpen = isOn;
                 if (isOn != true) {
@@ -134,7 +134,7 @@ export class TargetSetItem extends ViewPU {
             Row.justifyContent(FlexAlign.SpaceBetween);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777256, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777274, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
             Text.fontWeight(FontWeight.Medium);
         }, Text);
@@ -169,7 +169,7 @@ export class TargetSetItem extends ViewPU {
         }, If);
         If.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777380, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.create({ "id": 16777410, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Image.width(Const.DEFAULT_8);
             Image.height(Const.DEFAULT_16);
         }, Image);
@@ -215,7 +215,7 @@ export class OpenRemindItem extends ViewPU {
             Row.justifyContent(FlexAlign.SpaceBetween);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777246, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777259, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
             Text.fontWeight(FontWeight.Medium);
         }, Text);
@@ -224,7 +224,7 @@ export class OpenRemindItem extends ViewPU {
             Toggle.create({ type: ToggleType.Switch, isOn: this.settingParams?.isAlarm });
             Toggle.width(Const.DEFAULT_56);
             Toggle.height(Const.DEFAULT_32);
-            Toggle.selectedColor({ "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Toggle.selectedColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Toggle.onChange((isOn) => {
                 this.settingParams.isAlarm = isOn;
             });
@@ -272,7 +272,7 @@ export class RemindTimeItem extends ViewPU {
             Row.justifyContent(FlexAlign.SpaceBetween);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777249, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777267, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
             Text.fontWeight(FontWeight.Medium);
         }, Text);
@@ -289,7 +289,7 @@ export class RemindTimeItem extends ViewPU {
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777380, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.create({ "id": 16777410, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Image.width(Const.DEFAULT_8);
             Image.height(Const.DEFAULT_16);
         }, Image);
@@ -345,7 +345,7 @@ export class FrequencyItem extends ViewPU {
             Row.justifyContent(FlexAlign.SpaceBetween);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777238, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777245, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
             Text.fontWeight(FontWeight.Medium);
         }, Text);
@@ -357,7 +357,7 @@ export class FrequencyItem extends ViewPU {
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777380, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.create({ "id": 16777410, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Image.width(Const.DEFAULT_8);
             Image.height(Const.DEFAULT_16);
         }, Image);

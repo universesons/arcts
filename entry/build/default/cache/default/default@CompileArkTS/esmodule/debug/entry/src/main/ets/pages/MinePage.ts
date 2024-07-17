@@ -57,7 +57,7 @@ export class MineIndex extends ViewPU {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
             Column.height(Const.FULL_HEIGHT);
-            Column.backgroundColor({ "id": 16777278, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Column.backgroundColor({ "id": 16777298, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Column);
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {

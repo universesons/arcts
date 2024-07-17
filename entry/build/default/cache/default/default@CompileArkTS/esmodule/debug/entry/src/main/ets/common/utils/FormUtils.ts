@@ -223,6 +223,9 @@ class FormUtils {
                 case taskType.sleepEarly:
                     temp = this.getTemp(temp, TaskType.Sleep, Unit.Empty, true, item.isDone);
                     break;
+                case taskType.run:
+                    temp = this.getTemp(temp, TaskType.Run, Unit.Dist, true, item.isDone);
+                    break;
                 default:
                     break;
             }

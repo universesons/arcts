@@ -14,7 +14,7 @@ export class BadgeCard extends ViewPU {
             this.paramsGenerator_ = paramsLambda;
         }
         this.__content = new SynchedPropertySimpleOneWayPU(params.content, this, "content");
-        this.imgSrc = { "id": 16777237, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+        this.imgSrc = { "id": 16777243, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
@@ -58,10 +58,10 @@ export class BadgeCard extends ViewPU {
             Image.objectFit(ImageFit.Contain);
         }, Image);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777257, "type": 10003, params: [Number(this.content)], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.lineHeight({ "id": 16777307, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.fontSize({ "id": 16777303, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.fontColor({ "id": 16777290, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777275, "type": 10003, params: [Number(this.content)], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.lineHeight({ "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontSize({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Text);
         Text.pop();
         Column.pop();

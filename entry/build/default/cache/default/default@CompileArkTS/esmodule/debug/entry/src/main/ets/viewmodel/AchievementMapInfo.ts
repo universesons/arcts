@@ -16,16 +16,16 @@
  * Achievement map info
  */
 export default class AchievementMapInfo {
-    off_3: Resource = { "id": 16777351, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    on_3: Resource = { "id": 16777352, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    off_7: Resource = { "id": 16777357, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    on_7: Resource = { "id": 16777358, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    off_30: Resource = { "id": 16777349, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    on_30: Resource = { "id": 16777350, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    off_50: Resource = { "id": 16777353, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    on_50: Resource = { "id": 16777354, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    off_73: Resource = { "id": 16777355, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    on_73: Resource = { "id": 16777356, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    off_99: Resource = { "id": 16777359, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-    on_99: Resource = { "id": 16777360, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    off_3: Resource = { "id": 16777381, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    on_3: Resource = { "id": 16777382, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    off_7: Resource = { "id": 16777387, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    on_7: Resource = { "id": 16777388, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    off_30: Resource = { "id": 16777379, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    on_30: Resource = { "id": 16777380, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    off_50: Resource = { "id": 16777383, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    on_50: Resource = { "id": 16777384, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    off_73: Resource = { "id": 16777385, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    on_73: Resource = { "id": 16777386, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    off_99: Resource = { "id": 16777389, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    on_99: Resource = { "id": 16777390, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
 }

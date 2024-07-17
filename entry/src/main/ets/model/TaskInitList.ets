@@ -50,7 +50,7 @@ export const TaskList: TaskInfo[] = [
   new TaskInfo(3, '', 4, '1', true, '', ';', '', false, '', true),
   new TaskInfo(4, '', 5, '21:30', true, '', ';', '', false, '', true),
   new TaskInfo(5, '', 6, '22:00', true, '', ';', '', false, '', true),
-  new TaskInfo(6, '', 7, '22:00', true, '', ';', '', false, '', true)
+  new TaskInfo(6, '', 7, '1', true, '', ';', '', false, '', true)
 ]
 
 let achievementMap = new AchievementMapInfo();

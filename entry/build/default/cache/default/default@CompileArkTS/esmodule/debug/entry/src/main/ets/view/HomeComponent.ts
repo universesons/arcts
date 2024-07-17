@@ -28,7 +28,7 @@ import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry
 import type AchievementInfo from '../viewmodel/AchievementInfo';
 const WHITE_COLOR_0X = 255;
 function __Text__titleTextStyle(): void {
-    Text.fontSize({ "id": 16777307, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+    Text.fontSize({ "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
     Text.fontWeight(Const.FONT_WEIGHT_500);
     Text.width(Const.THOUSANDTH_1000);
     Text.fontFamily({ "id": 16777224, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
@@ -193,7 +193,7 @@ export default class HomeIndex extends ViewPU {
             Stack.create();
             Stack.width(Const.THOUSANDTH_1000);
             Stack.height(Const.THOUSANDTH_1000);
-            Stack.backgroundColor({ "id": 16777281, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Stack.backgroundColor({ "id": 16777301, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Stack);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Scroll.create(this.scroller);
@@ -226,7 +226,7 @@ export default class HomeIndex extends ViewPU {
             }, { name: "HomeTopView" });
         }
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777261, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777279, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             __Text__titleTextStyle();
         }, Text);
         Text.pop();
@@ -253,7 +253,7 @@ export default class HomeIndex extends ViewPU {
                             this.observeComponentCreation2((elmtId, isInitialRender) => {
                                 __Common__.create();
                                 __Common__.margin({ bottom: Const.DEFAULT_12 });
-                                __Common__.height({ "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                                __Common__.height({ "id": 16777347, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                             }, __Common__);
                             {
                                 this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -293,9 +293,9 @@ export default class HomeIndex extends ViewPU {
                         Column.margin({ top: Const.DEFAULT_48 });
                     }, Column);
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Image.create({ "id": 16777379, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        Image.width({ "id": 16777305, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        Image.height({ "id": 16777302, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Image.create({ "id": 16777409, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Image.width({ "id": 16777325, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Image.height({ "id": 16777322, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                     }, Image);
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         __Common__.create();
@@ -304,13 +304,13 @@ export default class HomeIndex extends ViewPU {
                     {
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             if (isInitialRender) {
-                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777245, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777306, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 156 });
+                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777258, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777326, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 156 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
                                         title: '',
-                                        titleResource: { "id": 16777245, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-                                        fontSize: { "id": 16777306, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
+                                        titleResource: { "id": 16777258, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                                        fontSize: { "id": 16777326, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
                                     };
                                 };
                                 componentCall.paramsGenerator_ = paramsLambda;
@@ -363,7 +363,7 @@ export default class HomeIndex extends ViewPU {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777219, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             __Text__titleTextStyle();
-            Text.fontSize({ "id": 16777312, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontSize({ "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.padding({ left: Const.THOUSANDTH_66 });
         }, Text);
         Text.pop();

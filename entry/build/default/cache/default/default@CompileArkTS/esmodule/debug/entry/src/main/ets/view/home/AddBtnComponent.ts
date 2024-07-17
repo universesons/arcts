@@ -36,11 +36,11 @@ export default class AddBtn extends ViewPU {
             Button.onClick(() => this.clickAction());
             Button.zIndex(Const.HOME_BTN_Z);
             Button.position({ x: Const.THOUSANDTH_830, y: Const.THOUSANDTH_880 });
-            Button.width({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Button.height({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Button.width({ "id": 16777343, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Button.height({ "id": 16777343, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Button);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777373, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.create({ "id": 16777403, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Image.width(Const.THOUSANDTH_1000);
             Image.height(Const.THOUSANDTH_1000);
             Image.borderRadius(Const.BORDER_RADIUS_PERCENT_50);

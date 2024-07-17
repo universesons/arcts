@@ -45,12 +45,12 @@ class AgencyCard extends ViewPU {
             this.paramsGenerator_ = paramsLambda;
         }
         this.iconList = {
-            getup: { "id": 16777390, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-            drink: { "id": 16777393, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-            apple: { "id": 16777388, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-            smile: { "id": 16777392, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-            clean: { "id": 16777389, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-            sleep: { "id": 16777391, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
+            getup: { "id": 16777420, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+            drink: { "id": 16777423, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+            apple: { "id": 16777418, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+            smile: { "id": 16777422, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+            clean: { "id": 16777419, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+            sleep: { "id": 16777421, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
         } as iconInfo;
         this.ACTION_TYPE = 'router';
         this.ABILITY_NAME = 'EntryAbility';
@@ -224,25 +224,25 @@ class AgencyCard extends ViewPU {
      */
     readonly TEXT_SLIGHTLY_BOLD: number;
     getIconByCardTaskType(key?: string): Resource {
-        let result: Resource = { "id": 16777237, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+        let result: Resource = { "id": 16777243, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
         switch (key) {
             case 'getup':
-                result = { "id": 16777390, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+                result = { "id": 16777420, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
                 break;
             case 'drink':
-                result = { "id": 16777393, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+                result = { "id": 16777423, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
                 break;
             case 'apple':
-                result = { "id": 16777388, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+                result = { "id": 16777418, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
                 break;
             case 'smile':
-                result = { "id": 16777392, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+                result = { "id": 16777422, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
                 break;
             case 'clean':
-                result = { "id": 16777389, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+                result = { "id": 16777419, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
                 break;
             case 'sleep':
-                result = { "id": 16777391, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+                result = { "id": 16777421, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
                 break;
             default:
                 break;
@@ -260,13 +260,13 @@ class AgencyCard extends ViewPU {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         List.create({ space: this.LIST_SPACE });
                         List.padding({
-                            left: { "id": 16777295, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-                            top: { "id": 16777297, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-                            right: { "id": 16777296, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-                            bottom: { "id": 16777294, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
+                            left: { "id": 16777315, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                            top: { "id": 16777317, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                            right: { "id": 16777316, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                            bottom: { "id": 16777314, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
                         });
                         List.lanes(this.LIST_TWO_LANES);
-                        List.backgroundColor({ "id": 16777277, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        List.backgroundColor({ "id": 16777297, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                         List.width(this.FULL_WIDTH_PERCENT);
                         List.height(this.FULL_HEIGHT_PERCENT);
                     }, List);
@@ -285,8 +285,8 @@ class AgencyCard extends ViewPU {
                                 };
                                 const itemCreation2 = (elmtId, isInitialRender) => {
                                     ListItem.create(deepRenderFunction, true);
-                                    ListItem.margin({ right: { "id": 16777292, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
-                                    ListItem.borderRadius({ "id": 16777293, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                                    ListItem.margin({ right: { "id": 16777312, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+                                    ListItem.borderRadius({ "id": 16777313, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                                     ListItem.backgroundColor(Color.White);
                                 };
                                 const deepRenderFunction = (elmtId, isInitialRender) => {
@@ -319,20 +319,20 @@ class AgencyCard extends ViewPU {
             Column.justifyContent(FlexAlign.Center);
             Column.width(this.FULL_WIDTH_PERCENT);
             Column.height(this.FULL_HEIGHT_PERCENT);
-            Column.backgroundColor({ "id": 16777279, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Column.backgroundColor({ "id": 16777299, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Column.onClick(() => {
                 this.jumpToAbility();
             });
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777379, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.create({ "id": 16777409, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Image.width(this.EMPTY_IMAGE_WIDTH);
             Image.height(this.EMPTY_IMAGE_HEIGHT);
             Image.objectFit(ImageFit.Contain);
         }, Image);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777228, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.fontSize({ "id": 16777336, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontSize({ "id": 16777356, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontColor(Color.White);
             Text.fontWeight(FontWeight.Normal);
             Text.opacity(this.TEXT_OPACITY);
@@ -345,8 +345,8 @@ class AgencyCard extends ViewPU {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
             Row.padding({
-                left: { "id": 16777298, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-                right: { "id": 16777298, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
+                left: { "id": 16777318, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                right: { "id": 16777318, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
             });
             Row.width(this.FULL_WIDTH_PERCENT);
             Row.height(this.AGENCY_COMPONENT_HEIGHT);
@@ -356,8 +356,8 @@ class AgencyCard extends ViewPU {
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Image.create(this.getIconByCardTaskType(taskItem.taskType));
-            Image.width({ "id": 16777291, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Image.height({ "id": 16777291, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.width({ "id": 16777311, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.height({ "id": 16777311, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Image.objectFit(ImageFit.Contain);
         }, Image);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -366,8 +366,8 @@ class AgencyCard extends ViewPU {
                 this.ifElseBranchUpdateFunction(0, () => {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         Text.create(taskItem.isDone ? taskItem.targetValue : this.TARGET_VALUE_SPLICING + taskItem.targetValue);
-                        Text.fontSize({ "id": 16777344, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        Text.fontColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontSize({ "id": 16777373, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontColor({ "id": 16777308, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                         Text.opacity(this.TARGET_TEXT_OPACITY);
                         Text.fontWeight(FontWeight.Normal);
                         Text.layoutWeight(this.TARGET_TEXT_WEIGHT);
@@ -385,23 +385,23 @@ class AgencyCard extends ViewPU {
                     }, Row);
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         Text.create(taskItem.finValueIsNull ? this.CROSS_BAR_SYMBOL : taskItem.finValue);
-                        Text.fontSize(taskItem.finValueIsNull ? { "id": 16777344, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777299, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontSize(taskItem.finValueIsNull ? { "id": 16777373, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777319, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                         Text.fontWeight(taskItem.finValueIsNull ? FontWeight.Normal : this.TEXT_SLIGHTLY_BOLD);
-                        Text.fontColor(taskItem.finValueIsNull ? { "id": 16777273, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontColor(taskItem.finValueIsNull ? { "id": 16777293, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777308, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                     }, Text);
                     Text.pop();
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         Text.create(this.SLASHES + taskItem.targetValue);
-                        Text.fontSize({ "id": 16777344, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontSize({ "id": 16777373, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                         Text.fontWeight(FontWeight.Normal);
-                        Text.fontColor({ "id": 16777273, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontColor({ "id": 16777293, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                     }, Text);
                     Text.pop();
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         Text.create(taskItem.unit);
-                        Text.fontSize({ "id": 16777344, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontSize({ "id": 16777373, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                         Text.fontWeight(FontWeight.Normal);
-                        Text.fontColor({ "id": 16777273, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontColor({ "id": 16777293, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                     }, Text);
                     Text.pop();
                     Row.pop();

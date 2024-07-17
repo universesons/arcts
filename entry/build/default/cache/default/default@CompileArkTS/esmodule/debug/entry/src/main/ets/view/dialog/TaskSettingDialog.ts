@@ -18,6 +18,7 @@ interface TargetSettingDialog_Params {
     controller?: CustomDialogController;
     drinkRange?: string[];
     appleRange?: string[];
+    runRange?: string[];
     brushAndSmileRange?: string[];
     currentValue?: string;
     currentTime?: string;
@@ -25,7 +26,7 @@ interface TargetSettingDialog_Params {
 import promptAction from "@ohos:promptAction";
 import type { ITaskItem } from '../../model/TaskInitList';
 import { frequencyRange } from "@bundle:com.example.healthy_life/entry/ets/common/utils/Utils";
-import { returnTimeStamp, createAppleRange, createDrinkRange, formatTime, createBrushTeethAndSmile } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/TaskViewModel";
+import { returnTimeStamp, createAppleRange, createDrinkRange, createRunRange, formatTime, createBrushTeethAndSmile } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/TaskViewModel";
 import { taskType } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/TaskInfo";
 import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry/ets/common/constants/CommonConstants";
 import type { FrequencyContentType } from '../../model/TaskInitList';
@@ -41,6 +42,7 @@ export class TargetSettingDialog extends ViewPU {
         }, this);
         this.drinkRange = createDrinkRange();
         this.appleRange = createAppleRange();
+        this.runRange = createRunRange();
         this.brushAndSmileRange = createBrushTeethAndSmile();
         this.currentValue = this.settingParams.targetValue;
         this.currentTime = Const.DEFAULT_TIME;
@@ -56,6 +58,9 @@ export class TargetSettingDialog extends ViewPU {
         }
         if (params.appleRange !== undefined) {
             this.appleRange = params.appleRange;
+        }
+        if (params.runRange !== undefined) {
+            this.runRange = params.runRange;
         }
         if (params.brushAndSmileRange !== undefined) {
             this.brushAndSmileRange = params.brushAndSmileRange;
@@ -90,6 +95,7 @@ export class TargetSettingDialog extends ViewPU {
     }
     private drinkRange: string[];
     private appleRange: string[];
+    private runRange: string[];
     private brushAndSmileRange: string[];
     private currentValue: string;
     private currentTime: string;
@@ -133,7 +139,7 @@ export class TargetSettingDialog extends ViewPU {
             Row.justifyContent(FlexAlign.Start);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777256, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777274, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
             Text.margin({ right: Const.DEFAULT_12 });
         }, Text);
@@ -168,7 +174,11 @@ export class TargetSettingDialog extends ViewPU {
             else {
                 this.ifElseBranchUpdateFunction(1, () => {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        TextPicker.create({ range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange : (taskType.brushTeeth || taskType.smile) ? this.brushAndSmileRange : this.appleRange });
+                        TextPicker.create({
+                            range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange :
+                                (this.settingParams?.taskID === taskType.brushTeeth || this.settingParams?.taskID === taskType.smile) ? this.brushAndSmileRange :
+                                    this.settingParams?.taskID === taskType.run ? this.runRange : this.appleRange
+                        });
                         TextPicker.width(Const.THOUSANDTH_900);
                         TextPicker.height(Const.THOUSANDTH_800);
                         TextPicker.onChange((value: string | string[]) => {
@@ -188,9 +198,9 @@ export class TargetSettingDialog extends ViewPU {
             Row.margin({ bottom: Const.DEFAULT_20 });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777233, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777238, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
-            Text.fontColor({ "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
                 this.currentTime = Const.DEFAULT_TIME;
                 this.currentValue = '';
@@ -199,9 +209,9 @@ export class TargetSettingDialog extends ViewPU {
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777236, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777241, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
-            Text.fontColor({ "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
                 this.setTargetValue();
                 this.controller.close();
@@ -271,7 +281,7 @@ export class RemindTimeDialog extends ViewPU {
             Column.width(Const.THOUSANDTH_900);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777249, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777267, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
             Text.margin({ top: Const.DEFAULT_10 });
             Text.width(Const.THOUSANDTH_1000);
@@ -298,9 +308,9 @@ export class RemindTimeDialog extends ViewPU {
             Row.margin({ bottom: Const.DEFAULT_20 });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777233, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777238, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
-            Text.fontColor({ "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
                 this.currentTime = Const.DEFAULT_TIME;
                 this.controller.close();
@@ -308,9 +318,9 @@ export class RemindTimeDialog extends ViewPU {
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777236, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777241, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
-            Text.fontColor({ "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
                 this.settingParams.startTime = this.currentTime;
                 this.controller.close();
@@ -409,7 +419,7 @@ export class FrequencyDialog extends ViewPU {
             Column.width(Const.THOUSANDTH_900);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777250, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777268, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
             Text.margin({ top: Const.DEFAULT_10 });
             Text.width(Const.THOUSANDTH_1000);
@@ -421,7 +431,7 @@ export class FrequencyDialog extends ViewPU {
             List.create();
             List.divider({
                 strokeWidth: Const.DEFAULT_2,
-                color: { "id": 16777270, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
+                color: { "id": 16777290, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
             });
             List.flexGrow(1);
             List.padding(Const.DEFAULT_12);
@@ -482,18 +492,18 @@ export class FrequencyDialog extends ViewPU {
             Row.margin({ bottom: Const.DEFAULT_16 });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777233, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777238, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
-            Text.fontColor({ "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
                 this.controller.close();
             });
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777236, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777241, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontSize(Const.DEFAULT_20);
-            Text.fontColor({ "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
                 this.setFrequency();
                 this.frequency = this.currentFrequency;

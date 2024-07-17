@@ -17,10 +17,10 @@ export default class HealthText extends ViewPU {
             this.paramsGenerator_ = paramsLambda;
         }
         this.__title = new SynchedPropertySimpleOneWayPU(params.title, this, "title");
-        this.titleResource = { "id": 16777237, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
-        this.fontSize = { "id": 16777307, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+        this.titleResource = { "id": 16777243, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+        this.fontSize = { "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
         this.fontWeight = Const.FONT_WEIGHT_500;
-        this.fontColor = { "id": 16777289, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+        this.fontColor = { "id": 16777309, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
         this.fontFamily = { "id": 16777224, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();

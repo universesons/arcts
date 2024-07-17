@@ -156,7 +156,7 @@ export default class TaskDetail extends ViewPU {
             };
             const itemCreation2 = (elmtId, isInitialRender) => {
                 ListItem.create(deepRenderFunction, true);
-                ListItem.backgroundColor({ "id": 16777290, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                ListItem.backgroundColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                 ListItem.height(Const.DEFAULT_56);
                 ListItem.borderRadius(Const.DEFAULT_10);
                 ListItem.padding({ left: Const.DEFAULT_12, right: Const.DEFAULT_12 });
@@ -198,7 +198,7 @@ export default class TaskDetail extends ViewPU {
             const itemCreation2 = (elmtId, isInitialRender) => {
                 ListItem.create(deepRenderFunction, true);
                 // 目标设置
-                ListItem.backgroundColor({ "id": 16777290, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                ListItem.backgroundColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                 // 目标设置
                 ListItem.height(Const.DEFAULT_56);
                 // 目标设置
@@ -247,7 +247,7 @@ export default class TaskDetail extends ViewPU {
             const itemCreation2 = (elmtId, isInitialRender) => {
                 ListItem.create(deepRenderFunction, true);
                 // 开启提醒
-                ListItem.backgroundColor({ "id": 16777290, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                ListItem.backgroundColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                 // 开启提醒
                 ListItem.height(Const.DEFAULT_56);
                 // 开启提醒
@@ -292,7 +292,7 @@ export default class TaskDetail extends ViewPU {
             };
             const itemCreation2 = (elmtId, isInitialRender) => {
                 ListItem.create(deepRenderFunction, true);
-                ListItem.backgroundColor({ "id": 16777290, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                ListItem.backgroundColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                 ListItem.height(Const.DEFAULT_56);
                 ListItem.borderRadius(Const.DEFAULT_10);
                 ListItem.padding({ left: Const.DEFAULT_12, right: Const.DEFAULT_12 });
@@ -334,7 +334,7 @@ export default class TaskDetail extends ViewPU {
             };
             const itemCreation2 = (elmtId, isInitialRender) => {
                 ListItem.create(deepRenderFunction, true);
-                ListItem.backgroundColor({ "id": 16777290, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                ListItem.backgroundColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                 ListItem.height(Const.DEFAULT_56);
                 ListItem.borderRadius(Const.DEFAULT_10);
                 ListItem.padding({ left: Const.DEFAULT_12, right: Const.DEFAULT_12 });
@@ -370,7 +370,7 @@ export default class TaskDetail extends ViewPU {
             Button.createWithChild();
             Button.width(Const.THOUSANDTH_800);
             Button.height(Const.DEFAULT_48);
-            Button.backgroundColor({ "id": 16777269, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Button.backgroundColor({ "id": 16777289, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Button.onClick(() => {
                 this.finishTaskEdit();
             });
@@ -380,9 +380,9 @@ export default class TaskDetail extends ViewPU {
             });
         }, Button);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777235, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.fontSize({ "id": 16777309, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.fontColor({ "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.create({ "id": 16777240, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontSize({ "id": 16777329, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Text);
         Text.pop();
         Button.pop();

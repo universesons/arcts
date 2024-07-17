@@ -89,18 +89,18 @@ export class WeekCalendar extends ViewPU {
     getProgressImg(item: WeekDateModel): Resource {
         let finNum = item.dayInfo?.finTaskNum || 0;
         if (finNum === 0) {
-            return { "id": 16777377, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+            return { "id": 16777407, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
         }
         if (finNum === (item.dayInfo?.targetTaskNum || 0)) {
-            return { "id": 16777374, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+            return { "id": 16777404, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
         }
-        return { "id": 16777376, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+        return { "id": 16777406, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
     }
     ArrowIcon(isRight: boolean, parent = null) {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.width({ "id": 16777309, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Row.height({ "id": 16777309, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Row.width({ "id": 16777329, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Row.height({ "id": 16777329, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Row.rotate({ z: 1, angle: isRight ? 0 : Const.DEFAULT_180 });
             Row.justifyContent(FlexAlign.Center);
             Row.onClick(() => isRight ?
@@ -108,9 +108,9 @@ export class WeekCalendar extends ViewPU {
                 WeekCalendarMethods.gotoPreviousWeek(this.isPageScroll, ObservedObject.GetRawObject(this.homeStore), this.currentPage, this.scroller));
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777380, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Image.width({ "id": 16777326, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Image.height({ "id": 16777303, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.create({ "id": 16777410, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.width({ "id": 16777346, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.height({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Image);
         Row.pop();
     }
@@ -123,8 +123,8 @@ export class WeekCalendar extends ViewPU {
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.borderRadius({ "id": 16777312, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Column.backgroundColor({ "id": 16777290, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Column.borderRadius({ "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Column.backgroundColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Column.width(Const.THOUSANDTH_1000);
             Column.height(Const.THOUSANDTH_1000);
             Column.padding({ top: Const.THOUSANDTH_50, bottom: Const.THOUSANDTH_120 });
@@ -136,17 +136,17 @@ export class WeekCalendar extends ViewPU {
         this.ArrowIcon.bind(this)(false, this);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             __Common__.create();
-            __Common__.margin({ "id": 16777303, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            __Common__.margin({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, __Common__);
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new HealthText(this, { title: this.homeStore.dateTitle, fontSize: { "id": 16777306, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/home/WeekCalendarComponent.ets", line: 82 });
+                    let componentCall = new HealthText(this, { title: this.homeStore.dateTitle, fontSize: { "id": 16777326, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/home/WeekCalendarComponent.ets", line: 82 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
                             title: this.homeStore.dateTitle,
-                            fontSize: { "id": 16777306, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
+                            fontSize: { "id": 16777326, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
                         };
                     };
                     componentCall.paramsGenerator_ = paramsLambda;
@@ -184,22 +184,22 @@ export class WeekCalendar extends ViewPU {
                 }, Column);
                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                     Text.create(item.weekTitle);
-                    Text.fontSize({ "id": 16777303, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                    Text.fontSize({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                     Text.fontWeight(Const.FONT_WEIGHT_500);
-                    Text.fontColor(sameDate(item.date, this.homeStore.showDate) ? { "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777289, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                    Text.fontColor(sameDate(item.date, this.homeStore.showDate) ? { "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777309, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                     Text.fontFamily({ "id": 16777224, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                     Text.opacity(Const.OPACITY_6);
                 }, Text);
                 Text.pop();
                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                     Divider.create();
-                    Divider.margin({ top: Const.DEFAULT_2, bottom: { "id": 16777318, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
-                    Divider.width({ "id": 16777303, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                    Divider.color(sameDate(item.date, this.homeStore.showDate) ? { "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777290, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                    Divider.margin({ top: Const.DEFAULT_2, bottom: { "id": 16777338, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+                    Divider.width({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                    Divider.color(sameDate(item.date, this.homeStore.showDate) ? { "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                 }, Divider);
                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                     Image.create(this.getProgressImg(item));
-                    Image.height({ "id": 16777315, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                    Image.height({ "id": 16777335, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                     Image.objectFit(ImageFit.Contain);
                     Image.margin({ top: Const.THOUSANDTH_80 });
                 }, Image);

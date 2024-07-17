@@ -41,10 +41,10 @@
 						"actions":	["action.system.home"]
 					}],
 				"descriptionId":	16777218,
-				"iconId":	16777396,
+				"iconId":	16777427,
 				"labelId":	16777219,
-				"startWindowIconId":	16777396,
-				"startWindowBackgroundId":	16777290
+				"startWindowIconId":	16777427,
+				"startWindowBackgroundId":	16777310
 			}],
 		"extensionAbilities":	[{
 				"name":	"EntryFormAbility",
@@ -55,7 +55,7 @@
 				"metadata":	[{
 						"name":	"ohos.extension.form",
 						"resource":	"$profile:form_config",
-						"resourceId":	16777403
+						"resourceId":	16777434
 					}],
 				"labelId":	16777221,
 				"descriptionId":	16777220
@@ -67,12 +67,12 @@
 					"abilities":	["EntryAbility"],
 					"when":	"always"
 				},
-				"reasonId":	16777264
+				"reasonId":	16777282
 			}],
 		"packageName":	"entry",
 		"virtualMachine":	"ark12.0.2.0",
 		"compileMode":	"esmodule",
 		"dependencies":	[],
-		"descriptionId":	16777244
+		"descriptionId":	16777256
 	}
 }

@@ -126,14 +126,14 @@ class Index extends ViewPU {
             let date = new Date();
             if (result && date.getTime() < predate.getTime()) {
                 AlertDialog.show({
-                    title: { "id": 16777229, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
-                    message: { "id": 16777231, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                    title: { "id": 16777230, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                    message: { "id": 16777232, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
                     autoCancel: false,
                     alignment: DialogAlignment.Bottom,
                     offset: { dx: 0, dy: -20 },
                     gridCount: 3,
                     confirm: {
-                        value: { "id": 16777230, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+                        value: { "id": 16777231, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
                         action: () => {
                             (getContext(this) as common.UIAbilityContext).terminateSelf();
                             console.info('Button-clicking callback');
@@ -158,16 +158,16 @@ class Index extends ViewPU {
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Image.create(index === this.currentPage ? NavList[index].icon_selected : NavList[index].icon);
-            Image.width({ "id": 16777312, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Image.height({ "id": 16777312, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.width({ "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Image.height({ "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Image.objectFit(ImageFit.Contain);
         }, Image);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create(NavList[index].text);
-            Text.fontSize({ "id": 16777301, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontSize({ "id": 16777321, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontWeight(Const.FONT_WEIGHT_500);
-            Text.fontColor(this.currentPage === index ? { "id": 16777268, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777287, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.margin({ top: { "id": 16777318, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+            Text.fontColor(this.currentPage === index ? { "id": 16777288, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777307, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.margin({ top: { "id": 16777338, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
         }, Text);
         Text.pop();
         Column.pop();
@@ -190,7 +190,7 @@ class Index extends ViewPU {
                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                     __Common__.create();
                     __Common__.borderWidth({ bottom: 1 });
-                    __Common__.borderColor({ "id": 16777281, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                    __Common__.borderColor({ "id": 16777301, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                 }, __Common__);
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -247,7 +247,7 @@ class Index extends ViewPU {
                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                     __Common__.create();
                     __Common__.borderWidth({ bottom: 1 });
-                    __Common__.borderColor({ "id": 16777281, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                    __Common__.borderColor({ "id": 16777301, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                 }, __Common__);
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {

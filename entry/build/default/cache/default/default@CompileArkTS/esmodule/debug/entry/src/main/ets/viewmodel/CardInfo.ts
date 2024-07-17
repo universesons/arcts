@@ -17,5 +17,5 @@
  */
 export default class CardInfo {
     titleContent: string = '';
-    achievement: Resource = { "id": 16777237, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    achievement: Resource = { "id": 16777243, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
 }

@@ -38,7 +38,7 @@ export class AchievementIndex extends ViewPU {
             Column.padding(Const.DEFAULT_10);
             Column.height(Const.FULL_HEIGHT);
             Column.width(Const.FULL_WIDTH);
-            Column.backgroundColor({ "id": 16777267, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Column.backgroundColor({ "id": 16777287, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Column);
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
