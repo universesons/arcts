@@ -152,7 +152,7 @@ export const TaskMapById: Array<ITaskItem> = [
     taskID: 7,
     taskName: $r('app.string.task_run'),
     // TODO： 修改 icon 和卡片背景
-    icon: $r("app.media.ic_task_morning"),
+    icon: $r("app.media.ic_task_run"),
     dialogBg: $r('app.media.ic_dialog_getup'),
     targetValue: '1',
     isOpen: false,

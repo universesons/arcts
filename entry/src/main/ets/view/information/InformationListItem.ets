@@ -7,10 +7,12 @@ function listItemStyle() {
   .borderRadius(Const.DEFAULT_10)
   .padding({ left: Const.DEFAULT_12, right: Const.DEFAULT_12 })
 }
+
 @Entry
 @Component
 export struct NameSetItem {
-  @Prop userName : string = ""
+  @Prop userName: string = ""
+
   build() {
     Row() {
       Row() {
@@ -25,9 +27,11 @@ export struct NameSetItem {
     .padding({ left: 12, right: 12 })
   }
 }
+
 @Component
 export struct GenderSetItem {
-  userSex:string = "";
+  userSex: string = "";
+
   build() {
     Row() {
       Row() {
@@ -42,11 +46,13 @@ export struct GenderSetItem {
     .padding({ left: 12, right: 12 })
   }
 }
+
 @Component
 export struct BirthSetItem {
   @Prop userYear: string; // 出生年
   @Prop userMonth: string; // 出生月
   @Prop userDay: string; // 出生日
+
   build() {
     Row() {
       Row() {
@@ -54,16 +60,18 @@ export struct BirthSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Text(this.userYear + "/"+this.userMonth+"/"+this.userDay).fontSize(20)
+      Text(this.userYear + "/" + this.userMonth + "/" + this.userDay).fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)
     .padding({ left: 12, right: 12 })
   }
 }
+
 @Component
 export struct HeightSetItem {
   @Prop userHeight: string; // 身高 单位:厘米
+
   build() {
     Row() {
       Row() {
@@ -71,16 +79,18 @@ export struct HeightSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Text(this.userHeight).fontSize(20)
+      Text(this.userHeight + "cm").fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)
     .padding({ left: 12, right: 12 })
   }
 }
+
 @Component
 export struct WeightSetItem {
-  @Prop userWeight:string;
+  @Prop userWeight: string;
+
   build() {
     Row() {
       Row() {
@@ -88,7 +98,7 @@ export struct WeightSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Text(this.userWeight).fontSize(20)
+      Text(this.userWeight + "kg").fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)

@@ -1,13 +1,11 @@
-
-
-
 import router from '@ohos.router'
-import {NameSetItem,GenderSetItem,BirthSetItem,HeightSetItem,WeightSetItem} from './InformationListItem'
+import { NameSetItem, GenderSetItem, BirthSetItem, HeightSetItem, WeightSetItem } from './InformationListItem'
 import { CommonConstants as Const } from '../../common/constants/CommonConstants';
 import personInfo, { StoreUtil } from '../../viewmodel/PersonInfo';
 import { promptAction } from '@kit.ArkUI';
 
-let name:string = ""
+let name: string = ""
+
 @Styles
 function listItemStyle() {
   .backgroundColor($r('app.color.white'))
@@ -19,7 +17,8 @@ function listItemStyle() {
 @CustomDialog
 struct changeName {
   controller: CustomDialogController
-  onNameChange: (newName: string) => void = () =>{} // 回调函数 Initial as an empty function
+  onNameChange: (newName: string) => void = () => {
+  } // 回调函数 Initial as an empty function
 
   build() {
     Column() {
@@ -41,37 +40,35 @@ struct changeName {
 
 @Entry
 @Component
-export default struct  InformationList {
-
+export default struct InformationList {
   // @State userInfo:object = parseRouterParams() // 新的arkts 11 已经不支持params['xxx'] 方式，因此到时候需要this.userInfo.userInfo
 
   dialogController: CustomDialogController = new CustomDialogController({
     builder: changeName({
-      onNameChange:  (newName: string) => {
+      onNameChange: (newName: string) => {
         this.userInfo.userName = newName; // 更新名字
-        promptAction.showToast({
-              message: "用户名更改并保存成功",
-              duration: 200,
-            });
-        // this.dialogController.close()
+        // promptAction.showToast({
+        //   message: "用户名更改并保存成功",
+        //   duration: 200,
+        // });
+        this.dialogController.close()
         try {
           this.userStore.setData(this.userInfo);
           promptAction.showToast({
             message: "用户名更改并保存成功",
             duration: 200,
           });
-          this.dialogController.close()
         } catch (error) {
           promptAction.showToast({
             message: "保存失败",
             duration: 200,
           });
         }
+        this.dialogController.close()
       }
     }),
-    alignment: DialogAlignment.Default,  // 可设置dialog的对齐方式，设定显示在底部或中间等，默认为底部显示
+    alignment: DialogAlignment.Default, // 可设置dialog的对齐方式，设定显示在底部或中间等，默认为底部显示
   })
-
   selectedDate: Date = new Date("2010-1-1")
   // @State select: number = 2
   heights: string[] =
@@ -93,11 +90,31 @@ export default struct  InformationList {
       '195cm', '196cm', '197cm', '198cm', '199cm', '200cm', '201cm', '202cm', '203cm', '204cm', '205cm', '206cm',
       '207cm', '208cm', '209cm', '210cm', '211cm', '212cm', '213cm', '214cm', '215cm', '216cm', '217cm', '218cm',
       '219cm', '220cm']
-  gender: string[] = ['男','女']
-  weight :string[] = ['1kg', '2kg', '3kg', '4kg', '5kg', '6kg', '7kg', '8kg', '9kg', '10kg', '11kg', '12kg', '13kg', '14kg', '15kg', '16kg', '17kg', '18kg', '19kg', '20kg', '21kg', '22kg', '23kg', '24kg', '25kg', '26kg', '27kg', '28kg', '29kg', '30kg', '31kg', '32kg', '33kg', '34kg', '35kg', '36kg', '37kg', '38kg', '39kg', '40kg', '41kg', '42kg', '43kg', '44kg', '45kg', '46kg', '47kg', '48kg', '49kg', '50kg', '51kg', '52kg', '53kg', '54kg', '55kg', '56kg', '57kg', '58kg', '59kg', '60kg', '61kg', '62kg', '63kg', '64kg', '65kg', '66kg', '67kg', '68kg', '69kg', '70kg', '71kg', '72kg', '73kg', '74kg', '75kg', '76kg', '77kg', '78kg', '79kg', '80kg', '81kg', '82kg', '83kg', '84kg', '85kg', '86kg', '87kg', '88kg', '89kg', '90kg', '91kg', '92kg', '93kg', '94kg', '95kg', '96kg', '97kg', '98kg', '99kg', '100kg', '101kg', '102kg', '103kg', '104kg', '105kg', '106kg', '107kg', '108kg', '109kg', '110kg', '111kg', '112kg', '113kg', '114kg', '115kg', '116kg', '117kg', '118kg', '119kg', '120kg', '121kg', '122kg', '123kg', '124kg', '125kg', '126kg', '127kg', '128kg', '129kg', '130kg', '131kg', '132kg', '133kg', '134kg', '135kg', '136kg', '137kg', '138kg', '139kg', '140kg', '141kg', '142kg', '143kg', '144kg', '145kg', '146kg', '147kg', '148kg', '149kg', '150kg', '151kg', '152kg', '153kg', '154kg', '155kg', '156kg', '157kg', '158kg', '159kg', '160kg', '161kg', '162kg', '163kg', '164kg', '165kg', '166kg', '167kg', '168kg', '169kg', '170kg', '171kg', '172kg', '173kg', '174kg', '175kg', '176kg', '177kg', '178kg', '179kg', '180kg', '181kg', '182kg', '183kg', '184kg', '185kg', '186kg', '187kg', '188kg', '189kg', '190kg', '191kg', '192kg', '193kg', '194kg', '195kg', '196kg', '197kg', '198kg', '199kg', '200kg', '201kg', '202kg', '203kg', '204kg', '205kg', '206kg', '207kg', '208kg', '209kg', '210kg', '211kg', '212kg', '213kg', '214kg', '215kg', '216kg', '217kg', '218kg', '219kg', '220kg', '221kg', '222kg', '223kg', '224kg', '225kg', '226kg', '227kg', '228kg', '229kg', '230kg', '231kg', '232kg', '233kg', '234kg', '235kg', '236kg', '237kg', '238kg', '239kg', '240kg', '241kg', '242kg', '243kg', '244kg', '245kg', '246kg', '247kg', '248kg', '249kg', '250kg']
+  gender: string[] = ['男', '女']
+  weight: string[] =
+    ['1kg', '2kg', '3kg', '4kg', '5kg', '6kg', '7kg', '8kg', '9kg', '10kg', '11kg', '12kg', '13kg', '14kg', '15kg',
+      '16kg', '17kg', '18kg', '19kg', '20kg', '21kg', '22kg', '23kg', '24kg', '25kg', '26kg', '27kg', '28kg', '29kg',
+      '30kg', '31kg', '32kg', '33kg', '34kg', '35kg', '36kg', '37kg', '38kg', '39kg', '40kg', '41kg', '42kg', '43kg',
+      '44kg', '45kg', '46kg', '47kg', '48kg', '49kg', '50kg', '51kg', '52kg', '53kg', '54kg', '55kg', '56kg', '57kg',
+      '58kg', '59kg', '60kg', '61kg', '62kg', '63kg', '64kg', '65kg', '66kg', '67kg', '68kg', '69kg', '70kg', '71kg',
+      '72kg', '73kg', '74kg', '75kg', '76kg', '77kg', '78kg', '79kg', '80kg', '81kg', '82kg', '83kg', '84kg', '85kg',
+      '86kg', '87kg', '88kg', '89kg', '90kg', '91kg', '92kg', '93kg', '94kg', '95kg', '96kg', '97kg', '98kg', '99kg',
+      '100kg', '101kg', '102kg', '103kg', '104kg', '105kg', '106kg', '107kg', '108kg', '109kg', '110kg', '111kg',
+      '112kg', '113kg', '114kg', '115kg', '116kg', '117kg', '118kg', '119kg', '120kg', '121kg', '122kg', '123kg',
+      '124kg', '125kg', '126kg', '127kg', '128kg', '129kg', '130kg', '131kg', '132kg', '133kg', '134kg', '135kg',
+      '136kg', '137kg', '138kg', '139kg', '140kg', '141kg', '142kg', '143kg', '144kg', '145kg', '146kg', '147kg',
+      '148kg', '149kg', '150kg', '151kg', '152kg', '153kg', '154kg', '155kg', '156kg', '157kg', '158kg', '159kg',
+      '160kg', '161kg', '162kg', '163kg', '164kg', '165kg', '166kg', '167kg', '168kg', '169kg', '170kg', '171kg',
+      '172kg', '173kg', '174kg', '175kg', '176kg', '177kg', '178kg', '179kg', '180kg', '181kg', '182kg', '183kg',
+      '184kg', '185kg', '186kg', '187kg', '188kg', '189kg', '190kg', '191kg', '192kg', '193kg', '194kg', '195kg',
+      '196kg', '197kg', '198kg', '199kg', '200kg', '201kg', '202kg', '203kg', '204kg', '205kg', '206kg', '207kg',
+      '208kg', '209kg', '210kg', '211kg', '212kg', '213kg', '214kg', '215kg', '216kg', '217kg', '218kg', '219kg',
+      '220kg', '221kg', '222kg', '223kg', '224kg', '225kg', '226kg', '227kg', '228kg', '229kg', '230kg', '231kg',
+      '232kg', '233kg', '234kg', '235kg', '236kg', '237kg', '238kg', '239kg', '240kg', '241kg', '242kg', '243kg',
+      '244kg', '245kg', '246kg', '247kg', '248kg', '249kg', '250kg']
   @State userInfo: personInfo = new personInfo();
-
   userStore: StoreUtil = new StoreUtil('userStore', 'userInfo');
+
   // 读取数据
   async aboutToAppear() {
     try {
@@ -108,6 +125,7 @@ export default struct  InformationList {
       this.userInfo = new personInfo();
     }
   }
+
   build() {
     Column() {
       // Text(this.userInfo.userSignature || "签名没读取到")
@@ -115,7 +133,7 @@ export default struct  InformationList {
       List() {
         ListItem() {
           // 名称
-          NameSetItem(this.userInfo)
+          NameSetItem({userName: this.userInfo.userName})
         }
         .listItemStyle()
         // .height(80)
@@ -129,17 +147,17 @@ export default struct  InformationList {
 
         ListItem() {
           // 性别
+          Row() {
             Row() {
-              Row() {
-                Text('性别')
-                  .fontSize(20)
-                  .fontColor($r('app.color.titleColor'))
-              }
-              Text(this.userInfo.userSex).fontSize(20)
+              Text('性别')
+                .fontSize(20)
+                .fontColor($r('app.color.titleColor'))
             }
-            .width('100%')
-            .justifyContent(FlexAlign.SpaceBetween)
-            .padding({ left: 12, right: 12 })
+            Text(this.userInfo.userSex).fontSize(20)
+          }
+          .width('100%')
+          .justifyContent(FlexAlign.SpaceBetween)
+          .padding({ left: 12, right: 12 })
 
         }
         .listItemStyle()
@@ -150,6 +168,7 @@ export default struct  InformationList {
             onAccept: (value: TextPickerResult) => {
               // 设置select为按下确定按钮时候的选中项index，这样当弹窗再次弹出时显示选中的是上一次确定的选项
               // this.select = value.index
+              this.userInfo.userSex = value.value.toString();
               console.info("TextPickerDialog:onAccept()" + JSON.stringify(value))
             },
             onCancel: () => {
@@ -160,13 +179,13 @@ export default struct  InformationList {
             }
           })
         })
-
         .backgroundColor($r('app.color.white'))
         .width('100%')
         .height('20%')
 
         ListItem() {
-          BirthSetItem(this.userInfo)
+          BirthSetItem({userYear: this.userInfo.userYear, userMonth: this.userInfo.userMonth,
+                        userDay: this.userInfo.userDay})
         }
         .listItemStyle()
         .onClick(() => {
@@ -192,7 +211,7 @@ export default struct  InformationList {
         .height('20%')
 
         ListItem() {
-          HeightSetItem(this.userInfo)
+          HeightSetItem({userHeight: this.userInfo.userHeight})
         }
         .listItemStyle()
         .onClick(() => {
@@ -212,14 +231,12 @@ export default struct  InformationList {
             }
           })
         })
-
         .backgroundColor($r('app.color.white'))
         .width('100%')
         .height('20%')
 
         ListItem() {
-          WeightSetItem(this.userInfo)
-
+          WeightSetItem({userWeight: this.userInfo.userWeight})
         }
         .listItemStyle()
         .onClick(() => {
@@ -239,7 +256,6 @@ export default struct  InformationList {
             }
           })
         })
-
         .backgroundColor($r('app.color.white'))
         .width('100%')
         .height('20%')
