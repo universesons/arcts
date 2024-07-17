@@ -27,13 +27,9 @@ export struct MineIndex {
 
   build() {
     Column() {
-      UserBaseInfo({
+      UserBaseInfo();
 
-      });
-
-      ListInfo({
-
-      });
+      ListInfo();
     }
     .height(Const.FULL_HEIGHT)
     .backgroundColor($r('app.color.mineBgColor'))

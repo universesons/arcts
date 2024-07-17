@@ -1,5 +1,5 @@
 {
-  "entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets": [
-    "ohos.data.preferences"
+  "entry\\src\\main\\ets\\view\\information\\InformationListComponent.ets": [
+    "ohos.promptAction"
   ]
 }

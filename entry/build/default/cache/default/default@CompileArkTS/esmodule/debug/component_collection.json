@@ -61,6 +61,9 @@
     "Button",
     "Divider"
   ],
+  "entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets": [
+    "If"
+  ],
   "entry\\src\\main\\ets\\pages\\AdvertisingPage.ets": [
     "Column",
     "Row",
@@ -190,9 +193,6 @@
     "Image",
     "If"
   ],
-  "entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets": [
-    "If"
-  ],
   "entry\\src\\main\\ets\\view\\UserBaseInfo.ets": [
     "CustomDialogController",
     "Column",
@@ -268,18 +268,20 @@
     "Column"
   ],
   "entry\\src\\main\\ets\\view\\information\\InformationListComponent.ets": [
+    "CustomDialogController",
     "Column",
+    "TextInput",
+    "Button",
     "Text",
     "List",
     "ListItem",
-    "ActionSheet",
+    "Row",
     "TextPickerDialog",
     "DatePickerDialog"
   ],
   "entry\\src\\main\\ets\\view\\information\\InformationListItem.ets": [
     "Row",
-    "Text",
-    "Image"
+    "Text"
   ],
   "entry\\src\\main\\ets\\pages\\AboutPage.ets": [
     "RelativeContainer",

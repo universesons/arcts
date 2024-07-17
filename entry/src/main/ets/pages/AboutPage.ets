@@ -1,7 +1,7 @@
 @Entry
 @Component
 struct AboutPage {
-  @State message: string = '青云休仙队';
+  @State message: string = '青云修仙队 Ver1.0.0';
 
   build() {
     RelativeContainer() {

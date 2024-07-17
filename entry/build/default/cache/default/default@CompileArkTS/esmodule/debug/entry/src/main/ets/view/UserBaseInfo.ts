@@ -148,7 +148,7 @@ export class UserBaseInfo extends ViewPU {
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
-    private __userInfo: ObservedPropertyObjectPU<personInfo>; // 初始化为 undefined，表示加载中
+    private __userInfo: ObservedPropertyObjectPU<personInfo>;
     get userInfo() {
         return this.__userInfo.get();
     }
@@ -178,91 +178,68 @@ export class UserBaseInfo extends ViewPU {
             Column.create();
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            If.create();
-            if (this.userInfo) {
-                this.ifElseBranchUpdateFunction(0, () => {
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        // userIcon
-                        Image.create({ "id": 16777424, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        // userIcon
-                        Image.objectFit(ImageFit.Contain);
-                        // userIcon
-                        Image.height({ "id": 16777348, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        // userIcon
-                        Image.width({ "id": 16777348, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        // userIcon
-                        Image.margin({ top: { "id": 16777350, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
-                    }, Image);
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Column.create();
-                        Column.width({ "id": 16777341, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        Column.height({ "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        Column.margin({ top: { "id": 16777353, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
-                        Column.border({ radius: { "id": 16777344, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
-                        Column.backgroundColor({ "id": 16777295, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        Column.justifyContent(FlexAlign.Center);
-                    }, Column);
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Text.create('LV.8');
-                        Text.fontSize({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        Text.fontWeight(FontWeight.Bolder);
-                        Text.fontColor({ "id": 16777296, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                    }, Text);
-                    Text.pop();
-                    Column.pop();
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        // nickname
-                        Text.create(this.userInfo.userName);
-                        // nickname
-                        Text.fontSize({ "id": 16777329, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        // nickname
-                        Text.fontFamily({ "id": 16777225, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        // nickname
-                        Text.margin({ bottom: { "id": 16777346, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
-                        // nickname
-                        Text.fontWeight(FontWeight.Normal);
-                        // nickname
-                        Text.fontColor({ "id": 16777287, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                    }, Text);
-                    // nickname
-                    Text.pop();
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        // signature
-                        Text.create(this.userInfo.userSignature);
-                        // signature
-                        Text.fontSize({ "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        // signature
-                        Text.fontWeight(FontWeight.Normal);
-                        // signature
-                        Text.fontFamily({ "id": 16777226, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        // signature
-                        Text.fontColor({ "id": 16777305, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        // signature
-                        Text.onClick(() => {
-                            this.dialogController.open(); // 弹出对话框
-                            promptAction.showToast({
-                                message: '更改成功',
-                                duration: 200,
-                            });
-                        });
-                    }, Text);
-                    // signature
-                    Text.pop();
-                });
-            }
-            else {
-                this.ifElseBranchUpdateFunction(1, () => {
-                    this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Text.create('加载中...');
-                        Text.fontSize(20);
-                        Text.fontWeight(FontWeight.Bold);
-                        Text.margin({ top: 50 });
-                    }, Text);
-                    Text.pop();
-                });
-            }
-        }, If);
-        If.pop();
+            // userIcon
+            Image.create({ "id": 16777424, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            // userIcon
+            Image.objectFit(ImageFit.Contain);
+            // userIcon
+            Image.height({ "id": 16777348, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            // userIcon
+            Image.width({ "id": 16777348, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            // userIcon
+            Image.margin({ top: { "id": 16777350, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+        }, Image);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.width({ "id": 16777341, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Column.height({ "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Column.margin({ top: { "id": 16777353, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+            Column.border({ radius: { "id": 16777344, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+            Column.backgroundColor({ "id": 16777295, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Column.justifyContent(FlexAlign.Center);
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create('LV.8');
+            Text.fontSize({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            Text.fontWeight(FontWeight.Bolder);
+            Text.fontColor({ "id": 16777296, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+        }, Text);
+        Text.pop();
+        Column.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // nickname
+            Text.create(this.userInfo.userName);
+            // nickname
+            Text.fontSize({ "id": 16777329, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            // nickname
+            Text.fontFamily({ "id": 16777225, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            // nickname
+            Text.margin({ bottom: { "id": 16777346, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+            // nickname
+            Text.fontWeight(FontWeight.Normal);
+            // nickname
+            Text.fontColor({ "id": 16777287, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+        }, Text);
+        // nickname
+        Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // signature
+            Text.create(this.userInfo.userSignature);
+            // signature
+            Text.fontSize({ "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            // signature
+            Text.fontWeight(FontWeight.Normal);
+            // signature
+            Text.fontFamily({ "id": 16777226, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            // signature
+            Text.fontColor({ "id": 16777305, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+            // signature
+            Text.onClick(() => {
+                this.dialogController.open(); // 弹出对话框
+            });
+        }, Text);
+        // signature
+        Text.pop();
         Column.pop();
     }
     rerender() {

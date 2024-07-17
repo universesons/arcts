@@ -30,20 +30,7 @@ export struct ListInfo {
               .onClick(()=>{
                 if(item.id === '1'){
                   router.pushUrl({
-                    url: 'pages/PersonalInfo',
-                    params: {
-                      // userName : this.userInfo.userName,
-                      // userSignature:this.userInfo.userSignature,
-                      // userAvatar: this.userInfo.userAvatar,
-                      // userSex: this.userInfo.userSex,
-                      // userYear:this.userInfo.userYear,
-                      // userMonth:this.userInfo.userMonth,
-                      // userDay:this.userInfo.userDay,
-                      // userHeight:this.userInfo.userHeight,
-                      // userWeight:this.userInfo.userWeight,
-                      // userLevel:this.userInfo.userLevel
-                      userInfo : this.userInfo
-                    }
+                    url: 'pages/PersonalInfo', // 直接将用户数据下沉到具体编辑界面读取
                   })
                     .then(() => {
                       // success

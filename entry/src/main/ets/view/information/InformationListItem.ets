@@ -10,6 +10,7 @@ function listItemStyle() {
 @Entry
 @Component
 export struct NameSetItem {
+  @Prop userName : string = ""
   build() {
     Row() {
       Row() {
@@ -17,9 +18,7 @@ export struct NameSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Image($r('app.media.ic_right_grey'))
-        .width(8)
-        .height(16)
+      Text(this.userName).fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)
@@ -28,6 +27,7 @@ export struct NameSetItem {
 }
 @Component
 export struct GenderSetItem {
+  userSex:string = "";
   build() {
     Row() {
       Row() {
@@ -35,9 +35,7 @@ export struct GenderSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Image($r('app.media.ic_right_grey'))
-        .width(8)
-        .height(16)
+      Text(this.userSex).fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)
@@ -46,6 +44,9 @@ export struct GenderSetItem {
 }
 @Component
 export struct BirthSetItem {
+  @Prop userYear: string; // 出生年
+  @Prop userMonth: string; // 出生月
+  @Prop userDay: string; // 出生日
   build() {
     Row() {
       Row() {
@@ -53,9 +54,7 @@ export struct BirthSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Image($r('app.media.ic_right_grey'))
-        .width(8)
-        .height(16)
+      Text(this.userYear + "/"+this.userMonth+"/"+this.userDay).fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)
@@ -64,6 +63,7 @@ export struct BirthSetItem {
 }
 @Component
 export struct HeightSetItem {
+  @Prop userHeight: string; // 身高 单位:厘米
   build() {
     Row() {
       Row() {
@@ -71,9 +71,7 @@ export struct HeightSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Image($r('app.media.ic_right_grey'))
-        .width(8)
-        .height(16)
+      Text(this.userHeight).fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)
@@ -82,6 +80,7 @@ export struct HeightSetItem {
 }
 @Component
 export struct WeightSetItem {
+  @Prop userWeight:string;
   build() {
     Row() {
       Row() {
@@ -89,9 +88,7 @@ export struct WeightSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Image($r('app.media.ic_right_grey'))
-        .width(8)
-        .height(16)
+      Text(this.userWeight).fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)

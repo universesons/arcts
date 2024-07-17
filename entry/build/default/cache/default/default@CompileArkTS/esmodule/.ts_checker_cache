@@ -1181,7 +1181,12 @@
     },
     "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.window.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\application\\BaseContext.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
+      ],
       "parent": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.ability.featureAbility.d.ts",
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.AbilityLifecycleCallback.d.ts",
@@ -1393,7 +1398,23 @@
     },
     "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.font.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.mediaquery.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.inspector.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.observer.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.promptAction.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.router.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.componentUtils.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.animator.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.measure.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.dragController.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.multimodalInput.pointer.d.ts"
+      ],
       "parent": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.window.d.ts",
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\component\\common.d.ts",
@@ -1744,7 +1765,24 @@
     },
     "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\application\\UIAbilityContext.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\bundleManager\\AbilityInfo.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\ability\\abilityResult.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\ability\\connectOptions.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\bundleManager\\HapModuleInfo.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\application\\Context.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.StartOptions.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.OpenLinkOptions.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.Configuration.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.dialogRequest.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.AbilityConstant.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\application\\AbilityStartCallback.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.window.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.AtomicServiceOptions.d.ts"
+      ],
       "parent": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts",
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.observer.d.ts",
@@ -1858,7 +1896,9 @@
     },
     "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.promptAction.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts"
+      ],
       "parent": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
@@ -1930,7 +1970,10 @@
     },
     "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.dragController.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.data.unifiedDataChannel.d.ts"
+      ],
       "parent": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
@@ -2366,7 +2409,9 @@
     },
     "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.advanced.ChipGroup.d.ets": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.advanced.Chip.d.ets"
+      ],
       "parent": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
       ],
@@ -2398,7 +2443,9 @@
     },
     "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.advanced.Dialog.d.ets": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.theme.d.ts"
+      ],
       "parent": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
       ],
@@ -3849,7 +3896,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\dialog\\UserPrivacyDialog.ets": {
-      "mtimeMs": 1721229352938.8425,
+      "mtimeMs": 1721230050455.267,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets",
@@ -3941,7 +3988,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\pages\\MinePage.ets": {
-      "mtimeMs": 1721228636170.2288,
+      "mtimeMs": 1721230113562.5771,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\ListInfo.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\UserBaseInfo.ets",
@@ -4334,7 +4381,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\ListInfo.ets": {
-      "mtimeMs": 1721224475214.345,
+      "mtimeMs": 1721230179375.6602,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\model\\Mine.ets",
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
@@ -4347,7 +4394,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\UserBaseInfo.ets": {
-      "mtimeMs": 1721229064063.7212,
+      "mtimeMs": 1721229974048.7634,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets",
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
@@ -4857,7 +4904,13 @@
     },
     "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.web.webview.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.security.cert.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.print.d.ts"
+      ],
       "parent": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\web.d.ts"
       ],
@@ -4914,7 +4967,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets": {
-      "mtimeMs": 1721229862464.262,
+      "mtimeMs": 1721235375297.0771,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.data.storage.d.ts",
@@ -4941,7 +4994,7 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\information\\InformationListItem.ets": {
-      "mtimeMs": 1721219333265.8606,
+      "mtimeMs": 1721235104428.9788,
       "children": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets"
       ],
@@ -4951,12 +5004,13 @@
       "error": false
     },
     "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\information\\InformationListComponent.ets": {
-      "mtimeMs": 1721227192422.9456,
+      "mtimeMs": 1721236358081.1067,
       "children": [
         "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.router.d.ts",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\view\\information\\InformationListItem.ets",
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
-        "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets"
+        "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\viewmodel\\PersonInfo.ets",
+        "D:\\IndustrialSoftware\\deveco\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
       ],
       "parent": [
         "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\src\\main\\ets\\pages\\PersonalInfo.ets"
