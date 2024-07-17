@@ -60,6 +60,9 @@ export struct TaskChooseItem {
         .selectedColor($r('app.color.blueColor'))
         .onChange((isOn) => {
           this.settingParams.isOpen = isOn;
+          if (isOn !=true) {
+            this.settingParams.isAlarm = isOn;
+          }
         })
     }
     .width(Const.THOUSANDTH_1000)
@@ -105,7 +108,7 @@ export struct OpenRemindItem {
         .fontSize(Const.DEFAULT_20)
         .fontWeight(FontWeight.Medium)
 
-      Toggle({ type: ToggleType.Switch, isOn: this.settingParams?.isAlarm })
+      Toggle({ type: ToggleType.Switch, isOn: this.settingParams?.isAlarm , })
         .width(Const.DEFAULT_56)
         .height(Const.DEFAULT_32)
         .selectedColor($r('app.color.blueColor'))

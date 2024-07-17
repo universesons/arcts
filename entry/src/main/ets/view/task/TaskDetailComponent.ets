@@ -108,10 +108,11 @@ export default struct TaskDetail {
       Column() {
         List({ space: Const.LIST_ITEM_SPACE }) {
           ListItem() {
+            // 任务开关
             TaskChooseItem()
           }
           .listItemStyle()
-
+          // 目标设置
           ListItem() {
             TargetSetItem()
           }
@@ -120,12 +121,12 @@ export default struct TaskDetail {
             this.broadCast.emit(
               BroadCastType.SHOW_TARGET_SETTING_DIALOG);
           })
-
+// 开启提醒
           ListItem() {
             OpenRemindItem()
           }
           .listItemStyle()
-          .enabled(this.settingParams?.isOpen)
+          .enabled(this.settingParams.isOpen)
 
           ListItem() {
             RemindTimeItem()
