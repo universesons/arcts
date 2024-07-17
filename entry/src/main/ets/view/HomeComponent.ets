@@ -91,6 +91,7 @@ export default struct HomeIndex {
 
   //confirm clockL
   onConfirm(task: TaskInfo) {
+    // 首先先调用taskClock来更新一个新的task
     this.homeStore.taskClock(task).then((res: AchievementInfo) => {
       // 打卡成功后，根据连续打卡情况判断是否弹出成就勋章以及成就勋章级别
       if (res.showAchievement) {

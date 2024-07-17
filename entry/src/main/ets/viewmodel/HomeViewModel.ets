@@ -132,7 +132,7 @@ export class HomeStore {
       let isOpen = editedTaskInfo.isOpen;
       // 开一个新的任务对象，这里应该将IsDone设置为false，有趣的是，在调试的时候  传的参数并没有isDone,先改成false，后续看看需不需要更新
       let task = new TaskInfo(0, dateToStr(new Date()), taskID, targetValue, isAlarm,
-        startTime, endTime, frequency, false, targetValue, isOpen);
+        startTime, endTime, frequency, false, '', isOpen);
       // 遍历包含任务信息的日期数组，找到与任务日期匹配的项
       this.dateArr = this.dateArr.map((item: WeekDateModel) => {
         if (task.date === item.dateStr) {
@@ -222,6 +222,7 @@ export class HomeStore {
   }
 
   public async taskClock(taskInfo: TaskInfo) {
+  // 更新任务状态
     let taskItem = await this.updateTask(taskInfo);
     let dateStr = this.selectedDayInfo?.dateStr;
     if (!taskItem) {
@@ -253,14 +254,17 @@ export class HomeStore {
       let taskID = task.taskID;
       let targetValue = task.targetValue;
       let finValue = task.finValue;
+      // 拿到任务名称，任务目标，以及当前目标之后，开一个新的task对象来进行更新
       let updateTask = new TaskInfo(task.id, task.date, taskID, targetValue, task.isAlarm, task.startTime,
         task.endTime, task.frequency, task.isDone, finValue, task.isOpen);
-      let step = TaskMapById[taskID - 1].step;
+      let step = TaskMapById[taskID - 1].step; // 找到每次增加的步长
       let hasExceed = updateTask.isDone;
       if (step === 0) {
+        // 如果step 是0 那就表示一步到位 只有 完成和没完成两种
         updateTask.isDone = true;
         updateTask.finValue = targetValue;
       } else {
+        // 2024-07-17 下面， 只有一个eatApple是按照步数来的
         let value = Number(finValue) + step;
         updateTask.isDone = updateTask.isDone || value >= Number(targetValue);
         updateTask.finValue = updateTask.isDone ? targetValue : `${value}`;
