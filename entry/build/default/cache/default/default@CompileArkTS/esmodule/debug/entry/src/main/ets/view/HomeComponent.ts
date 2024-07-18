@@ -103,7 +103,7 @@ export default class HomeIndex extends ViewPU {
     set naviAlpha(newValue: number) {
         this.__naviAlpha.set(newValue);
     }
-    private __homeStore: SynchedPropertySimpleOneWayPU<HomeStore>;
+    private __homeStore: SynchedPropertySimpleOneWayPU<HomeStore>; //
     get homeStore() {
         return this.__homeStore.get();
     }
@@ -211,7 +211,7 @@ export default class HomeIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new HomeTopView(this, { homeStore: this.__homeStore }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 129 });
+                    let componentCall = new HomeTopView(this, { homeStore: this.__homeStore }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 130 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -261,7 +261,7 @@ export default class HomeIndex extends ViewPU {
                                         let componentCall = new TaskCard(this, {
                                             taskInfoStr: JSON.stringify(item),
                                             clickAction: (isClick: boolean) => this.taskItemAction(item, isClick)
-                                        }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 134 });
+                                        }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 135 });
                                         ViewPU.create(componentCall);
                                         let paramsLambda = () => {
                                             return {
@@ -304,7 +304,7 @@ export default class HomeIndex extends ViewPU {
                     {
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             if (isInitialRender) {
-                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777258, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777326, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 156 });
+                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777258, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777326, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 157 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
@@ -337,7 +337,7 @@ export default class HomeIndex extends ViewPU {
                         clickAction: () => {
                             this.editTaskAction();
                         }
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 170 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 171 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -371,7 +371,7 @@ export default class HomeIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new CustomDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 186 });
+                    let componentCall = new CustomDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 187 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {};

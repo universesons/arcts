@@ -37,4 +37,8 @@ export default class AchievementMapInfo {
     on_73: Resource = { "id": 16777386, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
     off_99: Resource = { "id": 16777389, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
     on_99: Resource = { "id": 16777390, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    //qi ji yin qiao
+    on_101: Resource = { "id": 16777438, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    on_102: Resource = { "id": 16777440, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
+    on_103: Resource = { "id": 16777442, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" };
 }

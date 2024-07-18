@@ -6205,7 +6205,12 @@
     },
     "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.window.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\application\\BaseContext.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
+      ],
       "parent": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.ability.featureAbility.d.ts",
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.AbilityLifecycleCallback.d.ts",
@@ -6421,7 +6426,23 @@
     },
     "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.font.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.mediaquery.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.inspector.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.observer.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.promptAction.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.router.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.componentUtils.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.animator.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.measure.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.dragController.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.multimodalInput.pointer.d.ts"
+      ],
       "parent": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.window.d.ts",
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\component\\common.d.ts",
@@ -6772,7 +6793,24 @@
     },
     "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\application\\UIAbilityContext.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\bundleManager\\AbilityInfo.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\ability\\abilityResult.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\ability\\connectOptions.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\bundleManager\\HapModuleInfo.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\application\\Context.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.StartOptions.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.OpenLinkOptions.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.Configuration.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.dialogRequest.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.AbilityConstant.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\application\\AbilityStartCallback.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.window.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.AtomicServiceOptions.d.ts"
+      ],
       "parent": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts",
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.observer.d.ts",
@@ -6886,7 +6924,9 @@
     },
     "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.promptAction.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts"
+      ],
       "parent": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
@@ -6958,7 +6998,10 @@
     },
     "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.dragController.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.data.unifiedDataChannel.d.ts"
+      ],
       "parent": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
@@ -7396,7 +7439,9 @@
     },
     "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.advanced.ChipGroup.d.ets": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.advanced.Chip.d.ets"
+      ],
       "parent": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
       ],
@@ -7428,7 +7473,9 @@
     },
     "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.advanced.Dialog.d.ets": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.arkui.theme.d.ts"
+      ],
       "parent": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
       ],
@@ -8818,7 +8865,8 @@
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\HomeViewModel.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\DatabaseModel.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\TaskViewModel.ets",
-        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\BadgePanelComponent.ets"
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\BadgePanelComponent.ets",
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\AchieveModel.ets"
       ],
       "error": false
     },
@@ -8873,7 +8921,8 @@
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\task\\TaskDetailComponent.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\task\\TaskEditListItem.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\dialog\\TaskSettingDialog.ets",
-        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\BadgePanelComponent.ets"
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\BadgePanelComponent.ets",
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\AchieveModel.ets"
       ],
       "error": false
     },
@@ -8949,7 +8998,8 @@
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\TaskViewModel.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\dialog\\TaskSettingDialog.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\BadgePanelComponent.ets",
-        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\SmileBadgeCardComponent.ets"
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\SmileBadgeCardComponent.ets",
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\AchieveModel.ets"
       ],
       "error": false
     },
@@ -8982,7 +9032,7 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\AchievementMapInfo.ets": {
-      "mtimeMs": 1721301604073.658,
+      "mtimeMs": 1721312032652.6858,
       "children": [],
       "parent": [
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\TaskInitList.ets"
@@ -9086,7 +9136,7 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\HomeComponent.ets": {
-      "mtimeMs": 1721300791004.7039,
+      "mtimeMs": 1721311670304.569,
       "children": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\HealthTextComponent.ets",
@@ -9139,7 +9189,7 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\HomeViewModel.ets": {
-      "mtimeMs": 1721300791047.5544,
+      "mtimeMs": 1721311584976.8628,
       "children": [
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\AchieveModel.ets",
@@ -9163,7 +9213,8 @@
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\home\\HomeTopComponent.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\home\\WeekCalendarComponent.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\CalendarViewModel.ets",
-        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\BadgePanelComponent.ets"
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\BadgePanelComponent.ets",
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\AchieveModel.ets"
       ],
       "error": false
     },
@@ -9349,11 +9400,15 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\AchieveModel.ets": {
-      "mtimeMs": 1721300790945.6848,
+      "mtimeMs": 1721305822967.2473,
       "children": [
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\TaskInitList.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\GlobalInfo.ets",
-        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\common\\database\\tables\\GlobalInfoApi.ets"
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\common\\database\\tables\\GlobalInfoApi.ets",
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\common\\database\\tables\\TaskInfoApi.ets",
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\TaskInfo.ets",
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\common\\utils\\Utils.ets",
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\HomeViewModel.ets"
       ],
       "parent": [
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\HomeViewModel.ets",
@@ -9429,9 +9484,10 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\dialog\\AchievementDialog.ets": {
-      "mtimeMs": 1721300791013.7083,
+      "mtimeMs": 1721312268928.577,
       "children": [
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
+        "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\TaskInitList.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\TaskInitList.ets"
       ],
       "parent": [
@@ -10087,7 +10143,13 @@
     },
     "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.web.webview.d.ts": {
       "mtimeMs": 1720080966000,
-      "children": [],
+      "children": [
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.base.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.security.cert.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
+        "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\api\\@ohos.print.d.ts"
+      ],
       "parent": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\web.d.ts",
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkWeb.d.ts"

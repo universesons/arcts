@@ -15,6 +15,7 @@
 
 import { CommonConstants as Const } from '../../common/constants/CommonConstants';
 import { AchievementMap } from '../../model/TaskInitList';
+import { SMILE_LEVEL_BADGE } from '../../model/TaskInitList';
 
 const ANGLE_LARGE = 360;
 
@@ -47,6 +48,15 @@ export struct AchievementDialog {
       case 99:
         this.achievementMapValue = AchievementMap.on_99;
         break;
+      case 101:
+        this.achievementMapValue = AchievementMap.on_101;
+        break;
+      case 102:
+        this.achievementMapValue = AchievementMap.on_102;
+        break;
+      case 103:
+        this.achievementMapValue = AchievementMap.on_103;
+        break;
       default:
         break;
     }
@@ -60,12 +70,21 @@ export struct AchievementDialog {
         .height(Const.THOUSANDTH_400)
         .objectFit(ImageFit.Contain)
 
-      Text($r('app.string.task_achievement_level', this.achievementLevel))
-        .fontSize($r('app.float.default_24'))
-        .fontWeight(Const.FONT_WEIGHT_500)
-        .fontColor($r('app.color.white'))
-        .fontFamily($r('app.string.HarmonyHeiTi'))
-        .margin({ top: $r('app.float.default_12') })
+      if(this.achievementLevel > 100){
+        Text(SMILE_LEVEL_BADGE[this.achievementLevel - 101])
+          .fontSize($r('app.float.default_24'))
+          .fontWeight(Const.FONT_WEIGHT_500)
+          .fontColor($r('app.color.white'))
+          .fontFamily($r('app.string.HarmonyHeiTi'))
+          .margin({ top: $r('app.float.default_12') })
+      }else{
+        Text($r('app.string.task_achievement_level', this.achievementLevel))
+          .fontSize($r('app.float.default_24'))
+          .fontWeight(Const.FONT_WEIGHT_500)
+          .fontColor($r('app.color.white'))
+          .fontFamily($r('app.string.HarmonyHeiTi'))
+          .margin({ top: $r('app.float.default_12') })
+      }
     }
     .height(Const.THOUSANDTH_800)
     .width(Const.THOUSANDTH_1000)

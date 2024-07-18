@@ -150,7 +150,8 @@
     "Column",
     "Image",
     "Text",
-    "TapGesture"
+    "TapGesture",
+    "If"
   ],
   "entry\\src\\main\\ets\\view\\dialog\\TaskDetailDialog.ets": [
     "Text",

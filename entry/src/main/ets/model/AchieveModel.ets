@@ -16,8 +16,14 @@
 import { ACHIEVEMENT_LEVEL_LIST } from './TaskInitList';
 import GlobalInfo from '../viewmodel/GlobalInfo';
 import GlobalInfoApi from '../common/database/tables/GlobalInfoApi';
+import TaskInfoApi from '../common/database/tables/TaskInfoApi';
+import TaskInfo from '../viewmodel/TaskInfo';
+import { dateToStr } from '../common/utils/Utils';
+import { HomeStore } from '../viewmodel/HomeViewModel';
 
 export const ACHIEVEMENT_LEVEL_KEY = 'AchievementLevelKey';
+export const SMILE_LEVEL_KEY = 'SmileLevelKey';
+
 
 export function getAchievementLevel() {
   GlobalInfoApi.query((res: GlobalInfo) => {
@@ -29,6 +35,14 @@ export function getAchievementLevel() {
     }
   })
 
+}
+export function getSmileLevel(homeStore: HomeStore) {
+
+  const queryDate = homeStore.currentDate; // 获取当前日期
+  const formattedDate = dateToStr(queryDate); // 使用dateToStr函数格式化日期
+  TaskInfoApi.query(formattedDate, true, (res: TaskInfo) => {
+
+  })
 }
 
 export function isReachNewAchievement(globalInfo: GlobalInfo): boolean {

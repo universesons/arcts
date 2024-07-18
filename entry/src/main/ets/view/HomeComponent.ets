@@ -53,7 +53,7 @@ function titleTextStyle() {
 export default struct HomeIndex {
   @Provide broadCast: BroadCast = HealthDataSrcMgr.getInstance().getBroadCast();
   @State naviAlpha: number = 0;
-  @Link homeStore: HomeStore;
+  @Link homeStore: HomeStore;//
   @Link editedTaskInfo: ITaskItem;
   @Link @Watch('taskChange') editedTaskID: string;
   private scroller: Scroller = new Scroller();
@@ -94,6 +94,7 @@ export default struct HomeIndex {
     // 首先先调用taskClock来更新一个新的task
     this.homeStore.taskClock(task).then((res: AchievementInfo) => {
       // 打卡成功后，根据连续打卡情况判断是否弹出成就勋章以及成就勋章级别
+
       if (res.showAchievement) {
         let achievementLevel = res.achievementLevel;
         // 触发弹出成就勋章SHOW_ACHIEVEMENT_DIALOG 事件， 并透传勋章类型级别

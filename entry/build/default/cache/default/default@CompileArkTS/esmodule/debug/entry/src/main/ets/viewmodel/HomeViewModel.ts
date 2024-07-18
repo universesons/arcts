@@ -209,20 +209,41 @@ export class HomeStore {
                 showAchievement: false
             } as AchievementInfo;
         }
+        // 更新当前时间的任务列表
         this.selectedDayInfo.taskList = this.selectedDayInfo.taskList.map((item) => {
             return item.taskID === taskItem?.taskID ? taskItem : item;
         });
         let achievementLevel: number = 0;
         if (taskItem.isDone) {
+            // 更新每日任务完成情况数据
             let dayInfo = await this.updateDayInfo();
+            // 当日任务完成数量等于总任务数量时 累计连续打卡一天
             if (dayInfo && dayInfo?.finTaskNum === dayInfo?.targetTaskNum) {
+                // 更新成就勋章数据 判断是否弹出获得勋章弹出及勋章类型
                 achievementLevel = await this.updateAchievement(this.selectedDayInfo.dayInfo);
+            }
+            //补充微笑获取成就等级
+            if (taskItem.taskID === 4) {
+                let smileTimes = Number(taskItem.finValue) / Number(taskItem.targetValue);
+                switch (smileTimes) {
+                    case 1:
+                        achievementLevel = 101;
+                        break;
+                    case 2:
+                        achievementLevel = 102;
+                        break;
+                    case 3:
+                        achievementLevel = 103;
+                        break;
+                    default:
+                        break;
+                }
             }
         }
         this.dateArr = this.dateArr.map((item: WeekDateModel) => dateStr === item.dateStr ? this.selectedDayInfo : item);
         return {
             achievementLevel: achievementLevel,
-            showAchievement: ACHIEVEMENT_LEVEL_LIST.includes(achievementLevel)
+            showAchievement: ACHIEVEMENT_LEVEL_LIST.includes(achievementLevel) //看这个列表是否有这个等级，有的话就要show
         } as AchievementInfo;
     }
     updateTask(task: TaskInfo): Promise<TaskInfo> {
@@ -237,7 +258,13 @@ export class HomeStore {
             if (step === 0) {
                 // 如果step 是0 那就表示一步到位 只有 完成和没完成两种
                 updateTask.isDone = true;
-                updateTask.finValue = targetValue;
+                if (taskID === 4) {
+                    let value = Number(finValue) + Number(targetValue); //补充微笑的finvalue可以超过targetvalue的逻辑
+                    updateTask.finValue = `${value}`;
+                }
+                else {
+                    updateTask.finValue = targetValue;
+                }
             }
             else {
                 // 2024-07-17 下面， 只有一个eatApple是按照步数来的
@@ -275,23 +302,28 @@ export class HomeStore {
     updateAchievement(dayInfo: DayInfo): Promise<number> {
         Logger.debug('taskClock-updateAchievement', JSON.stringify(dayInfo));
         return new Promise((resolve, reject) => {
+            // 获取前一天的日期
             let preDay = new Date();
             preDay.setDate(preDay.getDate() - 1);
             preDay = new Date(preDay);
             let preDayStr = dateToStr(preDay);
             Logger.info('taskClock-updateAchievement-1', `${preDayStr}`);
+            // 查询前一天的日信息
             DayInfoApi.query(preDayStr, (res: DayInfo) => {
                 Logger.info('taskClock-updateAchievement-2', JSON.stringify(res));
                 let isReset = res?.date === '' || res?.targetTaskNum > res?.finTaskNum;
+                // 查询全局信息
                 GlobalInfoApi.query((res: GlobalInfo) => {
                     Logger.info('taskClock-globalInfoApi', JSON.stringify(res));
                     let achievementInfo = res;
                     isReset ? (achievementInfo.checkInDays = 1) : (achievementInfo.checkInDays += 1);
+                    // 检查是否达成新成就
                     let isNewAchieve = isReachNewAchievement(achievementInfo);
                     if (isNewAchieve) {
                         AppStorage.setOrCreate(ACHIEVEMENT_LEVEL_KEY, achievementInfo.checkInDays);
                         achievementInfo.achievements = achievementInfo.achievements + ',' + achievementInfo.checkInDays;
                     }
+                    // 更新全局信息
                     GlobalInfoApi.updateData(achievementInfo, (res: number) => {
                         if (!res) {
                             Logger.error('taskClock-updateAchievement', JSON.stringify(res));

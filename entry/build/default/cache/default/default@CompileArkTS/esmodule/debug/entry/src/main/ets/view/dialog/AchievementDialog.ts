@@ -11,6 +11,7 @@ interface AchievementDialog_Params {
 }
 import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry/ets/common/constants/CommonConstants";
 import { AchievementMap } from "@bundle:com.example.healthy_life/entry/ets/model/TaskInitList";
+import { SMILE_LEVEL_BADGE } from "@bundle:com.example.healthy_life/entry/ets/model/TaskInitList";
 const ANGLE_LARGE = 360;
 export class AchievementDialog extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
@@ -123,6 +124,15 @@ export class AchievementDialog extends ViewPU {
             case 99:
                 this.achievementMapValue = AchievementMap.on_99;
                 break;
+            case 101:
+                this.achievementMapValue = AchievementMap.on_101;
+                break;
+            case 102:
+                this.achievementMapValue = AchievementMap.on_102;
+                break;
+            case 103:
+                this.achievementMapValue = AchievementMap.on_103;
+                break;
             default:
                 break;
         }
@@ -163,14 +173,35 @@ export class AchievementDialog extends ViewPU {
             Image.objectFit(ImageFit.Contain);
         }, Image);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777275, "type": 10003, params: [this.achievementLevel], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.fontSize({ "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.fontWeight(Const.FONT_WEIGHT_500);
-            Text.fontColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.fontFamily({ "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.margin({ top: { "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
-        }, Text);
-        Text.pop();
+            If.create();
+            if (this.achievementLevel > 100) {
+                this.ifElseBranchUpdateFunction(0, () => {
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        Text.create(SMILE_LEVEL_BADGE[this.achievementLevel - 101]);
+                        Text.fontSize({ "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontWeight(Const.FONT_WEIGHT_500);
+                        Text.fontColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontFamily({ "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.margin({ top: { "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+                    }, Text);
+                    Text.pop();
+                });
+            }
+            else {
+                this.ifElseBranchUpdateFunction(1, () => {
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        Text.create({ "id": 16777275, "type": 10003, params: [this.achievementLevel], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontSize({ "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontWeight(Const.FONT_WEIGHT_500);
+                        Text.fontColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.fontFamily({ "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
+                        Text.margin({ top: { "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
+                    }, Text);
+                    Text.pop();
+                });
+            }
+        }, If);
+        If.pop();
         Column.pop();
     }
     rerender() {
