@@ -43,24 +43,25 @@ export struct TaskCard {
   @State taskInfo: TaskInfo = new TaskInfo(-1, '', -1, '', false, '', '', '', false, '', false);
   @State name: string = '';
   @State taskId:number= this.taskInfo.taskID;
-  @State currentValue:string = ''; // 用户的某一个任务的当前值
+  @State currentValue: string = ''; // 用户的某一个任务的当前值
   aboutToAppear() {
     this.taskInfo = JSON.parse(this.taskInfoStr);
   }
 
   @Builder
   targetValueBuilder() {
-
-
-
-
-
-    
     if (this.taskInfo.isDone) {
       // 修改问题1： 当不打卡的时候，是未完成
       HealthText({ title: '', titleResource:
-
-      $r(this.taskInfo.isDone ? 'app.string.task_done' : 'app.string.task_undone') })
+      $r(this.taskInfo.isDone ? 'app.string.task_done' : 'app.string.task_undone')})
+      if (this.taskInfo.taskID === 4) {
+        Text((() => {
+          return (Number(this.taskInfo.finValue) /
+          Number(this.taskInfo.targetValue) * 100) + '%';
+        })())
+          .labelTextStyle()
+          .fontWeight(Const.FONT_WEIGHT_400)
+      }
     } else {
       Row() {
         HealthText({
