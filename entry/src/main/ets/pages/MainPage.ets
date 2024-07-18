@@ -27,6 +27,7 @@ import { HomeStore } from '../viewmodel/HomeViewModel';
 import GlobalInfoApi from '../common/database/tables/GlobalInfoApi';
 import GlobalInfo from '../viewmodel/GlobalInfo';
 import { GlobalContext } from '../common/utils/GlobalContext';
+import personInfo, { StoreUtil } from '../viewmodel/PersonInfo';
 
 @Styles
 function allSize() {
@@ -43,6 +44,8 @@ struct Index {
   @State editedTaskID: string = '0';
   @State homeStore: HomeStore = new HomeStore(new Date());
   private tabController: TabsController = new TabsController();
+  @State userInfo: personInfo = new personInfo();
+  userStore: StoreUtil = new StoreUtil('userStore', 'userInfo');
 
   aboutToAppear() {
     notificationManager.requestEnableNotification().then(() => {
@@ -66,6 +69,19 @@ struct Index {
       }
       this.checkCurrentTime();
     }
+
+    Logger.info('onPageShow', "")
+    this.userStore.getData<personInfo>().then((data) => {
+      if (data) {
+        this.userInfo = data;
+      } else {
+        // 如果没有数据，则使用默认值
+        this.userInfo = new personInfo();
+      }
+    }).catch(() => {
+      // 处理获取数据失败的情况，使用默认值
+      this.userInfo = new personInfo();
+    });
   }
 
   checkCurrentTime() {
@@ -129,7 +145,7 @@ struct Index {
       .tabBar(this.TabBuilder(TabId.ACHIEVEMENT))
 
       TabContent() {
-        MineIndex()
+        MineIndex({userInfo: this.userInfo})
           .borderWidth({ bottom: 1 })
           .borderColor($r('app.color.primaryBgColor'))
       }

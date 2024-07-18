@@ -19,17 +19,14 @@ import { CommonConstants as Const } from '../common/constants/CommonConstants';
 import personInfo, { StoreUtil } from '../viewmodel/PersonInfo';
 import dataPreferences from '@ohos.data.preferences';
 import preferences from '@ohos.data.preferences';
-@Entry
+
 @Component
 export struct MineIndex {
-
-
-
+  @Link userInfo: personInfo;
   build() {
     Column() {
-      UserBaseInfo();
-
-      ListInfo();
+      UserBaseInfo({userInfo: this.userInfo});
+      ListInfo({userInfo: this.userInfo});
     }
     .height(Const.FULL_HEIGHT)
     .backgroundColor($r('app.color.mineBgColor'))

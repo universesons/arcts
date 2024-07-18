@@ -8,7 +8,6 @@ function listItemStyle() {
   .padding({ left: Const.DEFAULT_12, right: Const.DEFAULT_12 })
 }
 
-@Entry
 @Component
 export struct NameSetItem {
   @Prop userName: string = ""

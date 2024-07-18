@@ -20,44 +20,45 @@ import router from '@ohos.router'
 
 @Component
 export struct ListInfo {
-  @Prop userInfo: personInfo = new personInfo();
+  @Link userInfo: personInfo;
+
   build() {
     List() {
       ForEach(MineInfoList, (item: InfoItem) => {
         ListItem() {
           Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
             Text(item.title).fontSize($r('app.float.default_16')).height($r('app.float.default_40'))
-              .onClick(()=>{
-                if(item.id === '1'){
-                  router.pushUrl({
-                    url: 'pages/PersonalInfo', // 直接将用户数据下沉到具体编辑界面读取
-                  })
-                    .then(() => {
-                      // success
-                    })
-                }
-                if(item.id === '2')
-                {
-                    promptAction.showToast({
-                    message: "已经是最新版啦"
-                  })
-                }
-                if(item.id === '3'){
-                  router.pushUrl({
-                    url: 'pages/AboutPage',
-                  })
-                    .then(() => {
-                      // success
-                    })
-                }
-              })
-            // 个人头像
+            // 向右箭头
             Image($r('app.media.ic_right_grey'))
               .objectFit(ImageFit.Contain)
               .height($r('app.float.default_12'))
               .width($r('app.float.default_7'))
           }
         }
+        .onClick(() => {
+          if (item.id === '1') {
+            router.pushUrl({
+              url: 'pages/PersonalInfo', // 直接将用户数据下沉到具体编辑界面读取
+              params: this.userInfo
+            })
+              .then(() => {
+                // success
+              })
+          }
+          if (item.id === '2') {
+            promptAction.showToast({
+              message: "已经是最新版啦"
+            })
+          }
+          if (item.id === '3') {
+            router.pushUrl({
+              url: 'pages/AboutPage',
+            })
+              .then(() => {
+                // success
+              })
+          }
+        })
         .backgroundColor($r('app.color.white'))
         .margin({
           left: $r('app.float.default_24'),

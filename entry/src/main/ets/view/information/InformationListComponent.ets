@@ -39,7 +39,6 @@ struct changeName {
   }
 }
 
-@Entry
 @Component
 export default struct InformationList {
   // @State userInfo:object = parseRouterParams() // 新的arkts 11 已经不支持params['xxx'] 方式，因此到时候需要this.userInfo.userInfo
@@ -75,7 +74,7 @@ export default struct InformationList {
   heightRange: string[] = createHeightRange();
   gender: string[] = ['男', '女', '其他']
   weightRange: string[] = createWeightRange();
-  @State userInfo: personInfo = new personInfo();
+  @Link userInfo: personInfo;
   userStore: StoreUtil = new StoreUtil('userStore', 'userInfo');
 
   // 读取数据
@@ -94,7 +93,6 @@ export default struct InformationList {
   build() {
     Column() {
       // Text(this.userInfo.userSignature || "签名没读取到")
-      Text('个人信息编辑')
       List() {
         ListItem() {
           // 名称

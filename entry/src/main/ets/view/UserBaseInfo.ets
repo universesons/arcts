@@ -43,24 +43,8 @@ struct changeSignature {
 
 @Component
 export struct UserBaseInfo {
-  @State userInfo: personInfo = new personInfo();
-
+  @Link userInfo: personInfo;
   userStore: StoreUtil = new StoreUtil('userStore', 'userInfo');
-  // 读取数据
-  aboutToAppear(): void {
-    // 不能使用 async await
-    this.userStore.getData<personInfo>().then((data) => {
-      if (data) {
-        this.userInfo = data;
-      } else {
-        // 如果没有数据，则使用默认值
-        this.userInfo = new personInfo();
-      }
-    }).catch(() => {
-      // 处理获取数据失败的情况，使用默认值
-      this.userInfo = new personInfo();
-    });
-  }
 
   dialogController: CustomDialogController = new CustomDialogController({
     builder: changeSignature({

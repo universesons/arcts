@@ -6,8 +6,6 @@
     "pages/TaskListPage",
     "pages/TaskEditPage",
     "pages/PersonalInfo",
-    "view/information/InformationListComponent",
-    "view/information/InformationListItem",
     "pages/AboutPage"
   ]
 }
