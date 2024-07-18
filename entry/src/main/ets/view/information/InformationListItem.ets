@@ -49,9 +49,9 @@ export struct GenderSetItem {
 
 @Component
 export struct BirthSetItem {
-  @Prop userYear: string; // 出生年
-  @Prop userMonth: string; // 出生月
-  @Prop userDay: string; // 出生日
+  @Prop userYear: number; // 出生年
+  @Prop userMonth: number; // 出生月
+  @Prop userDay: number; // 出生日
 
   build() {
     Row() {
@@ -60,7 +60,7 @@ export struct BirthSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Text(this.userYear + "/" + this.userMonth + "/" + this.userDay).fontSize(20)
+      Text(this.userYear + "/" + (this.userMonth+1) + "/" + this.userDay).fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)
@@ -79,7 +79,7 @@ export struct HeightSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Text(this.userHeight + "cm").fontSize(20)
+      Text(this.userHeight + " " + Const.HEIGHT_UNIT).fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)
@@ -98,7 +98,7 @@ export struct WeightSetItem {
           .fontSize(20)
           .fontColor($r('app.color.titleColor'))
       }
-      Text(this.userWeight + "kg").fontSize(20)
+      Text(this.userWeight + " " + Const.WEIGHT_UNIT).fontSize(20)
     }
     .width('100%')
     .justifyContent(FlexAlign.SpaceBetween)
