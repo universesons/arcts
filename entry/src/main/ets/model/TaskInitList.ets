@@ -200,3 +200,7 @@ export const RemindContentMap: Array<RemindContentItem> = [
 ];
 
 export const ACHIEVEMENT_LEVEL_LIST = [3, 7, 30, 50, 73, 99];
+
+export const SMILE_LEVEL_LIST = [1, 2, 3];
+
+export const SMILE_LEVEL_BADGE = ['微笑者', '微笑小将', '微笑大师'];

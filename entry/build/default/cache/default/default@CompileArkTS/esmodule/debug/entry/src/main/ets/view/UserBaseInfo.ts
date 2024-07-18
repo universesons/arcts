@@ -10,7 +10,8 @@ interface changeSignature_Params {
     controller?: CustomDialogController;
     onSignatureChange?: (newSignature: string) => void;
 }
-import personInfo, { StoreUtil } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/PersonInfo";
+import { StoreUtil } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/PersonInfo";
+import type personInfo from "@bundle:com.example.healthy_life/entry/ets/viewmodel/PersonInfo";
 import promptAction from "@ohos:promptAction";
 let signature: string = "";
 class changeSignature extends ViewPU {
@@ -80,7 +81,7 @@ export class UserBaseInfo extends ViewPU {
         if (typeof paramsLambda === "function") {
             this.paramsGenerator_ = paramsLambda;
         }
-        this.__userInfo = new ObservedPropertyObjectPU(new personInfo(), this, "userInfo");
+        this.__userInfo = new SynchedPropertyObjectTwoWayPU(params.userInfo, this, "userInfo");
         this.userStore = new StoreUtil('userStore', 'userInfo');
         this.dialogController = new CustomDialogController({
             builder: () => {
@@ -99,7 +100,7 @@ export class UserBaseInfo extends ViewPU {
                             });
                         });
                     }
-                }, undefined, -1, () => { }, { page: "entry/src/main/ets/view/UserBaseInfo.ets", line: 66 });
+                }, undefined, -1, () => { }, { page: "entry/src/main/ets/view/UserBaseInfo.ets", line: 50 });
                 jsDialog.setController(this.dialogController);
                 ViewPU.create(jsDialog);
                 let paramsLambda = () => {
@@ -128,9 +129,6 @@ export class UserBaseInfo extends ViewPU {
         this.finalizeConstruction();
     }
     setInitiallyProvidedValue(params: UserBaseInfo_Params) {
-        if (params.userInfo !== undefined) {
-            this.userInfo = params.userInfo;
-        }
         if (params.userStore !== undefined) {
             this.userStore = params.userStore;
         }
@@ -148,7 +146,7 @@ export class UserBaseInfo extends ViewPU {
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
-    private __userInfo: ObservedPropertyObjectPU<personInfo>;
+    private __userInfo: SynchedPropertySimpleOneWayPU<personInfo>;
     get userInfo() {
         return this.__userInfo.get();
     }
@@ -156,22 +154,6 @@ export class UserBaseInfo extends ViewPU {
         this.__userInfo.set(newValue);
     }
     private userStore: StoreUtil;
-    // 读取数据
-    aboutToAppear(): void {
-        // 不能使用 async await
-        this.userStore.getData<personInfo>().then((data) => {
-            if (data) {
-                this.userInfo = data;
-            }
-            else {
-                // 如果没有数据，则使用默认值
-                this.userInfo = new personInfo();
-            }
-        }).catch(() => {
-            // 处理获取数据失败的情况，使用默认值
-            this.userInfo = new personInfo();
-        });
-    }
     private dialogController: CustomDialogController;
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {

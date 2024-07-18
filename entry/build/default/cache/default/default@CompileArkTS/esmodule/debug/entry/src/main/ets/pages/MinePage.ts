@@ -2,16 +2,19 @@ if (!("finalizeConstruction" in ViewPU.prototype)) {
     Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
 }
 interface MineIndex_Params {
+    userInfo?: personInfo;
 }
 import { ListInfo } from "@bundle:com.example.healthy_life/entry/ets/view/ListInfo";
 import { UserBaseInfo } from "@bundle:com.example.healthy_life/entry/ets/view/UserBaseInfo";
 import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry/ets/common/constants/CommonConstants";
+import type personInfo from '../viewmodel/PersonInfo';
 export class MineIndex extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
         if (typeof paramsLambda === "function") {
             this.paramsGenerator_ = paramsLambda;
         }
+        this.__userInfo = new SynchedPropertyObjectTwoWayPU(params.userInfo, this, "userInfo");
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
@@ -20,10 +23,19 @@ export class MineIndex extends ViewPU {
     updateStateVars(params: MineIndex_Params) {
     }
     purgeVariableDependenciesOnElmtId(rmElmtId) {
+        this.__userInfo.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
+        this.__userInfo.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
+    }
+    private __userInfo: SynchedPropertySimpleOneWayPU<personInfo>;
+    get userInfo() {
+        return this.__userInfo.get();
+    }
+    set userInfo(newValue: personInfo) {
+        this.__userInfo.set(newValue);
     }
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -34,10 +46,12 @@ export class MineIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new UserBaseInfo(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 30 });
+                    let componentCall = new UserBaseInfo(this, { userInfo: this.__userInfo }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 28 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
-                        return {};
+                        return {
+                            userInfo: this.userInfo
+                        };
                     };
                     componentCall.paramsGenerator_ = paramsLambda;
                 }
@@ -49,10 +63,12 @@ export class MineIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new ListInfo(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 32 });
+                    let componentCall = new ListInfo(this, { userInfo: this.__userInfo }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 29 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
-                        return {};
+                        return {
+                            userInfo: this.userInfo
+                        };
                     };
                     componentCall.paramsGenerator_ = paramsLambda;
                 }
@@ -66,8 +82,4 @@ export class MineIndex extends ViewPU {
     rerender() {
         this.updateDirtyElements();
     }
-    static getEntryName(): string {
-        return "MineIndex";
-    }
 }
-registerNamedRoute(() => new MineIndex(undefined, {}), "", { bundleName: "com.example.healthy_life", moduleName: "entry", pagePath: "pages/MinePage", pageFullPath: "entry/src/main/ets/pages/MinePage", integratedHsp: "false" });

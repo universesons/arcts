@@ -149,6 +149,15 @@ export class CommonConstants {
     static readonly BRUSH_TEETH_AND_SMILE_RANGE: number = 1;
     static readonly RUN_STEP: number = 1;
     static readonly RUN_MAX_RANGE: number = 20;
+    // user targetSetting Range
+    static readonly HEIGHT_MIN_RANGE: number = 120;
+    static readonly HEIGHT_MAX_RANGE: number = 220;
+    static readonly HEIGHT_STEP: number = 1;
+    static readonly WEIGHT_MIN_RANGE: number = 30;
+    static readonly WEIGHT_MAX_RANGE: number = 120;
+    static readonly WEIGHT_STEP: number = 1;
+    static readonly HEIGHT_UNIT: string = "cm";
+    static readonly WEIGHT_UNIT: string = "kg";
     // letter spacing
     static readonly LETTER_1: number = 0.1;
     static readonly LETTER_34: number = 3.4;

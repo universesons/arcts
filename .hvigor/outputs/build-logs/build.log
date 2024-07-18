@@ -14279,3 +14279,1542 @@
 [2024-07-18T01:12:45.448] [DEBUG] debug-file - Update task entry:default@SignHap input file:E:\studying\2\summer\huawei\Healthy_life\entry\build\default\outputs\default\entry-default-unsigned.hap cache from map.
 [2024-07-18T01:12:45.448] [DEBUG] debug-file - Update task entry:default@SignHap output file:E:\studying\2\summer\huawei\Healthy_life\entry\build\default\outputs\default\entry-default-signed.hap cache.
 [2024-07-18T01:12:45.448] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:1 ms .
+[2024-07-18T19:07:10.060] [DEBUG] debug-file - env: nodejsVersion=v18.20.1
+[2024-07-18T19:07:12.828] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: false,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' }
+}
+[2024-07-18T19:07:12.863] [DEBUG] debug-file - hvigorfile, resolving C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\hvigorfile.ts
+[2024-07-18T19:07:30.121] [DEBUG] debug-file - hvigorfile, require result:  { appTasks: [Getter] }
+[2024-07-18T19:07:30.327] [DEBUG] debug-file - Product 'default' using build option: {
+  "debuggable": true
+} in this build.
+[2024-07-18T19:07:30.336] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native
+[2024-07-18T19:07:30.321] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2024-07-18T19:07:30.343] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2024-07-18T19:07:30.357] [DEBUG] debug-file - Sdk init in 27 ms 
+[2024-07-18T19:07:30.392] [DEBUG] debug-file - Project task initialization takes 33 ms 
+[2024-07-18T19:07:30.400] [DEBUG] debug-file - hvigorfile, resolving C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\hvigorfile.ts
+[2024-07-18T19:07:30.418] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2024-07-18T19:07:30.426] [DEBUG] debug-file - Module entry task initialization takes 4 ms 
+[2024-07-18T19:07:30.427] [DEBUG] debug-file - project has submodules:entry
+[2024-07-18T19:07:10.061] [DEBUG] debug-file - env: hvigor-config.json5 content = { modelVersion: '5.0.0', dependencies: {} }
+[2024-07-18T19:07:12.836] [DEBUG] debug-file - Cache service initialization finished in 8 ms 
+[2024-07-18T19:07:30.482] [DEBUG] debug-file - Current worker pool is stopped or closed.
+[2024-07-18T19:07:30.121] [DEBUG] debug-file - hvigorfile, binding system plugins { appTasks: [Getter] }
+[2024-07-18T19:07:30.328] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2024-07-18T19:07:30.321] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2024-07-18T19:07:30.392] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\hvigorfile.ts
+[2024-07-18T19:07:30.406] [DEBUG] debug-file - hvigorfile, require result:  { hapTasks: [Getter] }
+[2024-07-18T19:07:30.419] [DEBUG] debug-file - Target 'default' config: {}
+[2024-07-18T19:07:30.426] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\hvigorfile.ts
+[2024-07-18T19:07:30.428] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2024-07-18T19:07:10.063] [DEBUG] debug-file - env: daemon=false
+[2024-07-18T19:07:30.488] [DEBUG] debug-file - Current worker pool is terminated.
+[2024-07-18T19:07:30.321] [DEBUG] debug-file - Product 'default' build option: {}
+[2024-07-18T19:07:30.407] [DEBUG] debug-file - hvigorfile, binding system plugins { hapTasks: [Getter] }
+[2024-07-18T19:07:30.419] [DEBUG] debug-file - Module 'entry' target 'default' build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+}
+[2024-07-18T19:07:30.435] [DEBUG] debug-file - load to the disk finished
+[2024-07-18T19:07:10.063] [DEBUG] debug-file - no-daemon, use the parent process.execArgv --max-old-space-size=8192,--expose-gc
+[2024-07-18T19:07:30.321] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2024-07-18T19:07:30.419] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2024-07-18T19:07:30.437] [DEBUG] debug-file - Module arcts_4 Collected Dependency: 
+[2024-07-18T19:07:30.419] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+} in this build.
+[2024-07-18T19:07:30.437] [DEBUG] debug-file - Module arcts_4's total dependency: 0
+[2024-07-18T19:07:30.439] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2024-07-18T19:07:30.440] [DEBUG] debug-file - Module entry's total dependency: 0
+[2024-07-18T19:07:30.444] [DEBUG] debug-file - Configuration phase cost:17 s 596 ms 
+[2024-07-18T19:07:30.445] [DEBUG] debug-file - Configuration task cost before running: 17 s 642 ms 
+[2024-07-18T19:07:30.446] [DEBUG] debug-file - Executing task :entry:init
+[2024-07-18T19:07:30.446] [DEBUG] debug-file - entry : init cost memory 0.01131439208984375
+[2024-07-18T19:07:30.446] [DEBUG] debug-file - runTaskFromQueue task cost before running: 17 s 643 ms 
+[2024-07-18T19:07:30.447] [INFO] debug-file - Finished :entry:init... after 1 ms 
+[2024-07-18T19:07:30.447] [DEBUG] debug-file - Executing task ::init
+[2024-07-18T19:07:30.447] [DEBUG] debug-file - arcts_4 : init cost memory 0.0084991455078125
+[2024-07-18T19:07:30.447] [DEBUG] debug-file - runTaskFromQueue task cost before running: 17 s 644 ms 
+[2024-07-18T19:07:30.447] [INFO] debug-file - Finished ::init... after 1 ms 
+[2024-07-18T19:07:30.465] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+} in this build.
+[2024-07-18T19:07:30.469] [DEBUG] debug-file - hvigor start cli arguments:{
+  prop: [ 'product=default' ],
+  sync: true,
+  parallel: true,
+  incremental: true,
+  daemon: false,
+  _: [ '--analyze=normal' ]
+}
+[2024-07-18T19:07:30.475] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2024-07-18T19:07:30.475] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
+[2024-07-18T19:10:28.434] [DEBUG] debug-file - env: daemon=true
+[2024-07-18T19:10:28.240] [DEBUG] debug-file - env: nodejsVersion=v18.20.1
+[2024-07-18T19:10:28.241] [DEBUG] debug-file - env: hvigor-config.json5 content = { modelVersion: '5.0.0', dependencies: {} }
+[2024-07-18T19:10:30.086] [DEBUG] debug-file - hvigor start cli arguments:{
+  prop: [
+    'module=entry@default',
+    'product=default',
+    'requiredDeviceType=phone'
+  ],
+  mode: 'module',
+  parallel: true,
+  incremental: true,
+  daemon: true,
+  _: [ 'assembleHap', '--analyze=normal' ]
+}
+[2024-07-18T19:10:30.109] [DEBUG] debug-file - session manager: set active socket. socketId=EhmdY0Q7qw60mcJeAAAB
+[2024-07-18T19:10:30.123] [DEBUG] debug-file - java daemon tryConnect success
+[2024-07-18T19:10:30.976] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' }
+}
+[2024-07-18T19:10:30.983] [DEBUG] debug-file - Cache service initialization finished in 7 ms 
+[2024-07-18T19:10:30.996] [DEBUG] debug-file - hvigorfile, resolving C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\hvigorfile.ts
+[2024-07-18T19:10:33.400] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2024-07-18T19:10:33.400] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2024-07-18T19:10:33.548] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2024-07-18T19:10:33.548] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2024-07-18T19:10:33.548] [DEBUG] debug-file - Product 'default' build option: {}
+[2024-07-18T19:10:33.548] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2024-07-18T19:10:33.551] [DEBUG] debug-file - Product 'default' using build option: {
+  "debuggable": true
+} in this build.
+[2024-07-18T19:10:33.552] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2024-07-18T19:10:33.557] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native
+[2024-07-18T19:10:33.562] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2024-07-18T19:10:33.569] [DEBUG] debug-file - Sdk init in 16 ms 
+[2024-07-18T19:10:33.590] [DEBUG] debug-file - Project task initialization takes 19 ms 
+[2024-07-18T19:10:33.590] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\hvigorfile.ts
+[2024-07-18T19:10:33.595] [DEBUG] debug-file - hvigorfile, resolving C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\hvigorfile.ts
+[2024-07-18T19:10:33.600] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2024-07-18T19:10:33.601] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2024-07-18T19:10:33.610] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2024-07-18T19:10:33.610] [DEBUG] debug-file - Target 'default' config: {}
+[2024-07-18T19:10:33.610] [DEBUG] debug-file - Module 'entry' target 'default' build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+}
+[2024-07-18T19:10:33.610] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2024-07-18T19:10:33.611] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+} in this build.
+[2024-07-18T19:10:33.617] [DEBUG] debug-file - Module entry task initialization takes 3 ms 
+[2024-07-18T19:10:33.617] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\hvigorfile.ts
+[2024-07-18T19:10:33.664] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 47 ms 
+[2024-07-18T19:10:33.665] [DEBUG] debug-file - project has submodules:entry
+[2024-07-18T19:10:33.665] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2024-07-18T19:10:33.673] [DEBUG] debug-file - load to the disk finished
+[2024-07-18T19:10:33.676] [DEBUG] debug-file - Module arcts_4 Collected Dependency: 
+[2024-07-18T19:10:33.676] [DEBUG] debug-file - Module arcts_4's total dependency: 0
+[2024-07-18T19:10:33.680] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2024-07-18T19:10:33.680] [DEBUG] debug-file - Module entry's total dependency: 0
+[2024-07-18T19:10:33.684] [DEBUG] debug-file - Configuration phase cost:2 s 696 ms 
+[2024-07-18T19:10:33.686] [DEBUG] debug-file - Configuration task cost before running: 2 s 725 ms 
+[2024-07-18T19:10:33.689] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.690] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.690] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.696] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2024-07-18T19:10:33.706] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2024-07-18T19:10:33.706] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
+[2024-07-18T19:10:33.860] [DEBUG] debug-file - current product is not Atomic service.
+[2024-07-18T19:10:33.861] [DEBUG] debug-file - Use tool [win32: JAVA_HOME, CLASSPATH]
+ [
+  {
+    JAVA_HOME: 'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\jbr'
+  },
+  { CLASSPATH: undefined }
+]
+[2024-07-18T19:10:33.861] [DEBUG] debug-file - Use tool [win32: NODE_HOME]
+ [
+  {
+    NODE_HOME: 'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\tools\\node'
+  }
+]
+[2024-07-18T19:10:33.861] [DEBUG] debug-file - entry : default@PreBuild cost memory 6.049964904785156
+[2024-07-18T19:10:33.862] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 900 ms 
+[2024-07-18T19:10:33.866] [INFO] debug-file - Finished :entry:default@PreBuild... after 166 ms 
+[2024-07-18T19:10:33.869] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.870] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.870] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.871] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2024-07-18T19:10:33.875] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.11083984375
+[2024-07-18T19:10:33.876] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 914 ms 
+[2024-07-18T19:10:33.877] [INFO] debug-file - Finished :entry:default@GenerateMetadata... after 5 ms 
+[2024-07-18T19:10:33.880] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.880] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.880] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.880] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2024-07-18T19:10:33.881] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.013153076171875
+[2024-07-18T19:10:33.881] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 919 ms 
+[2024-07-18T19:10:33.881] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2024-07-18T19:10:33.884] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.884] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.884] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.886] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2024-07-18T19:10:33.887] [DEBUG] debug-file - Change app api release type with 'Beta1'
+[2024-07-18T19:10:33.887] [DEBUG] debug-file - Change app compile API version with '5.0.0.25'
+[2024-07-18T19:10:33.887] [DEBUG] debug-file - Change app target API version with '50000012'
+[2024-07-18T19:10:33.887] [DEBUG] debug-file - Change app minimum API version with '50000012'
+[2024-07-18T19:10:33.887] [DEBUG] debug-file - Use cli appEnvironment
+[2024-07-18T19:10:33.898] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.20983123779296875
+[2024-07-18T19:10:33.898] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 936 ms 
+[2024-07-18T19:10:33.898] [INFO] debug-file - Finished :entry:default@MergeProfile... after 13 ms 
+[2024-07-18T19:10:33.901] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.901] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.901] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.902] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2024-07-18T19:10:33.905] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.08454132080078125
+[2024-07-18T19:10:33.906] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 944 ms 
+[2024-07-18T19:10:33.907] [INFO] debug-file - Finished :entry:default@CreateBuildProfile... after 4 ms 
+[2024-07-18T19:10:33.909] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.909] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.910] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.911] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2024-07-18T19:10:33.911] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.013458251953125
+[2024-07-18T19:10:33.911] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 949 ms 
+[2024-07-18T19:10:33.911] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2024-07-18T19:10:33.914] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.914] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.914] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.923] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2024-07-18T19:10:33.923] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.01973724365234375
+[2024-07-18T19:10:33.923] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 962 ms 
+[2024-07-18T19:10:33.923] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 1 ms 
+[2024-07-18T19:10:33.926] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.926] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.926] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.928] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2024-07-18T19:10:33.930] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.048126220703125
+[2024-07-18T19:10:33.930] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 968 ms 
+[2024-07-18T19:10:33.930] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 2 ms 
+[2024-07-18T19:10:33.933] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.933] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.933] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.934] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2024-07-18T19:10:33.934] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.01438140869140625
+[2024-07-18T19:10:33.934] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 973 ms 
+[2024-07-18T19:10:33.935] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2024-07-18T19:10:33.937] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.937] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.937] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.938] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2024-07-18T19:10:33.943] [DEBUG] debug-file - Module Pack Info:  {
+  summary: {
+    app: {
+      bundleName: 'com.example.healthy_life',
+      bundleType: 'app',
+      version: [Object]
+    },
+    modules: [ [Object] ]
+  },
+  packages: [
+    {
+      deviceType: [Array],
+      moduleType: 'entry',
+      deliveryWithInstall: true,
+      name: 'entry-default'
+    }
+  ]
+}
+[2024-07-18T19:10:33.943] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.176483154296875
+[2024-07-18T19:10:33.944] [DEBUG] debug-file - runTaskFromQueue task cost before running: 2 s 982 ms 
+[2024-07-18T19:10:33.944] [INFO] debug-file - Finished :entry:default@MakePackInfo... after 6 ms 
+[2024-07-18T19:10:33.946] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.947] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:33.947] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:33.948] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2024-07-18T19:10:33.950] [DEBUG] debug-file - [
+  'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\tools\\node\\node.exe',
+  'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\build-tools\\ets-loader\\bin\\ark\\ts2abc.js',
+  '--target-api-version',
+  '12'
+]
+[2024-07-18T19:10:34.213] [DEBUG] debug-file - 12.0.2.0
+[2024-07-18T19:10:34.214] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 2.089202880859375
+[2024-07-18T19:10:34.214] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 253 ms 
+[2024-07-18T19:10:34.215] [INFO] debug-file - Finished :entry:default@ProcessProfile... after 267 ms 
+[2024-07-18T19:10:34.217] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.217] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.217] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:34.218] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2024-07-18T19:10:34.220] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.0474853515625
+[2024-07-18T19:10:34.221] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 259 ms 
+[2024-07-18T19:10:34.222] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 3 ms 
+[2024-07-18T19:10:34.224] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.224] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.224] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:34.226] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2024-07-18T19:10:34.231] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.2015533447265625
+[2024-07-18T19:10:34.231] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 269 ms 
+[2024-07-18T19:10:34.232] [INFO] debug-file - Finished :entry:default@ProcessRouterMap... after 5 ms 
+[2024-07-18T19:10:34.235] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.235] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.235] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:34.236] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2024-07-18T19:10:34.237] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.038238525390625
+[2024-07-18T19:10:34.238] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 276 ms 
+[2024-07-18T19:10:34.238] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 3 ms 
+[2024-07-18T19:10:34.240] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.240] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.240] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:34.241] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2024-07-18T19:10:34.253] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2024-07-18T19:10:34.254] [DEBUG] debug-file - entry : default@ProcessResource cost memory -13.232063293457031
+[2024-07-18T19:10:34.256] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 295 ms 
+[2024-07-18T19:10:34.259] [INFO] debug-file - Finished :entry:default@ProcessResource... after 12 ms 
+[2024-07-18T19:10:34.262] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.262] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.262] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:34.266] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2024-07-18T19:10:34.285] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.5159225463867188
+[2024-07-18T19:10:34.285] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 323 ms 
+[2024-07-18T19:10:34.290] [INFO] debug-file - Finished :entry:default@GenerateLoaderJson... after 19 ms 
+[2024-07-18T19:10:34.292] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.292] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.292] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:34.294] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2024-07-18T19:10:34.300] [DEBUG] debug-file - default@ProcessLibs work[0] is submitted.
+[2024-07-18T19:10:34.301] [DEBUG] debug-file - default@ProcessLibs work[0] is pushed to ready queue.
+[2024-07-18T19:10:34.301] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.302] [DEBUG] debug-file - default@ProcessLibs work[0] has been dispatched to worker[18].
+[2024-07-18T19:10:34.302] [DEBUG] debug-file - default@ProcessLibs work[0] is dispatched.
+[2024-07-18T19:10:34.302] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 0.6524658203125
+[2024-07-18T19:10:34.304] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.304] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.304] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:34.306] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2024-07-18T19:10:34.308] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2024-07-18T19:10:34.409] [DEBUG] debug-file - Use tool [C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\toolchains\restool.exe]
+ [
+  'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\toolchains\\restool.exe',
+  '-l',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resConfig.json'
+]
+[2024-07-18T19:10:34.412] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 235589632,
+  heapTotal: 137478144,
+  heapUsed: 111746448,
+  external: 1452915,
+  arrayBuffers: 84925
+} os memoryUsage :14.238750457763672
+[2024-07-18T19:10:34.670] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2024-07-18T19:10:34.677] [DEBUG] debug-file - entry : default@CompileResource cost memory 9.167510986328125
+[2024-07-18T19:10:34.677] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 716 ms 
+[2024-07-18T19:10:34.679] [INFO] debug-file - Finished :entry:default@CompileResource... after 370 ms 
+[2024-07-18T19:10:34.683] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.683] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.683] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:34.688] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2024-07-18T19:10:34.711] [DEBUG] debug-file - build config:
+[2024-07-18T19:10:34.711] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  buildMode: 'Debug',
+  watchMode: 'false',
+  aceProfilePath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resources\\base\\profile',
+  etsLoaderPath: 'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\build-tools\\ets-loader',
+  modulePath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4',
+  compileSdkVersion: 12,
+  compatibleSdkVersion: 12,
+  bundleName: 'com.example.healthy_life',
+  etsLoaderVersion: '5.0.0.25',
+  etsLoaderReleaseType: 'Beta1',
+  aotCompileMode: 'type',
+  apPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: '97be44d3cb37482d3049eb9ae963893d',
+  externalApiPaths: [
+    'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\hms\\ets'
+  ],
+  compilerTypes: undefined,
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  buildGeneratedProfilePath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\generated\\profile\\default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 12,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  strictMode: undefined,
+  buildDir: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build',
+  deviceTypes: [ 'phone' ],
+  moduleDependencies: { dependency: {} },
+  projectDependencies: { dependency: {} },
+  useNormalizedOHMUrl: false,
+  pkgContextInfo: undefined,
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: { requestPermissions: [ [Object] ], definePermissions: undefined },
+  integratedHsp: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  caseSensitiveCheck: false,
+  tsImportSendable: false,
+  resolveConflictMode: true,
+  depName2RootPath: {},
+  aceModuleJsonPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\module.json',
+  appResource: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\ResourceTable.txt',
+  rawFileResource: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resources\\rawfile',
+  resourceTableHash: '82bb4bbdeae15ede001804f0336373ba',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:12:5.0.0.25:Beta1',
+  aceModuleRoot: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\supervisual',
+  aceBuildJson: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\loader\\default\\loader.json',
+  cachePath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule\\debug',
+  aceModuleBuild: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\loader_out\\default\\ets',
+  supportChunks: true,
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main': {
+      moduleName: 'entry',
+      modulePkgPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry'
+    },
+    'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry': {
+      moduleName: 'entry',
+      modulePkgPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry'
+    },
+    'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4': {
+      moduleName: 'arcts_4',
+      modulePkgPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4'
+    }
+  },
+  pkgJsonFileHash: '52c5f33230ea56a2aeae467df5dcdd03',
+  allModulePaths: [ 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry' ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: undefined,
+    mockConfigKey2ModuleInfo: {}
+  },
+  otherPaths: {
+    'entry/*': [
+      '..\\*',
+      '..\\..\\..\\build\\default\\generated\\profile\\default\\*'
+    ]
+  },
+  collectImportersConfig: undefined
+}
+[2024-07-18T19:10:34.711] [DEBUG] debug-file - Compile arkts with external api path: C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\hms\ets
+[2024-07-18T19:10:34.712] [DEBUG] debug-file - default@CompileArkTS work[1] is submitted.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - default@CompileArkTS work[1] is pushed to ready queue.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[18] failed because of worker busy.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[17] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[16] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[15] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[14] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[13] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[12] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[11] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.713] [DEBUG] debug-file - A work dispatched to worker[10] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - A work dispatched to worker[3] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - A work dispatched to worker[2] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - A work dispatched to worker[1] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - default@CompileArkTS work[1] has been dispatched to worker[0].
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - default@CompileArkTS work[1] is dispatched.
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - CopyResources startTime: 206574414798300
+[2024-07-18T19:10:34.714] [DEBUG] debug-file - default@CompileArkTS work[2] is submitted.
+[2024-07-18T19:10:34.715] [DEBUG] debug-file - default@CompileArkTS work[2] is pushed to ready queue.
+[2024-07-18T19:10:34.715] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.715] [DEBUG] debug-file - A work dispatched to worker[18] failed because of worker busy.
+[2024-07-18T19:10:34.716] [DEBUG] debug-file - default@CompileArkTS work[2] has been dispatched to worker[17].
+[2024-07-18T19:10:34.716] [DEBUG] debug-file - default@CompileArkTS work[2] is dispatched.
+[2024-07-18T19:10:34.724] [DEBUG] debug-file - default@CompileArkTS work[3] is submitted.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - default@CompileArkTS work[3] is pushed to ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[18] failed because of worker busy.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[17] failed because of worker busy.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[16] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[15] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[14] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[13] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[12] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[11] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[10] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[3] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.725] [DEBUG] debug-file - A work dispatched to worker[2] failed because unable to get work from ready queue.
+[2024-07-18T19:10:34.726] [DEBUG] debug-file - default@CompileArkTS work[3] has been dispatched to worker[1].
+[2024-07-18T19:10:34.726] [DEBUG] debug-file - default@CompileArkTS work[3] is dispatched.
+[2024-07-18T19:10:34.726] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 2.9809341430664062
+[2024-07-18T19:10:34.728] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.728] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:34.728] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:34.733] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2024-07-18T19:10:34.739] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.14212799072265625
+[2024-07-18T19:10:34.739] [DEBUG] debug-file - runTaskFromQueue task cost before running: 3 s 778 ms 
+[2024-07-18T19:10:34.739] [INFO] debug-file - Finished :entry:default@BuildJS... after 7 ms 
+[2024-07-18T19:10:35.656] [DEBUG] debug-file - default@ProcessLibs work[0] done.
+[2024-07-18T19:10:35.656] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2024-07-18T19:10:35.657] [INFO] debug-file - Finished :entry:default@ProcessLibs... after 1 s 362 ms 
+[2024-07-18T19:10:35.661] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:35.661] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:35.661] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:35.666] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2024-07-18T19:10:35.669] [DEBUG] debug-file - default@DoNativeStrip work[4] is submitted.
+[2024-07-18T19:10:35.671] [DEBUG] debug-file - default@DoNativeStrip work[4] is pushed to ready queue.
+[2024-07-18T19:10:35.671] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:10:35.671] [DEBUG] debug-file - default@DoNativeStrip work[4] has been dispatched to worker[18].
+[2024-07-18T19:10:35.671] [DEBUG] debug-file - default@DoNativeStrip work[4] is dispatched.
+[2024-07-18T19:10:35.672] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.15439605712890625
+[2024-07-18T19:10:35.685] [DEBUG] debug-file - Do not need strip, copying .so files to stripped_native_libs
+[2024-07-18T19:10:35.694] [DEBUG] debug-file - default@DoNativeStrip work[4] done.
+[2024-07-18T19:10:35.694] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2024-07-18T19:10:35.695] [INFO] debug-file - Finished :entry:default@DoNativeStrip... after 28 ms 
+[2024-07-18T19:10:35.697] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:35.698] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:35.698] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:35.700] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2024-07-18T19:10:35.701] [DEBUG] debug-file - default@CacheNativeLibs work[5] is submitted.
+[2024-07-18T19:10:35.702] [DEBUG] debug-file - default@CacheNativeLibs work[5] is pushed to ready queue.
+[2024-07-18T19:10:35.702] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:10:35.702] [DEBUG] debug-file - default@CacheNativeLibs work[5] has been dispatched to worker[18].
+[2024-07-18T19:10:35.702] [DEBUG] debug-file - default@CacheNativeLibs work[5] is dispatched.
+[2024-07-18T19:10:35.702] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.14316558837890625
+[2024-07-18T19:10:35.876] [DEBUG] debug-file - CopyResources is end, endTime: 206575576545900
+[2024-07-18T19:10:35.876] [DEBUG] debug-file - default@CompileArkTS work[2] done.
+[2024-07-18T19:10:35.876] [DEBUG] debug-file - A work dispatched to worker[17] failed because unable to get work from ready queue.
+[2024-07-18T19:10:36.424] [DEBUG] debug-file - default@CacheNativeLibs work[5] done.
+[2024-07-18T19:10:36.424] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2024-07-18T19:10:36.425] [INFO] debug-file - Finished :entry:default@CacheNativeLibs... after 725 ms 
+[2024-07-18T19:10:50.862] [DEBUG] debug-file - Ark compile task finished.finished time is 206590561815300
+[2024-07-18T19:10:50.870] [DEBUG] debug-file - default@CompileArkTS work[3] done.
+[2024-07-18T19:10:50.871] [DEBUG] debug-file - A work dispatched to worker[1] failed because unable to get work from ready queue.
+[2024-07-18T19:10:54.431] [DEBUG] debug-file - default@CompileArkTS work[1] done.
+[2024-07-18T19:10:54.431] [DEBUG] debug-file - A work dispatched to worker[0] failed because unable to get work from ready queue.
+[2024-07-18T19:10:54.437] [INFO] debug-file - Finished :entry:default@CompileArkTS... after 19 s 744 ms 
+[2024-07-18T19:10:54.440] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:54.440] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:54.440] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:54.442] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2024-07-18T19:10:54.446] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.04940032958984375
+[2024-07-18T19:10:54.446] [DEBUG] debug-file - runTaskFromQueue task cost before running: 23 s 484 ms 
+[2024-07-18T19:10:54.447] [INFO] debug-file - Finished :entry:default@GeneratePkgModuleJson... after 4 ms 
+[2024-07-18T19:10:54.420] [INFO] debug-file - [33mWARN: [33mArkTS:WARN File: C:/Users/admin/Desktop/DevEcoStudioProjects/arcts_4/entry/src/main/ets/view/HomeComponent.ets:165:8
+ 'onScroll' has been deprecated.
+[39m
+
+[2024-07-18T19:10:54.421] [DEBUG] debug-file - Ark compile task finished.finished time is 206594121560000
+[2024-07-18T19:10:54.452] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:54.452] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:54.452] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:54.461] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2024-07-18T19:10:54.473] [DEBUG] debug-file - Use tool [C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\toolchains\lib\app_packing_tool.jar]
+ [
+  'java',
+  '-Dfile.encoding=GBK',
+  '-jar',
+  'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\toolchains\\lib\\app_packing_tool.jar',
+  '--mode',
+  'hap',
+  '--force',
+  'true',
+  '--lib-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\stripped_native_libs\\default',
+  '--json-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\package\\default\\module.json',
+  '--resources-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resources',
+  '--index-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resources.index',
+  '--pack-info-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\outputs\\default\\pack.info',
+  '--out-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\outputs\\default\\entry-default-unsigned.hap',
+  '--ets-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\loader_out\\default\\ets'
+]
+[2024-07-18T19:10:54.476] [DEBUG] debug-file - default@PackageHap work[6] is submitted.
+[2024-07-18T19:10:54.478] [DEBUG] debug-file - default@PackageHap work[6] is pushed to ready queue.
+[2024-07-18T19:10:54.478] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:10:54.478] [DEBUG] debug-file - default@PackageHap work[6] has been dispatched to worker[18].
+[2024-07-18T19:10:54.479] [DEBUG] debug-file - default@PackageHap work[6] is dispatched.
+[2024-07-18T19:10:54.483] [DEBUG] debug-file - entry : default@PackageHap cost memory -0.2467498779296875
+[2024-07-18T19:10:54.501] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 1048039424,
+  heapTotal: 58961920,
+  heapUsed: 54992128,
+  external: 2099763,
+  arrayBuffers: 25066
+} os memoryUsage :15.114898681640625
+[2024-07-18T19:10:55.566] [DEBUG] debug-file - default@PackageHap work[6] done.
+[2024-07-18T19:10:55.566] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2024-07-18T19:10:55.568] [INFO] debug-file - Finished :entry:default@PackageHap... after 1 s 105 ms 
+[2024-07-18T19:10:55.571] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:55.571] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:10:55.571] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:10:55.574] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2024-07-18T19:10:55.575] [WARN] debug-file - Will skip sign 'hos_hap'. No signingConfigs profile is configured in current project.
+             If needed, configure the signingConfigs in C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build-profile.json5.
+[2024-07-18T19:10:55.575] [DEBUG] debug-file - entry : default@SignHap cost memory 0.09513092041015625
+[2024-07-18T19:10:55.576] [DEBUG] debug-file - runTaskFromQueue task cost before running: 24 s 614 ms 
+[2024-07-18T19:10:55.576] [INFO] debug-file - Finished :entry:default@SignHap... after 3 ms 
+[2024-07-18T19:10:55.578] [DEBUG] debug-file - Executing task :entry:assembleHap
+[2024-07-18T19:10:55.578] [DEBUG] debug-file - entry : assembleHap cost memory 0.01160430908203125
+[2024-07-18T19:10:55.578] [DEBUG] debug-file - runTaskFromQueue task cost before running: 24 s 616 ms 
+[2024-07-18T19:10:55.578] [INFO] debug-file - Finished :entry:assembleHap... after 1 ms 
+[2024-07-18T19:10:55.591] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\AppScope\app.json5 cache by regenerate.
+[2024-07-18T19:10:55.592] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\module.json5 cache by regenerate.
+[2024-07-18T19:10:55.592] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources\base\profile\form_config.json cache by regenerate.
+[2024-07-18T19:10:55.592] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build-profile.json5 cache by regenerate.
+[2024-07-18T19:10:55.593] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build-profile.json5 cache by regenerate.
+[2024-07-18T19:10:55.593] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources\base\profile\main_pages.json cache by regenerate.
+[2024-07-18T19:10:55.593] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\hvigor\hvigor-config.json5 cache by regenerate.
+[2024-07-18T19:10:55.594] [DEBUG] debug-file - Update task entry:default@PreBuild input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\oh-package.json5 cache by regenerate.
+[2024-07-18T19:10:55.594] [DEBUG] debug-file - Incremental task entry:default@PreBuild post-execution cost:5 ms .
+[2024-07-18T19:10:55.594] [DEBUG] debug-file - Update task entry:default@GenerateMetadata input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\module.json5 cache by regenerate.
+[2024-07-18T19:10:55.595] [DEBUG] debug-file - Update task entry:default@GenerateMetadata output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\hap_metadata\default\output_metadata.json cache.
+[2024-07-18T19:10:55.595] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata post-execution cost:2 ms .
+[2024-07-18T19:10:55.595] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\AppScope\app.json5 cache by regenerate.
+[2024-07-18T19:10:55.596] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build-profile.json5 cache by regenerate.
+[2024-07-18T19:10:55.596] [DEBUG] debug-file - Update task entry:default@MergeProfile input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\module.json5 cache by regenerate.
+[2024-07-18T19:10:55.597] [DEBUG] debug-file - Update task entry:default@MergeProfile output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\merge_profile\default\module.json cache.
+[2024-07-18T19:10:55.597] [DEBUG] debug-file - Incremental task entry:default@MergeProfile post-execution cost:2 ms .
+[2024-07-18T19:10:55.597] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\AppScope\app.json5 cache by regenerate.
+[2024-07-18T19:10:55.598] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build-profile.json5 cache by regenerate.
+[2024-07-18T19:10:55.598] [DEBUG] debug-file - Update task entry:default@CreateBuildProfile output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\profile\default\BuildProfile.ets cache.
+[2024-07-18T19:10:55.598] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile post-execution cost:2 ms .
+[2024-07-18T19:10:55.599] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache.
+[2024-07-18T19:10:55.599] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2024-07-18T19:10:55.599] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build\cache\default\integrated_hsp\integratedHspCache.json cache.
+[2024-07-18T19:10:55.600] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2024-07-18T19:10:55.600] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\AppScope\app.json5 cache by regenerate.
+[2024-07-18T19:10:55.600] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\module.json5 cache by regenerate.
+[2024-07-18T19:10:55.600] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build-profile.json5 cache by regenerate.
+[2024-07-18T19:10:55.601] [DEBUG] debug-file - Update task entry:default@MakePackInfo input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources\base\profile\form_config.json cache by regenerate.
+[2024-07-18T19:10:55.601] [DEBUG] debug-file - Update task entry:default@MakePackInfo output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\pack.info cache.
+[2024-07-18T19:10:55.601] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo post-execution cost:2 ms .
+[2024-07-18T19:10:55.602] [DEBUG] debug-file - Update task entry:default@ProcessProfile input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\merge_profile\default\module.json cache by regenerate.
+[2024-07-18T19:10:55.602] [DEBUG] debug-file - Update task entry:default@ProcessProfile output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\process_profile\default\module.json cache.
+[2024-07-18T19:10:55.603] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile post-execution cost:2 ms .
+[2024-07-18T19:10:55.604] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\toolchains\syscap_tool.exe cache by regenerate.
+[2024-07-18T19:10:55.604] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\ets\api\device-define cache by regenerate.
+[2024-07-18T19:10:55.605] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\syscap\default\rpcid.sc cache.
+[2024-07-18T19:10:55.606] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:3 ms .
+[2024-07-18T19:10:55.607] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\oh-package.json5 cache by regenerate.
+[2024-07-18T19:10:55.608] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\oh-package.json5 cache by regenerate.
+[2024-07-18T19:10:55.608] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\module.json5 cache by regenerate.
+[2024-07-18T19:10:55.608] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\router_map\default\intermediates_temp_routerMap.json cache.
+[2024-07-18T19:10:55.608] [DEBUG] debug-file - Update task entry:default@ProcessRouterMap output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\router_map\default\intermediate_routerMap_for_loader.json cache.
+[2024-07-18T19:10:55.609] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap post-execution cost:3 ms .
+[2024-07-18T19:10:55.609] [DEBUG] debug-file - Update task entry:default@ProcessResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resConfig.json cache.
+[2024-07-18T19:10:55.609] [DEBUG] debug-file - Incremental task entry:default@ProcessResource post-execution cost:1 ms .
+[2024-07-18T19:10:55.612] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\router_map\default\intermediates_temp_routerMap.json cache by regenerate.
+[2024-07-18T19:10:55.612] [DEBUG] debug-file - Update task entry:default@GenerateLoaderJson output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader\default\loader.json cache.
+[2024-07-18T19:10:55.612] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson post-execution cost:4 ms .
+[2024-07-18T19:10:55.613] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build-profile.json5 cache by regenerate.
+[2024-07-18T19:10:55.613] [DEBUG] debug-file - Update task entry:default@ProcessLibs input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build-profile.json5 cache by regenerate.
+[2024-07-18T19:10:55.614] [DEBUG] debug-file - Update task entry:default@ProcessLibs output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\libs\default cache.
+[2024-07-18T19:10:55.614] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs post-execution cost:2 ms .
+[2024-07-18T19:10:55.615] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources cache by regenerate.
+[2024-07-18T19:10:55.629] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\AppScope\resources cache by regenerate.
+[2024-07-18T19:10:55.631] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\process_profile\default\module.json cache by regenerate.
+[2024-07-18T19:10:55.631] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resConfig.json cache by regenerate.
+[2024-07-18T19:10:55.631] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default cache.
+[2024-07-18T19:10:55.644] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\r\default\ResourceTable.h cache.
+[2024-07-18T19:10:55.644] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\r\default cache.
+[2024-07-18T19:10:55.645] [DEBUG] debug-file - Incremental task entry:default@CompileResource post-execution cost:31 ms .
+[2024-07-18T19:10:55.647] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader\default cache by regenerate.
+[2024-07-18T19:10:55.648] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2024-07-18T19:10:55.648] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2024-07-18T19:10:55.648] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2024-07-18T19:10:55.649] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\ets cache by regenerate.
+[2024-07-18T19:10:55.665] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources\base\profile\form_config.json cache by regenerate.
+[2024-07-18T19:10:55.665] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2024-07-18T19:10:55.666] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader_out\default\ets cache.
+[2024-07-18T19:10:55.667] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:23 ms .
+[2024-07-18T19:10:55.669] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader\default cache by regenerate.
+[2024-07-18T19:10:55.669] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2024-07-18T19:10:55.670] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2024-07-18T19:10:55.670] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2024-07-18T19:10:55.670] [DEBUG] debug-file - Update task entry:default@BuildJS output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader_out\default\js cache.
+[2024-07-18T19:10:55.671] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:4 ms .
+[2024-07-18T19:10:55.671] [DEBUG] debug-file - Update task entry:default@DoNativeStrip input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\libs\default cache by regenerate.
+[2024-07-18T19:10:55.672] [DEBUG] debug-file - Update task entry:default@DoNativeStrip output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\stripped_native_libs\default cache.
+[2024-07-18T19:10:55.672] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip post-execution cost:1 ms .
+[2024-07-18T19:10:55.673] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\libs\default cache by regenerate.
+[2024-07-18T19:10:55.673] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\stripped_native_libs\default cache by regenerate.
+[2024-07-18T19:10:55.673] [DEBUG] debug-file - Update task entry:default@CacheNativeLibs output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\patch\default\base_native_libs.json cache.
+[2024-07-18T19:10:55.674] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs post-execution cost:2 ms .
+[2024-07-18T19:10:55.674] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2024-07-18T19:10:55.674] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\package\default\module.json cache.
+[2024-07-18T19:10:55.675] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson post-execution cost:1 ms .
+[2024-07-18T19:10:55.676] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\stripped_native_libs\default cache by regenerate.
+[2024-07-18T19:10:55.676] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2024-07-18T19:10:55.676] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resources cache by regenerate.
+[2024-07-18T19:10:55.687] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resources.index cache by regenerate.
+[2024-07-18T19:10:55.688] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\pack.info cache by regenerate.
+[2024-07-18T19:10:55.688] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader_out\default\ets cache by regenerate.
+[2024-07-18T19:10:55.689] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2024-07-18T19:10:55.690] [DEBUG] debug-file - Update task entry:default@PackageHap output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\entry-default-unsigned.hap cache.
+[2024-07-18T19:10:55.690] [DEBUG] debug-file - Update task entry:default@PackageHap output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\mapping\sourceMaps.map cache.
+[2024-07-18T19:10:55.690] [DEBUG] debug-file - Incremental task entry:default@PackageHap post-execution cost:16 ms .
+[2024-07-18T19:10:55.691] [DEBUG] debug-file - Update task entry:default@SignHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\entry-default-unsigned.hap cache by regenerate.
+[2024-07-18T19:10:55.691] [DEBUG] debug-file - Update task entry:default@SignHap output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\entry-default-signed.hap cache.
+[2024-07-18T19:10:55.691] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:1 ms .
+[2024-07-18T19:20:16.352] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' }
+}
+[2024-07-18T19:20:16.362] [DEBUG] debug-file - Cache service initialization finished in 10 ms 
+[2024-07-18T19:20:16.381] [DEBUG] debug-file - hvigorfile, resolving C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\hvigorfile.ts
+[2024-07-18T19:20:16.391] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2024-07-18T19:20:16.391] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2024-07-18T19:20:16.405] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2024-07-18T19:20:16.405] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2024-07-18T19:20:16.405] [DEBUG] debug-file - Product 'default' build option: {}
+[2024-07-18T19:20:16.405] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2024-07-18T19:20:16.409] [DEBUG] debug-file - Product 'default' using build option: {
+  "debuggable": true
+} in this build.
+[2024-07-18T19:20:16.410] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2024-07-18T19:20:16.425] [DEBUG] debug-file - Sdk init in 14 ms 
+[2024-07-18T19:20:16.455] [DEBUG] debug-file - Project task initialization takes 27 ms 
+[2024-07-18T19:20:16.455] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\hvigorfile.ts
+[2024-07-18T19:20:16.463] [DEBUG] debug-file - hvigorfile, resolving C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\hvigorfile.ts
+[2024-07-18T19:20:16.470] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2024-07-18T19:20:16.470] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2024-07-18T19:20:16.478] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2024-07-18T19:20:16.479] [DEBUG] debug-file - Target 'default' config: {}
+[2024-07-18T19:20:16.479] [DEBUG] debug-file - Module 'entry' target 'default' build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+}
+[2024-07-18T19:20:16.479] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2024-07-18T19:20:16.479] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+} in this build.
+[2024-07-18T19:20:16.483] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2024-07-18T19:20:16.483] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\hvigorfile.ts
+[2024-07-18T19:20:16.544] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 60 ms 
+[2024-07-18T19:20:16.544] [DEBUG] debug-file - project has submodules:entry
+[2024-07-18T19:20:16.545] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2024-07-18T19:20:16.552] [DEBUG] debug-file - load to the disk finished
+[2024-07-18T19:20:16.555] [DEBUG] debug-file - Module arcts_4 Collected Dependency: 
+[2024-07-18T19:20:16.555] [DEBUG] debug-file - Module arcts_4's total dependency: 0
+[2024-07-18T19:20:16.557] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2024-07-18T19:20:16.557] [DEBUG] debug-file - Module entry's total dependency: 0
+[2024-07-18T19:20:16.563] [DEBUG] debug-file - Configuration phase cost:194 ms 
+[2024-07-18T19:20:16.564] [DEBUG] debug-file - Configuration task cost before running: 224 ms 
+[2024-07-18T19:20:16.567] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.567] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.567] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.572] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2024-07-18T19:20:16.589] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 12 ms .
+[2024-07-18T19:20:16.589] [DEBUG] debug-file - entry : default@PreBuild cost memory 0.3585052490234375
+[2024-07-18T19:20:16.594] [INFO] debug-file - UP-TO-DATE :entry:default@PreBuild...  
+[2024-07-18T19:20:16.597] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.597] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.597] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.598] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2024-07-18T19:20:16.602] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata pre-execution cost: 3 ms .
+[2024-07-18T19:20:16.602] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.13910675048828125
+[2024-07-18T19:20:16.604] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateMetadata...  
+[2024-07-18T19:20:16.607] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.607] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.607] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.607] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2024-07-18T19:20:16.607] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.01294708251953125
+[2024-07-18T19:20:16.607] [DEBUG] debug-file - runTaskFromQueue task cost before running: 267 ms 
+[2024-07-18T19:20:16.607] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2024-07-18T19:20:16.610] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.610] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.610] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.611] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2024-07-18T19:20:16.614] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 3 ms .
+[2024-07-18T19:20:16.614] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.10711669921875
+[2024-07-18T19:20:16.614] [INFO] debug-file - UP-TO-DATE :entry:default@MergeProfile...  
+[2024-07-18T19:20:16.617] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.617] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.617] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.619] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2024-07-18T19:20:16.622] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 3 ms .
+[2024-07-18T19:20:16.622] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.1150970458984375
+[2024-07-18T19:20:16.623] [INFO] debug-file - UP-TO-DATE :entry:default@CreateBuildProfile...  
+[2024-07-18T19:20:16.625] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.625] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.625] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.626] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2024-07-18T19:20:16.627] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.01331329345703125
+[2024-07-18T19:20:16.627] [DEBUG] debug-file - runTaskFromQueue task cost before running: 286 ms 
+[2024-07-18T19:20:16.627] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2024-07-18T19:20:16.629] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.629] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.629] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.633] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2024-07-18T19:20:16.634] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.01915740966796875
+[2024-07-18T19:20:16.634] [DEBUG] debug-file - runTaskFromQueue task cost before running: 293 ms 
+[2024-07-18T19:20:16.634] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 1 ms 
+[2024-07-18T19:20:16.638] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.639] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.639] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.641] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2024-07-18T19:20:16.642] [DEBUG] debug-file - entry:default@ProcessIntegratedHsp is not up-to-date, since the output file 'C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build\cache\default\integrated_hsp\integratedHspCache.json' does not exist.
+[2024-07-18T19:20:16.642] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp pre-execution cost: 2 ms .
+[2024-07-18T19:20:16.643] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.0873565673828125
+[2024-07-18T19:20:16.643] [DEBUG] debug-file - runTaskFromQueue task cost before running: 302 ms 
+[2024-07-18T19:20:16.643] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 3 ms 
+[2024-07-18T19:20:16.645] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.646] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.646] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.646] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2024-07-18T19:20:16.646] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.013885498046875
+[2024-07-18T19:20:16.647] [DEBUG] debug-file - runTaskFromQueue task cost before running: 306 ms 
+[2024-07-18T19:20:16.647] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2024-07-18T19:20:16.649] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.649] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.649] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.650] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2024-07-18T19:20:16.654] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo pre-execution cost: 4 ms .
+[2024-07-18T19:20:16.654] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.15514373779296875
+[2024-07-18T19:20:16.655] [INFO] debug-file - UP-TO-DATE :entry:default@MakePackInfo...  
+[2024-07-18T19:20:16.657] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.657] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.658] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.659] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2024-07-18T19:20:16.660] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 1 ms .
+[2024-07-18T19:20:16.660] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.06000518798828125
+[2024-07-18T19:20:16.660] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessProfile...  
+[2024-07-18T19:20:16.662] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.662] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.663] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.664] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2024-07-18T19:20:16.670] [DEBUG] debug-file - entry:default@SyscapTransform is not up-to-date, since the output file 'C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\syscap\default\rpcid.sc' does not exist.
+[2024-07-18T19:20:16.671] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform pre-execution cost: 5 ms .
+[2024-07-18T19:20:16.671] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.1375732421875
+[2024-07-18T19:20:16.671] [DEBUG] debug-file - runTaskFromQueue task cost before running: 330 ms 
+[2024-07-18T19:20:16.672] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 8 ms 
+[2024-07-18T19:20:16.674] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.674] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.675] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.677] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2024-07-18T19:20:16.683] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 5 ms .
+[2024-07-18T19:20:16.683] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.26934051513671875
+[2024-07-18T19:20:16.685] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessRouterMap...  
+[2024-07-18T19:20:16.688] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.688] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.688] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.688] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2024-07-18T19:20:16.689] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.03090667724609375
+[2024-07-18T19:20:16.689] [DEBUG] debug-file - runTaskFromQueue task cost before running: 349 ms 
+[2024-07-18T19:20:16.689] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 1 ms 
+[2024-07-18T19:20:16.692] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.692] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.692] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.693] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2024-07-18T19:20:16.695] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2024-07-18T19:20:16.696] [DEBUG] debug-file - Incremental task entry:default@ProcessResource pre-execution cost: 1 ms .
+[2024-07-18T19:20:16.696] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.1116485595703125
+[2024-07-18T19:20:16.701] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessResource...  
+[2024-07-18T19:20:16.703] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.703] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.703] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.706] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2024-07-18T19:20:16.721] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 10 ms .
+[2024-07-18T19:20:16.721] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.6349334716796875
+[2024-07-18T19:20:16.728] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateLoaderJson...  
+[2024-07-18T19:20:16.732] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.732] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.732] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.735] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2024-07-18T19:20:16.738] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs pre-execution cost: 3 ms .
+[2024-07-18T19:20:16.739] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 0.07825469970703125
+[2024-07-18T19:20:16.739] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessLibs...  
+[2024-07-18T19:20:16.742] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.742] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:16.742] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:16.744] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2024-07-18T19:20:16.748] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2024-07-18T19:20:16.784] [DEBUG] debug-file - entry:default@CompileResource is not up-to-date, since the input file 'C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources' has been changed.
+[2024-07-18T19:20:16.785] [DEBUG] debug-file - Incremental task entry:default@CompileResource pre-execution cost: 36 ms .
+[2024-07-18T19:20:16.857] [DEBUG] debug-file - Use tool [C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\toolchains\restool.exe]
+ [
+  'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\toolchains\\restool.exe',
+  '-l',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resConfig.json'
+]
+[2024-07-18T19:20:16.859] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 680861696,
+  heapTotal: 115720192,
+  heapUsed: 92210560,
+  external: 1458541,
+  arrayBuffers: 51941
+} os memoryUsage :14.349983215332031
+[2024-07-18T19:20:17.061] [DEBUG] debug-file - ERROR: command = C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\toolchains\restool.exe -l C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resConfig.json
+[2024-07-18T19:20:17.061] [ERROR] debug-file - Failed :entry:default@CompileResource... 
+[2024-07-18T19:20:17.062] [DEBUG] debug-file - hvigor build process will be closed with an error.
+[2024-07-18T19:20:17.072] [DEBUG] debug-file - ERROR: stacktrace = Error: Tools execution failed.
+Error: the name '微笑400%' can only contain [a-zA-Z0-9_].
+Error: invalid idName '微笑400%'.
+at C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources\base\media\微笑400%.png
+Solutions:
+> Modify the name '微笑400%' to match [a-zA-Z0-9_].
+	 Detail: Please check the message from tools.
+    at OhosLogger.errorMessageExit (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\log\hvigor-log.js:1:2844)
+    at OhosLogger._printErrorAndExit (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\utils\log\ohos-logger.js:1:1931)
+    at ProcessUtils.handleException (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\utils\process-utils.js:1:5475)
+    at ProcessUtils.execute (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\utils\process-utils.js:1:3693)
+    at async CompileResource.executeCommand (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\abstract\abstract-compile-resource.js:1:3430)
+    at async CompileResource.invokeRestool (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\compile-resource.js:1:2542)
+    at async CompileResource.compilationProcess (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\abstract\abstract-compile-resource.js:1:2965)
+    at async CompileResource.doTaskAction (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\compile-resource.js:1:2152)
+    at async CompileResource.<anonymous> (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\task\ohos-module-task.js:1:1808)
+    at async CompileResource.execute (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\external\task\core-task-impl.js:1:2180)
+[2024-07-18T19:20:17.072] [ERROR] debug-file - Error: Tools execution failed.
+Error: the name '微笑400%' can only contain [a-zA-Z0-9_].
+Error: invalid idName '微笑400%'.
+at C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources\base\media\微笑400%.png
+Solutions:
+> Modify the name '微笑400%' to match [a-zA-Z0-9_].
+	 Detail: Please check the message from tools.
+    at OhosLogger.errorMessageExit (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\log\hvigor-log.js:1:2844)
+    at OhosLogger._printErrorAndExit (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\utils\log\ohos-logger.js:1:1931)
+    at ProcessUtils.handleException (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\utils\process-utils.js:1:5475)
+    at ProcessUtils.execute (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\utils\process-utils.js:1:3693)
+    at async CompileResource.executeCommand (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\abstract\abstract-compile-resource.js:1:3430)
+    at async CompileResource.invokeRestool (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\compile-resource.js:1:2542)
+    at async CompileResource.compilationProcess (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\abstract\abstract-compile-resource.js:1:2965)
+    at async CompileResource.doTaskAction (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\compile-resource.js:1:2152)
+    at async CompileResource.<anonymous> (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\tasks\task\ohos-module-task.js:1:1808)
+    at async CompileResource.execute (C:\Users\admin\AppData\Local\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\external\task\core-task-impl.js:1:2180)
+[2024-07-18T19:20:17.089] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@PreBuild is up-to-date.
+[2024-07-18T19:20:17.089] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateMetadata is up-to-date.
+[2024-07-18T19:20:17.089] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MergeProfile is up-to-date.
+[2024-07-18T19:20:17.089] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CreateBuildProfile is up-to-date.
+[2024-07-18T19:20:17.089] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache.
+[2024-07-18T19:20:17.090] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2024-07-18T19:20:17.091] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build\cache\default\integrated_hsp\integratedHspCache.json cache.
+[2024-07-18T19:20:17.091] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:2 ms .
+[2024-07-18T19:20:17.091] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MakePackInfo is up-to-date.
+[2024-07-18T19:20:17.091] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessProfile is up-to-date.
+[2024-07-18T19:20:17.093] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\toolchains\syscap_tool.exe cache by regenerate.
+[2024-07-18T19:20:17.093] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\ets\api\device-define cache by regenerate.
+[2024-07-18T19:20:17.095] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\syscap\default\rpcid.sc cache.
+[2024-07-18T19:20:17.095] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:4 ms .
+[2024-07-18T19:20:17.095] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2024-07-18T19:20:17.095] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessResource is up-to-date.
+[2024-07-18T19:20:17.095] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateLoaderJson is up-to-date.
+[2024-07-18T19:20:17.095] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessLibs is up-to-date.
+[2024-07-18T19:20:17.097] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources cache from map.
+[2024-07-18T19:20:17.097] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\AppScope\resources cache by regenerate.
+[2024-07-18T19:20:17.099] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\process_profile\default\module.json cache by regenerate.
+[2024-07-18T19:20:17.099] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resConfig.json cache by regenerate.
+[2024-07-18T19:20:17.100] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default cache.
+[2024-07-18T19:20:17.119] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\r\default\ResourceTable.h cache.
+[2024-07-18T19:20:17.120] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\r\default cache.
+[2024-07-18T19:20:17.120] [DEBUG] debug-file - Incremental task entry:default@CompileResource post-execution cost:26 ms .
+[2024-07-18T19:20:55.880] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' }
+}
+[2024-07-18T19:20:55.887] [DEBUG] debug-file - Cache service initialization finished in 7 ms 
+[2024-07-18T19:20:55.899] [DEBUG] debug-file - hvigorfile, resolving C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\hvigorfile.ts
+[2024-07-18T19:20:55.904] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2024-07-18T19:20:55.905] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2024-07-18T19:20:55.912] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2024-07-18T19:20:55.912] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2024-07-18T19:20:55.912] [DEBUG] debug-file - Product 'default' build option: {}
+[2024-07-18T19:20:55.913] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2024-07-18T19:20:55.914] [DEBUG] debug-file - Product 'default' using build option: {
+  "debuggable": true
+} in this build.
+[2024-07-18T19:20:55.915] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2024-07-18T19:20:55.925] [DEBUG] debug-file - Sdk init in 10 ms 
+[2024-07-18T19:20:55.945] [DEBUG] debug-file - Project task initialization takes 18 ms 
+[2024-07-18T19:20:55.945] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\hvigorfile.ts
+[2024-07-18T19:20:55.950] [DEBUG] debug-file - hvigorfile, resolving C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\hvigorfile.ts
+[2024-07-18T19:20:55.953] [DEBUG] debug-file - hvigorfile, require result:  {}
+[2024-07-18T19:20:55.953] [DEBUG] debug-file - hvigorfile, binding system plugins {}
+[2024-07-18T19:20:55.957] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2024-07-18T19:20:55.957] [DEBUG] debug-file - Target 'default' config: {}
+[2024-07-18T19:20:55.957] [DEBUG] debug-file - Module 'entry' target 'default' build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+}
+[2024-07-18T19:20:55.957] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2024-07-18T19:20:55.957] [DEBUG] debug-file - Module 'entry' target 'default' using build option: {
+  "debuggable": true,
+  "copyFrom": "default"
+} in this build.
+[2024-07-18T19:20:55.960] [DEBUG] debug-file - Module entry task initialization takes 1 ms 
+[2024-07-18T19:20:55.960] [DEBUG] debug-file - hvigorfile, resolve finished C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\hvigorfile.ts
+[2024-07-18T19:20:56.000] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 40 ms 
+[2024-07-18T19:20:56.001] [DEBUG] debug-file - project has submodules:entry
+[2024-07-18T19:20:56.001] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2024-07-18T19:20:56.008] [DEBUG] debug-file - load to the disk finished
+[2024-07-18T19:20:56.009] [DEBUG] debug-file - Module arcts_4 Collected Dependency: 
+[2024-07-18T19:20:56.010] [DEBUG] debug-file - Module arcts_4's total dependency: 0
+[2024-07-18T19:20:56.011] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2024-07-18T19:20:56.011] [DEBUG] debug-file - Module entry's total dependency: 0
+[2024-07-18T19:20:56.014] [DEBUG] debug-file - Configuration phase cost:121 ms 
+[2024-07-18T19:20:56.015] [DEBUG] debug-file - Configuration task cost before running: 148 ms 
+[2024-07-18T19:20:56.017] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.017] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.017] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.021] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2024-07-18T19:20:56.036] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 11 ms .
+[2024-07-18T19:20:56.036] [DEBUG] debug-file - entry : default@PreBuild cost memory 0.3950653076171875
+[2024-07-18T19:20:56.041] [INFO] debug-file - UP-TO-DATE :entry:default@PreBuild...  
+[2024-07-18T19:20:56.044] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.044] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.044] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.045] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2024-07-18T19:20:56.049] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata pre-execution cost: 4 ms .
+[2024-07-18T19:20:56.049] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.13791656494140625
+[2024-07-18T19:20:56.050] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateMetadata...  
+[2024-07-18T19:20:56.053] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.053] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.053] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.053] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2024-07-18T19:20:56.053] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.01282501220703125
+[2024-07-18T19:20:56.053] [DEBUG] debug-file - runTaskFromQueue task cost before running: 187 ms 
+[2024-07-18T19:20:56.053] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2024-07-18T19:20:56.056] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.056] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.056] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.057] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2024-07-18T19:20:56.060] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 3 ms .
+[2024-07-18T19:20:56.061] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.34076690673828125
+[2024-07-18T19:20:56.061] [INFO] debug-file - UP-TO-DATE :entry:default@MergeProfile...  
+[2024-07-18T19:20:56.063] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.063] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.063] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.064] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2024-07-18T19:20:56.068] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 3 ms .
+[2024-07-18T19:20:56.068] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.11380767822265625
+[2024-07-18T19:20:56.068] [INFO] debug-file - UP-TO-DATE :entry:default@CreateBuildProfile...  
+[2024-07-18T19:20:56.071] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.071] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.071] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.072] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2024-07-18T19:20:56.072] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.01309967041015625
+[2024-07-18T19:20:56.072] [DEBUG] debug-file - runTaskFromQueue task cost before running: 206 ms 
+[2024-07-18T19:20:56.072] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2024-07-18T19:20:56.077] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.077] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.077] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.081] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2024-07-18T19:20:56.081] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.01915740966796875
+[2024-07-18T19:20:56.081] [DEBUG] debug-file - runTaskFromQueue task cost before running: 215 ms 
+[2024-07-18T19:20:56.081] [INFO] debug-file - Finished :entry:default@GeneratePkgContextInfo... after 1 ms 
+[2024-07-18T19:20:56.084] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.084] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.084] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.085] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2024-07-18T19:20:56.087] [DEBUG] debug-file - entry:default@ProcessIntegratedHsp is not up-to-date, since the output file 'C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build\cache\default\integrated_hsp\integratedHspCache.json' does not exist.
+[2024-07-18T19:20:56.087] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp pre-execution cost: 2 ms .
+[2024-07-18T19:20:56.087] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.08647918701171875
+[2024-07-18T19:20:56.087] [DEBUG] debug-file - runTaskFromQueue task cost before running: 221 ms 
+[2024-07-18T19:20:56.088] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 2 ms 
+[2024-07-18T19:20:56.090] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.090] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.090] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.091] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2024-07-18T19:20:56.091] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.013885498046875
+[2024-07-18T19:20:56.091] [DEBUG] debug-file - runTaskFromQueue task cost before running: 224 ms 
+[2024-07-18T19:20:56.091] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2024-07-18T19:20:56.093] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.093] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.093] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.094] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2024-07-18T19:20:56.099] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo pre-execution cost: 4 ms .
+[2024-07-18T19:20:56.099] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.154571533203125
+[2024-07-18T19:20:56.100] [INFO] debug-file - UP-TO-DATE :entry:default@MakePackInfo...  
+[2024-07-18T19:20:56.102] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.102] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.102] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.103] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2024-07-18T19:20:56.105] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 2 ms .
+[2024-07-18T19:20:56.105] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.0607757568359375
+[2024-07-18T19:20:56.106] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessProfile...  
+[2024-07-18T19:20:56.108] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.108] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.108] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.109] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2024-07-18T19:20:56.115] [DEBUG] debug-file - entry:default@SyscapTransform is not up-to-date, since the output file 'C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\syscap\default\rpcid.sc' does not exist.
+[2024-07-18T19:20:56.116] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform pre-execution cost: 5 ms .
+[2024-07-18T19:20:56.116] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.38275909423828125
+[2024-07-18T19:20:56.116] [DEBUG] debug-file - runTaskFromQueue task cost before running: 249 ms 
+[2024-07-18T19:20:56.117] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 7 ms 
+[2024-07-18T19:20:56.120] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.120] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.120] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.123] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2024-07-18T19:20:56.130] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 5 ms .
+[2024-07-18T19:20:56.130] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.26781463623046875
+[2024-07-18T19:20:56.132] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessRouterMap...  
+[2024-07-18T19:20:56.134] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.135] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.135] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.135] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2024-07-18T19:20:56.136] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.0305023193359375
+[2024-07-18T19:20:56.137] [DEBUG] debug-file - runTaskFromQueue task cost before running: 270 ms 
+[2024-07-18T19:20:56.137] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 2 ms 
+[2024-07-18T19:20:56.139] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.139] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.139] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.141] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2024-07-18T19:20:56.143] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2024-07-18T19:20:56.144] [DEBUG] debug-file - Incremental task entry:default@ProcessResource pre-execution cost: 1 ms .
+[2024-07-18T19:20:56.144] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.10990142822265625
+[2024-07-18T19:20:56.147] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessResource...  
+[2024-07-18T19:20:56.149] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.149] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.149] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.152] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2024-07-18T19:20:56.165] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 9 ms .
+[2024-07-18T19:20:56.165] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.5046768188476562
+[2024-07-18T19:20:56.170] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateLoaderJson...  
+[2024-07-18T19:20:56.172] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.172] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.172] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.174] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2024-07-18T19:20:56.177] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs pre-execution cost: 3 ms .
+[2024-07-18T19:20:56.177] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 0.07816314697265625
+[2024-07-18T19:20:56.178] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessLibs...  
+[2024-07-18T19:20:56.180] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.180] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.180] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.181] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2024-07-18T19:20:56.183] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2024-07-18T19:20:56.243] [DEBUG] debug-file - Use tool [C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\toolchains\restool.exe]
+ [
+  'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\toolchains\\restool.exe',
+  '-l',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resConfig.json'
+]
+[2024-07-18T19:20:56.245] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 676773888,
+  heapTotal: 111001600,
+  heapUsed: 90550928,
+  external: 1433965,
+  arrayBuffers: 51941
+} os memoryUsage :14.349185943603516
+[2024-07-18T19:20:56.442] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2024-07-18T19:20:56.448] [DEBUG] debug-file - entry : default@CompileResource cost memory -4.291908264160156
+[2024-07-18T19:20:56.449] [DEBUG] debug-file - runTaskFromQueue task cost before running: 582 ms 
+[2024-07-18T19:20:56.451] [INFO] debug-file - Finished :entry:default@CompileResource... after 266 ms 
+[2024-07-18T19:20:56.454] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.454] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.454] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.457] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2024-07-18T19:20:56.460] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip pre-execution cost: 2 ms .
+[2024-07-18T19:20:56.460] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.07013702392578125
+[2024-07-18T19:20:56.460] [INFO] debug-file - UP-TO-DATE :entry:default@DoNativeStrip...  
+[2024-07-18T19:20:56.463] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.463] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.463] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.469] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2024-07-18T19:20:56.483] [DEBUG] debug-file - entry:default@CompileArkTS is not up-to-date, since the input file 'C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\ResourceTable.txt' has been changed.
+[2024-07-18T19:20:56.483] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS pre-execution cost: 8 ms .
+[2024-07-18T19:20:56.497] [DEBUG] debug-file - build config:
+[2024-07-18T19:20:56.497] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  buildMode: 'Debug',
+  watchMode: 'false',
+  aceProfilePath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resources\\base\\profile',
+  etsLoaderPath: 'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\build-tools\\ets-loader',
+  modulePath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4',
+  compileSdkVersion: 12,
+  compatibleSdkVersion: 12,
+  bundleName: 'com.example.healthy_life',
+  etsLoaderVersion: '5.0.0.25',
+  etsLoaderReleaseType: 'Beta1',
+  aotCompileMode: 'type',
+  apPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: '97be44d3cb37482d3049eb9ae963893d',
+  externalApiPaths: [
+    'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\hms\\ets'
+  ],
+  compilerTypes: undefined,
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  buildGeneratedProfilePath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\generated\\profile\\default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 12,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  strictMode: undefined,
+  buildDir: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build',
+  deviceTypes: [ 'phone' ],
+  moduleDependencies: { dependency: {} },
+  projectDependencies: { dependency: {} },
+  useNormalizedOHMUrl: false,
+  pkgContextInfo: undefined,
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: { requestPermissions: [ [Object] ], definePermissions: undefined },
+  integratedHsp: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  caseSensitiveCheck: false,
+  tsImportSendable: false,
+  resolveConflictMode: true,
+  depName2RootPath: {},
+  aceModuleJsonPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\module.json',
+  appResource: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\ResourceTable.txt',
+  rawFileResource: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resources\\rawfile',
+  resourceTableHash: '594d8c518fadacd4b0ece43b6c72e0da',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:12:5.0.0.25:Beta1',
+  aceModuleRoot: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\supervisual',
+  aceBuildJson: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\loader\\default\\loader.json',
+  cachePath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule\\debug',
+  aceModuleBuild: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\loader_out\\default\\ets',
+  supportChunks: true,
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main': {
+      moduleName: 'entry',
+      modulePkgPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry'
+    },
+    'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry': {
+      moduleName: 'entry',
+      modulePkgPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry'
+    },
+    'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4': {
+      moduleName: 'arcts_4',
+      modulePkgPath: 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4'
+    }
+  },
+  pkgJsonFileHash: '52c5f33230ea56a2aeae467df5dcdd03',
+  allModulePaths: [ 'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry' ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: undefined,
+    mockConfigKey2ModuleInfo: {}
+  },
+  otherPaths: {
+    'entry/*': [
+      '..\\*',
+      '..\\..\\..\\build\\default\\generated\\profile\\default\\*'
+    ]
+  },
+  collectImportersConfig: undefined
+}
+[2024-07-18T19:20:56.497] [DEBUG] debug-file - Compile arkts with external api path: C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\hms\ets
+[2024-07-18T19:20:56.499] [DEBUG] debug-file - default@CompileArkTS work[7] is submitted.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - default@CompileArkTS work[7] is pushed to ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[17] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[16] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[15] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[14] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[13] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[12] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[11] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[10] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[3] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[2] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.500] [DEBUG] debug-file - A work dispatched to worker[1] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.501] [DEBUG] debug-file - default@CompileArkTS work[7] has been dispatched to worker[0].
+[2024-07-18T19:20:56.501] [DEBUG] debug-file - default@CompileArkTS work[7] is dispatched.
+[2024-07-18T19:20:56.501] [DEBUG] debug-file - CopyResources startTime: 207196201513200
+[2024-07-18T19:20:56.501] [DEBUG] debug-file - default@CompileArkTS work[8] is submitted.
+[2024-07-18T19:20:56.502] [DEBUG] debug-file - default@CompileArkTS work[8] is pushed to ready queue.
+[2024-07-18T19:20:56.502] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.503] [DEBUG] debug-file - default@CompileArkTS work[8] has been dispatched to worker[18].
+[2024-07-18T19:20:56.503] [DEBUG] debug-file - default@CompileArkTS work[8] is dispatched.
+[2024-07-18T19:20:56.511] [DEBUG] debug-file - default@CompileArkTS work[9] is submitted.
+[2024-07-18T19:20:56.511] [DEBUG] debug-file - default@CompileArkTS work[9] is pushed to ready queue.
+[2024-07-18T19:20:56.511] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[18] failed because of worker busy.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[17] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[16] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[15] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[14] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[13] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[12] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[11] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[10] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[3] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - A work dispatched to worker[2] failed because unable to get work from ready queue.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - default@CompileArkTS work[9] has been dispatched to worker[1].
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - default@CompileArkTS work[9] is dispatched.
+[2024-07-18T19:20:56.512] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 2.1408843994140625
+[2024-07-18T19:20:56.514] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.514] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.514] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.518] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2024-07-18T19:20:56.523] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.136138916015625
+[2024-07-18T19:20:56.523] [DEBUG] debug-file - runTaskFromQueue task cost before running: 656 ms 
+[2024-07-18T19:20:56.523] [INFO] debug-file - Finished :entry:default@BuildJS... after 5 ms 
+[2024-07-18T19:20:56.525] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.525] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:20:56.525] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:20:56.528] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2024-07-18T19:20:56.530] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs pre-execution cost: 2 ms .
+[2024-07-18T19:20:56.531] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.0850982666015625
+[2024-07-18T19:20:56.531] [INFO] debug-file - UP-TO-DATE :entry:default@CacheNativeLibs...  
+[2024-07-18T19:20:57.123] [DEBUG] debug-file - Ark compile task finished.finished time is 207196823176900
+[2024-07-18T19:20:57.132] [DEBUG] debug-file - default@CompileArkTS work[9] done.
+[2024-07-18T19:20:57.133] [DEBUG] debug-file - A work dispatched to worker[1] failed because unable to get work from ready queue.
+[2024-07-18T19:20:57.639] [DEBUG] debug-file - CopyResources is end, endTime: 207197339703100
+[2024-07-18T19:20:57.639] [DEBUG] debug-file - default@CompileArkTS work[8] done.
+[2024-07-18T19:20:57.639] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2024-07-18T19:21:00.033] [INFO] debug-file - [33mWARN: [33mArkTS:WARN File: C:/Users/admin/Desktop/DevEcoStudioProjects/arcts_4/entry/src/main/ets/view/HomeComponent.ets:165:8
+ 'onScroll' has been deprecated.
+[39m
+
+[2024-07-18T19:21:00.034] [DEBUG] debug-file - Ark compile task finished.finished time is 207199734517800
+[2024-07-18T19:21:00.043] [DEBUG] debug-file - default@CompileArkTS work[7] done.
+[2024-07-18T19:21:00.043] [DEBUG] debug-file - A work dispatched to worker[0] failed because unable to get work from ready queue.
+[2024-07-18T19:21:00.047] [INFO] debug-file - Finished :entry:default@CompileArkTS... after 3 s 575 ms 
+[2024-07-18T19:21:00.049] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:21:00.049] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:21:00.049] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:21:00.050] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2024-07-18T19:21:00.053] [DEBUG] debug-file - entry:default@GeneratePkgModuleJson is not up-to-date, since the input file 'C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json' has been changed.
+[2024-07-18T19:21:00.053] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson pre-execution cost: 2 ms .
+[2024-07-18T19:21:00.053] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.0893707275390625
+[2024-07-18T19:21:00.053] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 187 ms 
+[2024-07-18T19:21:00.054] [INFO] debug-file - Finished :entry:default@GeneratePkgModuleJson... after 4 ms 
+[2024-07-18T19:21:00.057] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:21:00.057] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:21:00.057] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:21:00.063] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2024-07-18T19:21:00.071] [DEBUG] debug-file - entry:default@PackageHap is not up-to-date, since the input file 'C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json' has been changed.
+[2024-07-18T19:21:00.071] [DEBUG] debug-file - Incremental task entry:default@PackageHap pre-execution cost: 6 ms .
+[2024-07-18T19:21:00.075] [DEBUG] debug-file - Use tool [C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\toolchains\lib\app_packing_tool.jar]
+ [
+  'java',
+  '-Dfile.encoding=GBK',
+  '-jar',
+  'C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\toolchains\\lib\\app_packing_tool.jar',
+  '--mode',
+  'hap',
+  '--force',
+  'true',
+  '--lib-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\stripped_native_libs\\default',
+  '--json-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\package\\default\\module.json',
+  '--resources-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resources',
+  '--index-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\res\\default\\resources.index',
+  '--pack-info-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\outputs\\default\\pack.info',
+  '--out-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\outputs\\default\\entry-default-unsigned.hap',
+  '--ets-path',
+  'C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\build\\default\\intermediates\\loader_out\\default\\ets'
+]
+[2024-07-18T19:21:00.077] [DEBUG] debug-file - default@PackageHap work[10] is submitted.
+[2024-07-18T19:21:00.078] [DEBUG] debug-file - default@PackageHap work[10] is pushed to ready queue.
+[2024-07-18T19:21:00.078] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2024-07-18T19:21:00.078] [DEBUG] debug-file - default@PackageHap work[10] has been dispatched to worker[18].
+[2024-07-18T19:21:00.078] [DEBUG] debug-file - default@PackageHap work[10] is dispatched.
+[2024-07-18T19:21:00.082] [DEBUG] debug-file - entry : default@PackageHap cost memory 0.6679229736328125
+[2024-07-18T19:21:00.267] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 860254208,
+  heapTotal: 73949184,
+  heapUsed: 54917600,
+  external: 2638128,
+  arrayBuffers: 585826
+} os memoryUsage :14.563117980957031
+[2024-07-18T19:21:00.807] [DEBUG] debug-file - default@PackageHap work[10] done.
+[2024-07-18T19:21:00.807] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2024-07-18T19:21:00.808] [INFO] debug-file - Finished :entry:default@PackageHap... after 744 ms 
+[2024-07-18T19:21:00.810] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:21:00.810] [DEBUG] debug-file - jsonObjWithoutParam {} at undefined
+[2024-07-18T19:21:00.810] [DEBUG] debug-file - jsonObjWithoutParam {"license":"","devDependencies":{},"author":"","name":"entry","description":"Please describe the basic information.","main":"","version":"1.0.0","dependencies":{}} at undefined
+[2024-07-18T19:21:00.813] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2024-07-18T19:21:00.813] [WARN] debug-file - Will skip sign 'hos_hap'. No signingConfigs profile is configured in current project.
+             If needed, configure the signingConfigs in C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build-profile.json5.
+[2024-07-18T19:21:00.815] [DEBUG] debug-file - entry:default@SignHap is not up-to-date, since the input file 'C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\entry-default-unsigned.hap' has been changed.
+[2024-07-18T19:21:00.815] [DEBUG] debug-file - Incremental task entry:default@SignHap pre-execution cost: 2 ms .
+[2024-07-18T19:21:00.816] [DEBUG] debug-file - entry : default@SignHap cost memory 0.1389617919921875
+[2024-07-18T19:21:00.816] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 949 ms 
+[2024-07-18T19:21:00.816] [INFO] debug-file - Finished :entry:default@SignHap... after 3 ms 
+[2024-07-18T19:21:00.818] [DEBUG] debug-file - Executing task :entry:assembleHap
+[2024-07-18T19:21:00.818] [DEBUG] debug-file - entry : assembleHap cost memory 0.01142120361328125
+[2024-07-18T19:21:00.818] [DEBUG] debug-file - runTaskFromQueue task cost before running: 4 s 951 ms 
+[2024-07-18T19:21:00.818] [INFO] debug-file - Finished :entry:assembleHap... after 1 ms 
+[2024-07-18T19:21:00.833] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@PreBuild is up-to-date.
+[2024-07-18T19:21:00.833] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateMetadata is up-to-date.
+[2024-07-18T19:21:00.833] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MergeProfile is up-to-date.
+[2024-07-18T19:21:00.833] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CreateBuildProfile is up-to-date.
+[2024-07-18T19:21:00.833] [DEBUG] debug-file - Update task entry:default@GeneratePkgContextInfo output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache.
+[2024-07-18T19:21:00.834] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo post-execution cost:1 ms .
+[2024-07-18T19:21:00.835] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\build\cache\default\integrated_hsp\integratedHspCache.json cache.
+[2024-07-18T19:21:00.835] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:2 ms .
+[2024-07-18T19:21:00.835] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MakePackInfo is up-to-date.
+[2024-07-18T19:21:00.835] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessProfile is up-to-date.
+[2024-07-18T19:21:00.837] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\toolchains\syscap_tool.exe cache by regenerate.
+[2024-07-18T19:21:00.837] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:C:\Users\admin\AppData\Local\Huawei\DevEco Studio\sdk\HarmonyOS-NEXT-DB1\openharmony\ets\api\device-define cache by regenerate.
+[2024-07-18T19:21:00.839] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\syscap\default\rpcid.sc cache.
+[2024-07-18T19:21:00.839] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:4 ms .
+[2024-07-18T19:21:00.839] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2024-07-18T19:21:00.839] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessResource is up-to-date.
+[2024-07-18T19:21:00.839] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateLoaderJson is up-to-date.
+[2024-07-18T19:21:00.839] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessLibs is up-to-date.
+[2024-07-18T19:21:00.842] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources cache by regenerate.
+[2024-07-18T19:21:00.869] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\AppScope\resources cache by regenerate.
+[2024-07-18T19:21:00.871] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\process_profile\default\module.json cache by regenerate.
+[2024-07-18T19:21:00.872] [DEBUG] debug-file - Update task entry:default@CompileResource input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resConfig.json cache by regenerate.
+[2024-07-18T19:21:00.872] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default cache.
+[2024-07-18T19:21:00.892] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\r\default\ResourceTable.h cache.
+[2024-07-18T19:21:00.892] [DEBUG] debug-file - Update task entry:default@CompileResource output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\r\default cache.
+[2024-07-18T19:21:00.893] [DEBUG] debug-file - Incremental task entry:default@CompileResource post-execution cost:55 ms .
+[2024-07-18T19:21:00.894] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@DoNativeStrip is up-to-date.
+[2024-07-18T19:21:00.897] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader\default cache by regenerate.
+[2024-07-18T19:21:00.898] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\ResourceTable.txt cache from map.
+[2024-07-18T19:21:00.898] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2024-07-18T19:21:00.899] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2024-07-18T19:21:00.900] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\ets cache by regenerate.
+[2024-07-18T19:21:00.930] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\src\main\resources\base\profile\form_config.json cache by regenerate.
+[2024-07-18T19:21:00.930] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2024-07-18T19:21:00.930] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader_out\default\ets cache.
+[2024-07-18T19:21:00.932] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:39 ms .
+[2024-07-18T19:21:00.935] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader\default cache by regenerate.
+[2024-07-18T19:21:00.935] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2024-07-18T19:21:00.936] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json cache by regenerate.
+[2024-07-18T19:21:00.936] [DEBUG] debug-file - Update task entry:default@BuildJS input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2024-07-18T19:21:00.937] [DEBUG] debug-file - Update task entry:default@BuildJS output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader_out\default\js cache.
+[2024-07-18T19:21:00.938] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:6 ms .
+[2024-07-18T19:21:00.938] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CacheNativeLibs is up-to-date.
+[2024-07-18T19:21:00.939] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json cache from map.
+[2024-07-18T19:21:00.939] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\package\default\module.json cache.
+[2024-07-18T19:21:00.939] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson post-execution cost:1 ms .
+[2024-07-18T19:21:00.941] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\stripped_native_libs\default cache by regenerate.
+[2024-07-18T19:21:00.941] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\module.json cache from map.
+[2024-07-18T19:21:00.941] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resources cache by regenerate.
+[2024-07-18T19:21:00.956] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\res\default\resources.index cache by regenerate.
+[2024-07-18T19:21:00.957] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\pack.info cache by regenerate.
+[2024-07-18T19:21:00.957] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\intermediates\loader_out\default\ets cache by regenerate.
+[2024-07-18T19:21:00.958] [DEBUG] debug-file - Update task entry:default@PackageHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2024-07-18T19:21:00.959] [DEBUG] debug-file - Update task entry:default@PackageHap output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\entry-default-unsigned.hap cache.
+[2024-07-18T19:21:00.960] [DEBUG] debug-file - Update task entry:default@PackageHap output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\mapping\sourceMaps.map cache.
+[2024-07-18T19:21:00.960] [DEBUG] debug-file - Incremental task entry:default@PackageHap post-execution cost:21 ms .
+[2024-07-18T19:21:00.960] [DEBUG] debug-file - Update task entry:default@SignHap input file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\entry-default-unsigned.hap cache from map.
+[2024-07-18T19:21:00.960] [DEBUG] debug-file - Update task entry:default@SignHap output file:C:\Users\admin\Desktop\DevEcoStudioProjects\arcts_4\entry\build\default\outputs\default\entry-default-signed.hap cache.
+[2024-07-18T19:21:00.961] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:1 ms .

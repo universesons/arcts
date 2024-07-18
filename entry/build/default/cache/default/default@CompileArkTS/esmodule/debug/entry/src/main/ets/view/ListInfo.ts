@@ -7,7 +7,7 @@ interface ListInfo_Params {
 import { MineInfoList } from "@bundle:com.example.healthy_life/entry/ets/model/Mine";
 import type { InfoItem } from "@bundle:com.example.healthy_life/entry/ets/model/Mine";
 import promptAction from "@ohos:promptAction";
-import personInfo from "@bundle:com.example.healthy_life/entry/ets/viewmodel/PersonInfo";
+import type personInfo from '../viewmodel/PersonInfo';
 import router from "@ohos:router";
 export class ListInfo extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
@@ -15,17 +15,13 @@ export class ListInfo extends ViewPU {
         if (typeof paramsLambda === "function") {
             this.paramsGenerator_ = paramsLambda;
         }
-        this.__userInfo = new SynchedPropertyObjectOneWayPU(params.userInfo, this, "userInfo");
+        this.__userInfo = new SynchedPropertyObjectTwoWayPU(params.userInfo, this, "userInfo");
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
     setInitiallyProvidedValue(params: ListInfo_Params) {
-        if (params.userInfo === undefined) {
-            this.__userInfo.set(new personInfo());
-        }
     }
     updateStateVars(params: ListInfo_Params) {
-        this.__userInfo.reset(params.userInfo);
     }
     purgeVariableDependenciesOnElmtId(rmElmtId) {
         this.__userInfo.purgeDependencyOnElmtId(rmElmtId);
@@ -72,6 +68,30 @@ export class ListInfo extends ViewPU {
                     };
                     const itemCreation2 = (elmtId, isInitialRender) => {
                         ListItem.create(deepRenderFunction, true);
+                        ListItem.onClick(() => {
+                            if (item.id === '1') {
+                                router.pushUrl({
+                                    url: 'pages/PersonalInfo',
+                                    params: this.userInfo
+                                })
+                                    .then(() => {
+                                    // success
+                                });
+                            }
+                            if (item.id === '2') {
+                                promptAction.showToast({
+                                    message: "已经是最新版啦"
+                                });
+                            }
+                            if (item.id === '3') {
+                                router.pushUrl({
+                                    url: 'pages/AboutPage',
+                                })
+                                    .then(() => {
+                                    // success
+                                });
+                            }
+                        });
                         ListItem.backgroundColor({ "id": 16777310, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                         ListItem.margin({
                             left: { "id": 16777332, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
@@ -92,39 +112,16 @@ export class ListInfo extends ViewPU {
                             Text.create(item.title);
                             Text.fontSize({ "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                             Text.height({ "id": 16777339, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                            Text.onClick(() => {
-                                if (item.id === '1') {
-                                    router.pushUrl({
-                                        url: 'pages/PersonalInfo', // 直接将用户数据下沉到具体编辑界面读取
-                                    })
-                                        .then(() => {
-                                        // success
-                                    });
-                                }
-                                if (item.id === '2') {
-                                    promptAction.showToast({
-                                        message: "已经是最新版啦"
-                                    });
-                                }
-                                if (item.id === '3') {
-                                    router.pushUrl({
-                                        url: 'pages/AboutPage',
-                                    })
-                                        .then(() => {
-                                        // success
-                                    });
-                                }
-                            });
                         }, Text);
                         Text.pop();
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
-                            // 个人头像
+                            // 向右箭头
                             Image.create({ "id": 16777410, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                            // 个人头像
+                            // 向右箭头
                             Image.objectFit(ImageFit.Contain);
-                            // 个人头像
+                            // 向右箭头
                             Image.height({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                            // 个人头像
+                            // 向右箭头
                             Image.width({ "id": 16777349, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                         }, Image);
                         Flex.pop();

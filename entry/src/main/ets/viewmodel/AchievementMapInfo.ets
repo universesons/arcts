@@ -17,6 +17,16 @@
  * Achievement map info
  */
 export default class AchievementMapInfo {
+  //补充微笑勋章
+  smile_off_1: Resource = $r('app.media.ic_badge_smile_1_off');
+  smile_on_1: Resource = $r('app.media.ic_badge_smile_1_on');
+  smile_off_2: Resource = $r('app.media.ic_badge_smile_2_off');
+  smile_on_2: Resource = $r('app.media.ic_badge_smile_2_on');
+  smile_off_3: Resource = $r('app.media.ic_badge_smile_3_off');
+  smile_on_3: Resource = $r('app.media.ic_badge_smile_3_on');
+  // smile_off_4: Resource = $r('app.media.ic_badge_smile_4_off');
+  // smile_on_4: Resource = $r('app.media.ic_badge_smile_4_on');
+
   off_3: Resource = $r('app.media.ic_badge_3_off');
   on_3: Resource = $r('app.media.ic_badge_3_on');
   off_7: Resource = $r('app.media.ic_badge_7_off');

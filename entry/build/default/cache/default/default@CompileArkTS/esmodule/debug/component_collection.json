@@ -170,7 +170,8 @@
   "entry\\src\\main\\ets\\view\\BadgePanelComponent.ets": [
     "Flex",
     "Row",
-    "ForEach"
+    "ForEach",
+    "If"
   ],
   "entry\\src\\main\\ets\\view\\BadgeCardComponent.ets": [
     "Column",
@@ -199,8 +200,7 @@
     "TextInput",
     "Button",
     "Image",
-    "Text",
-    "If"
+    "Text"
   ],
   "entry\\src\\main\\ets\\pages\\TaskListPage.ets": [
     "Row",
@@ -263,21 +263,22 @@
     "If"
   ],
   "entry\\src\\main\\ets\\pages\\PersonalInfo.ets": [
-    "Row",
     "Navigation",
-    "Column"
+    "RelativeContainer",
+    "Button"
   ],
   "entry\\src\\main\\ets\\view\\information\\InformationListComponent.ets": [
     "CustomDialogController",
     "Column",
     "TextInput",
     "Button",
-    "Text",
     "List",
     "ListItem",
     "Row",
+    "Text",
     "TextPickerDialog",
-    "DatePickerDialog"
+    "DatePickerDialog",
+    "If"
   ],
   "entry\\src\\main\\ets\\view\\information\\InformationListItem.ets": [
     "Row",
@@ -285,6 +286,11 @@
   ],
   "entry\\src\\main\\ets\\pages\\AboutPage.ets": [
     "RelativeContainer",
+    "Text"
+  ],
+  "entry\\src\\main\\ets\\view\\SmileBadgeCardComponent.ets": [
+    "Column",
+    "Image",
     "Text"
   ]
 }

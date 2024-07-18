@@ -13,9 +13,10 @@
  * limitations under the License.
  */
 import CardInfo from './CardInfo';
-import { ACHIEVEMENT_LEVEL_LIST, AchievementMap } from '../model/TaskInitList';
+import { ACHIEVEMENT_LEVEL_LIST, AchievementMap, SMILE_LEVEL_LIST } from '../model/TaskInitList';
 
 export function getBadgeCardItems(successiveDays: number): Array<CardInfo> {
+  //获取奖章卡片信息
   let badgeMileStones = ACHIEVEMENT_LEVEL_LIST;
   let cardItems: Array<CardInfo> = [];
   for (let i = 0; i < badgeMileStones.length; i++) {
@@ -28,10 +29,50 @@ export function getBadgeCardItems(successiveDays: number): Array<CardInfo> {
   }
   return cardItems;
 }
+//修改补充获取微笑勋章的图片，勋章名称信息
+export function getSmileCardItems(smileTimes: number): Array<CardInfo> {
+  //获取奖章卡片信息
+  let badgeMileStones = SMILE_LEVEL_LIST;
+  let cardItems: Array<CardInfo> = [];
+  for (let i = 0; i < badgeMileStones.length; i++) {
+    let onOrOff = smileTimes >= badgeMileStones[i] ? 'on' : 'off'; //smileTarget是每天微笑次数
+    let titleContent = String(badgeMileStones[i] - 1);
+    let cardInfo: CardInfo = new CardInfo();//用来返回
+    cardInfo.titleContent = titleContent;
+    cardInfo.achievement = getAchievement(`smile_${onOrOff}_${badgeMileStones[i]}`);//调用函数获取成就勋章图片
+    cardItems.push(cardInfo);
+  }
+  return cardItems;
+}
 
 function getAchievement(key: string) {
   let result = $r('app.string.empty');
   switch (key) {
+    case 'smile_off_1':
+      result = AchievementMap.smile_off_1;
+      break;
+    case 'smile_on_1':
+      result = AchievementMap.smile_on_1;
+      break;
+    case 'smile_off_2':
+      result = AchievementMap.smile_off_2;
+      break;
+    case 'smile_on_2':
+      result = AchievementMap.smile_on_2;
+      break;
+    case 'smile_off_3':
+      result = AchievementMap.smile_off_3;
+      break;
+    case 'smile_on_3':
+      result = AchievementMap.smile_on_3;
+      break;
+  // case 'smile_off_4':
+  //   result = AchievementMap.smile_off_4;
+  //   break;
+  // case 'smile_on_4':
+  //   result = AchievementMap.smile_on_4;
+  //   break;
+
     case 'off_3':
       result = AchievementMap.off_3;
       break;

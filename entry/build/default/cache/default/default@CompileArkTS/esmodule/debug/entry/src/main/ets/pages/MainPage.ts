@@ -7,6 +7,8 @@ interface Index_Params {
     editedTaskID?: string;
     homeStore?: HomeStore;
     tabController?: TabsController;
+    userInfo?: personInfo;
+    userStore?: StoreUtil;
 }
 import router from "@ohos:router";
 import type common from "@ohos:app.ability.common";
@@ -22,6 +24,7 @@ import { HomeStore } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/
 import GlobalInfoApi from "@bundle:com.example.healthy_life/entry/ets/common/database/tables/GlobalInfoApi";
 import type GlobalInfo from '../viewmodel/GlobalInfo';
 import { GlobalContext } from "@bundle:com.example.healthy_life/entry/ets/common/utils/GlobalContext";
+import personInfo, { StoreUtil } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/PersonInfo";
 class Index extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
@@ -33,6 +36,8 @@ class Index extends ViewPU {
         this.__editedTaskID = new ObservedPropertySimplePU('0', this, "editedTaskID");
         this.__homeStore = new ObservedPropertyObjectPU(new HomeStore(new Date()), this, "homeStore");
         this.tabController = new TabsController();
+        this.__userInfo = new ObservedPropertyObjectPU(new personInfo(), this, "userInfo");
+        this.userStore = new StoreUtil('userStore', 'userInfo');
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
@@ -52,6 +57,12 @@ class Index extends ViewPU {
         if (params.tabController !== undefined) {
             this.tabController = params.tabController;
         }
+        if (params.userInfo !== undefined) {
+            this.userInfo = params.userInfo;
+        }
+        if (params.userStore !== undefined) {
+            this.userStore = params.userStore;
+        }
     }
     updateStateVars(params: Index_Params) {
     }
@@ -60,12 +71,14 @@ class Index extends ViewPU {
         this.__editedTaskInfo.purgeDependencyOnElmtId(rmElmtId);
         this.__editedTaskID.purgeDependencyOnElmtId(rmElmtId);
         this.__homeStore.purgeDependencyOnElmtId(rmElmtId);
+        this.__userInfo.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
         this.__currentPage.aboutToBeDeleted();
         this.__editedTaskInfo.aboutToBeDeleted();
         this.__editedTaskID.aboutToBeDeleted();
         this.__homeStore.aboutToBeDeleted();
+        this.__userInfo.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
@@ -98,6 +111,14 @@ class Index extends ViewPU {
         this.__homeStore.set(newValue);
     }
     private tabController: TabsController;
+    private __userInfo: ObservedPropertyObjectPU<personInfo>;
+    get userInfo() {
+        return this.__userInfo.get();
+    }
+    set userInfo(newValue: personInfo) {
+        this.__userInfo.set(newValue);
+    }
+    private userStore: StoreUtil;
     aboutToAppear() {
         notificationManager.requestEnableNotification().then(() => {
             Logger.info('onPageShow', `requestEnableNotification success`);
@@ -119,6 +140,19 @@ class Index extends ViewPU {
             }
             this.checkCurrentTime();
         }
+        Logger.info('onPageShow', "");
+        this.userStore.getData<personInfo>().then((data) => {
+            if (data) {
+                this.userInfo = data;
+            }
+            else {
+                // 如果没有数据，则使用默认值
+                this.userInfo = new personInfo();
+            }
+        }).catch(() => {
+            // 处理获取数据失败的情况，使用默认值
+            this.userInfo = new personInfo();
+        });
     }
     checkCurrentTime() {
         GlobalInfoApi.query((result: GlobalInfo) => {
@@ -195,7 +229,7 @@ class Index extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new HomeIndex(this, { homeStore: this.__homeStore, editedTaskInfo: this.__editedTaskInfo, editedTaskID: this.__editedTaskID }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 119 });
+                            let componentCall = new HomeIndex(this, { homeStore: this.__homeStore, editedTaskInfo: this.__editedTaskInfo, editedTaskID: this.__editedTaskID }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 135 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -224,7 +258,7 @@ class Index extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new AchievementIndex(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 127 });
+                            let componentCall = new AchievementIndex(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 143 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {};
@@ -252,10 +286,12 @@ class Index extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new MineIndex(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 132 });
+                            let componentCall = new MineIndex(this, { userInfo: this.__userInfo }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 148 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
-                                return {};
+                                return {
+                                    userInfo: this.userInfo
+                                };
                             };
                             componentCall.paramsGenerator_ = paramsLambda;
                         }

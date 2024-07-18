@@ -131,7 +131,7 @@ export const TaskMapById: Array<ITaskItem> = [
         taskID: 7,
         taskName: { "id": 16777283, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         // TODO： 修改 icon 和卡片背景
-        icon: { "id": 16777420, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        icon: { "id": 16777436, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         dialogBg: { "id": 16777400, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
         targetValue: '1',
         isOpen: false,
@@ -176,3 +176,5 @@ export const RemindContentMap: Array<RemindContentItem> = [
     }
 ];
 export const ACHIEVEMENT_LEVEL_LIST = [3, 7, 30, 50, 73, 99];
+export const SMILE_LEVEL_LIST = [1, 2, 3];
+export const SMILE_LEVEL_BADGE = ['微笑者', '微笑小将', '微笑大师'];
