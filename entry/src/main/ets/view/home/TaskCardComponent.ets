@@ -52,15 +52,19 @@ export struct TaskCard {
   targetValueBuilder() {
     if (this.taskInfo.isDone) {
       // 修改问题1： 当不打卡的时候，是未完成
-      HealthText({ title: '', titleResource:
-      $r(this.taskInfo.isDone ? 'app.string.task_done' : 'app.string.task_undone')})
-      if (this.taskInfo.taskID === 4) {
-        Text((() => {
-          return (Number(this.taskInfo.finValue) /
-          Number(this.taskInfo.targetValue) * 100) + '%';
-        })())
-          .labelTextStyle()
-          .fontWeight(Const.FONT_WEIGHT_400)
+      Row() {
+        HealthText({
+          title: '', titleResource:
+          $r(this.taskInfo.isDone ? 'app.string.task_done' : 'app.string.task_undone')
+        }).margin({right: 10})
+        if (this.taskInfo.taskID === 4) {
+          Text((() => {
+            return (Number(this.taskInfo.finValue) /
+            Number(this.taskInfo.targetValue) * 100) + '%';
+          })())
+            .labelTextStyle()
+            .fontWeight(Const.FONT_WEIGHT_400)
+        }
       }
     } else {
       Row() {
