@@ -875,5 +875,45 @@
 			"type":	"float",
 			"name":	"main_padding_right",
 			"id":	"0x010000DA"
+		}, {
+			"type":	"media",
+			"name":	"ic_badge_smile_2_off",
+			"id":	"0x010000DB"
+		}, {
+			"type":	"media",
+			"name":	"ic_badge_smile_1_off",
+			"id":	"0x010000DC"
+		}, {
+			"type":	"media",
+			"name":	"ic_badge_smile_3_off",
+			"id":	"0x010000DD"
+		}, {
+			"type":	"media",
+			"name":	"ic_badge_smile_2_on",
+			"id":	"0x010000DE"
+		}, {
+			"type":	"media",
+			"name":	"ic_badge_smile_4_off",
+			"id":	"0x010000DF"
+		}, {
+			"type":	"media",
+			"name":	"ic_badge_smile_4_on",
+			"id":	"0x010000E0"
+		}, {
+			"type":	"string",
+			"name":	"task_run",
+			"id":	"0x010000E1"
+		}, {
+			"type":	"media",
+			"name":	"ic_badge_smile_1_on",
+			"id":	"0x010000E2"
+		}, {
+			"type":	"media",
+			"name":	"ic_badge_smile_3_on",
+			"id":	"0x010000E3"
+		}, {
+			"type":	"media",
+			"name":	"ic_task_run",
+			"id":	"0x010000E4"
 		}]
 }

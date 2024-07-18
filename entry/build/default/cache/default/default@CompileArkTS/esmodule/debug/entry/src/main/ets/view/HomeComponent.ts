@@ -160,6 +160,7 @@ export default class HomeIndex extends ViewPU {
         // 首先先调用taskClock来更新一个新的task
         this.homeStore.taskClock(task).then((res: AchievementInfo) => {
             // 打卡成功后，根据连续打卡情况判断是否弹出成就勋章以及成就勋章级别
+            // this.broadCast.emit(BroadCastType.SHOW_ACHIEVEMENT_DIALOG, 101);
             if (res.showAchievement) {
                 let achievementLevel = res.achievementLevel;
                 // 触发弹出成就勋章SHOW_ACHIEVEMENT_DIALOG 事件， 并透传勋章类型级别

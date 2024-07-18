@@ -1,10 +1,10 @@
 {
   "modulePathMap": {
-    "entry": "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry"
+    "entry": "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry"
   },
   "compileMode": "esmodule",
-  "projectRootPath": "E:\\studying\\2\\summer\\huawei\\Healthy_life",
-  "nodeModulesPath": "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\.preview\\default\\intermediates\\loader_out\\default\\node_modules",
+  "projectRootPath": "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4",
+  "nodeModulesPath": "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\.preview\\default\\intermediates\\loader_out\\default\\node_modules",
   "moduleName": "entry",
   "harNameOhmMap": {},
   "packageManagerType": "ohpm",
@@ -12,6 +12,6 @@
   "dynamicImportLibInfo": {},
   "routerMap": [],
   "hspResourcesMap": {},
-  "anBuildOutPut": "E:\\studying\\2\\summer\\huawei\\Healthy_life\\entry\\.preview\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildOutPut": "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\.preview\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
   "anBuildMode": "type"
 }

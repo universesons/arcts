@@ -7,6 +7,8 @@ interface Index_Params {
     editedTaskID?: string;
     homeStore?: HomeStore;
     tabController?: TabsController;
+    userInfo?: personInfo;
+    userStore?: StoreUtil;
 }
 import router from "@ohos:router";
 import type common from "@ohos:app.ability.common";
@@ -22,6 +24,7 @@ import { HomeStore } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/
 import GlobalInfoApi from "@bundle:com.example.healthy_life/entry/ets/common/database/tables/GlobalInfoApi";
 import type GlobalInfo from '../viewmodel/GlobalInfo';
 import { GlobalContext } from "@bundle:com.example.healthy_life/entry/ets/common/utils/GlobalContext";
+import personInfo, { StoreUtil } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/PersonInfo";
 class Index extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
@@ -33,6 +36,8 @@ class Index extends ViewPU {
         this.__editedTaskID = new ObservedPropertySimplePU('0', this, "editedTaskID");
         this.__homeStore = new ObservedPropertyObjectPU(new HomeStore(new Date()), this, "homeStore");
         this.tabController = new TabsController();
+        this.__userInfo = new ObservedPropertyObjectPU(new personInfo(), this, "userInfo");
+        this.userStore = new StoreUtil('userStore', 'userInfo');
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
@@ -52,6 +57,12 @@ class Index extends ViewPU {
         if (params.tabController !== undefined) {
             this.tabController = params.tabController;
         }
+        if (params.userInfo !== undefined) {
+            this.userInfo = params.userInfo;
+        }
+        if (params.userStore !== undefined) {
+            this.userStore = params.userStore;
+        }
     }
     updateStateVars(params: Index_Params) {
     }
@@ -60,12 +71,14 @@ class Index extends ViewPU {
         this.__editedTaskInfo.purgeDependencyOnElmtId(rmElmtId);
         this.__editedTaskID.purgeDependencyOnElmtId(rmElmtId);
         this.__homeStore.purgeDependencyOnElmtId(rmElmtId);
+        this.__userInfo.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
         this.__currentPage.aboutToBeDeleted();
         this.__editedTaskInfo.aboutToBeDeleted();
         this.__editedTaskID.aboutToBeDeleted();
         this.__homeStore.aboutToBeDeleted();
+        this.__userInfo.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
@@ -98,6 +111,14 @@ class Index extends ViewPU {
         this.__homeStore.set(newValue);
     }
     private tabController: TabsController;
+    private __userInfo: ObservedPropertyObjectPU<personInfo>;
+    get userInfo() {
+        return this.__userInfo.get();
+    }
+    set userInfo(newValue: personInfo) {
+        this.__userInfo.set(newValue);
+    }
+    private userStore: StoreUtil;
     aboutToAppear() {
         notificationManager.requestEnableNotification().then(() => {
             Logger.info('onPageShow', `requestEnableNotification success`);
@@ -119,6 +140,19 @@ class Index extends ViewPU {
             }
             this.checkCurrentTime();
         }
+        Logger.info('onPageShow', "");
+        this.userStore.getData<personInfo>().then((data) => {
+            if (data) {
+                this.userInfo = data;
+            }
+            else {
+                // 如果没有数据，则使用默认值
+                this.userInfo = new personInfo();
+            }
+        }).catch(() => {
+            // 处理获取数据失败的情况，使用默认值
+            this.userInfo = new personInfo();
+        });
     }
     checkCurrentTime() {
         GlobalInfoApi.query((result: GlobalInfo) => {
@@ -152,21 +186,21 @@ class Index extends ViewPU {
     TabBuilder(index: number, parent = null) {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.debugLine("entry/src/main/ets/pages/MainPage.ets(103:5)");
+            Column.debugLine("entry/src/main/ets/pages/MainPage.ets(119:5)");
             Column.justifyContent(FlexAlign.Center);
             Column.width(Const.THOUSANDTH_1000);
             Column.height(Const.THOUSANDTH_1000);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Image.create(index === this.currentPage ? NavList[index].icon_selected : NavList[index].icon);
-            Image.debugLine("entry/src/main/ets/pages/MainPage.ets(104:7)");
+            Image.debugLine("entry/src/main/ets/pages/MainPage.ets(120:7)");
             Image.width({ "id": 16777333, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Image.height({ "id": 16777333, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Image.objectFit(ImageFit.Contain);
         }, Image);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create(NavList[index].text);
-            Text.debugLine("entry/src/main/ets/pages/MainPage.ets(108:7)");
+            Text.debugLine("entry/src/main/ets/pages/MainPage.ets(124:7)");
             Text.fontSize({ "id": 16777322, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.fontWeight(Const.FONT_WEIGHT_500);
             Text.fontColor(this.currentPage === index ? { "id": 16777372, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } : { "id": 16777391, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
@@ -178,7 +212,7 @@ class Index extends ViewPU {
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Tabs.create({ barPosition: BarPosition.End, controller: this.tabController });
-            Tabs.debugLine("entry/src/main/ets/pages/MainPage.ets(117:5)");
+            Tabs.debugLine("entry/src/main/ets/pages/MainPage.ets(133:5)");
             Tabs.scrollable(false);
             Tabs.width(Const.THOUSANDTH_1000);
             Tabs.height(Const.THOUSANDTH_1000);
@@ -199,7 +233,7 @@ class Index extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new HomeIndex(this, { homeStore: this.__homeStore, editedTaskInfo: this.__editedTaskInfo, editedTaskID: this.__editedTaskID }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 119 });
+                            let componentCall = new HomeIndex(this, { homeStore: this.__homeStore, editedTaskInfo: this.__editedTaskInfo, editedTaskID: this.__editedTaskID }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 135 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -221,7 +255,7 @@ class Index extends ViewPU {
                     this.TabBuilder.call(this, TabId.HOME);
                 } });
             TabContent.align(Alignment.Start);
-            TabContent.debugLine("entry/src/main/ets/pages/MainPage.ets(118:7)");
+            TabContent.debugLine("entry/src/main/ets/pages/MainPage.ets(134:7)");
         }, TabContent);
         TabContent.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -229,7 +263,7 @@ class Index extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new AchievementIndex(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 127 });
+                            let componentCall = new AchievementIndex(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 143 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {};
@@ -245,7 +279,7 @@ class Index extends ViewPU {
             TabContent.tabBar({ builder: () => {
                     this.TabBuilder.call(this, TabId.ACHIEVEMENT);
                 } });
-            TabContent.debugLine("entry/src/main/ets/pages/MainPage.ets(126:7)");
+            TabContent.debugLine("entry/src/main/ets/pages/MainPage.ets(142:7)");
         }, TabContent);
         TabContent.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -258,10 +292,12 @@ class Index extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new MineIndex(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 132 });
+                            let componentCall = new MineIndex(this, { userInfo: this.__userInfo }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MainPage.ets", line: 148 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
-                                return {};
+                                return {
+                                    userInfo: this.userInfo
+                                };
                             };
                             componentCall.paramsGenerator_ = paramsLambda;
                         }
@@ -275,7 +311,7 @@ class Index extends ViewPU {
             TabContent.tabBar({ builder: () => {
                     this.TabBuilder.call(this, TabId.MINE);
                 } });
-            TabContent.debugLine("entry/src/main/ets/pages/MainPage.ets(131:7)");
+            TabContent.debugLine("entry/src/main/ets/pages/MainPage.ets(147:7)");
         }, TabContent);
         TabContent.pop();
         Tabs.pop();

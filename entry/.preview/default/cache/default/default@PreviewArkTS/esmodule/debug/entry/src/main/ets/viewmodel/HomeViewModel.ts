@@ -113,7 +113,7 @@ export class HomeStore {
             let endTime = editedTaskInfo.endTime;
             let isOpen = editedTaskInfo.isOpen;
             // 开一个新的任务对象，这里应该将IsDone设置为false，有趣的是，在调试的时候  传的参数并没有isDone,先改成false，后续看看需不需要更新
-            let task = new TaskInfo(0, dateToStr(new Date()), taskID, targetValue, isAlarm, startTime, endTime, frequency, false, targetValue, isOpen);
+            let task = new TaskInfo(0, dateToStr(new Date()), taskID, targetValue, isAlarm, startTime, endTime, frequency, false, '', isOpen);
             // 遍历包含任务信息的日期数组，找到与任务日期匹配的项
             this.dateArr = this.dateArr.map((item: WeekDateModel) => {
                 if (task.date === item.dateStr) {
@@ -200,6 +200,7 @@ export class HomeStore {
         return [];
     }
     public async taskClock(taskInfo: TaskInfo) {
+        // 更新任务状态
         let taskItem = await this.updateTask(taskInfo);
         let dateStr = this.selectedDayInfo?.dateStr;
         if (!taskItem) {
@@ -213,15 +214,18 @@ export class HomeStore {
         });
         let achievementLevel: number = 0;
         if (taskItem.isDone) {
+            // 更新每日任务完成情况数据
             let dayInfo = await this.updateDayInfo();
+            // 当日任务完成数量等于总任务数量时 累计连续打卡一天
             if (dayInfo && dayInfo?.finTaskNum === dayInfo?.targetTaskNum) {
+                // 更新成就勋章数据 判断是否弹出获得勋章弹出及勋章类型
                 achievementLevel = await this.updateAchievement(this.selectedDayInfo.dayInfo);
             }
         }
         this.dateArr = this.dateArr.map((item: WeekDateModel) => dateStr === item.dateStr ? this.selectedDayInfo : item);
         return {
             achievementLevel: achievementLevel,
-            showAchievement: ACHIEVEMENT_LEVEL_LIST.includes(achievementLevel)
+            showAchievement: ACHIEVEMENT_LEVEL_LIST.includes(achievementLevel) //看这个列表是否有这个等级，有的话就要show
         } as AchievementInfo;
     }
     updateTask(task: TaskInfo): Promise<TaskInfo> {
@@ -229,14 +233,23 @@ export class HomeStore {
             let taskID = task.taskID;
             let targetValue = task.targetValue;
             let finValue = task.finValue;
+            // 拿到任务名称，任务目标，以及当前目标之后，开一个新的task对象来进行更新
             let updateTask = new TaskInfo(task.id, task.date, taskID, targetValue, task.isAlarm, task.startTime, task.endTime, task.frequency, task.isDone, finValue, task.isOpen);
-            let step = TaskMapById[taskID - 1].step;
+            let step = TaskMapById[taskID - 1].step; // 找到每次增加的步长
             let hasExceed = updateTask.isDone;
             if (step === 0) {
+                // 如果step 是0 那就表示一步到位 只有 完成和没完成两种
                 updateTask.isDone = true;
-                updateTask.finValue = targetValue;
+                if (taskID === 4) {
+                    let value = Number(finValue) + Number(targetValue); //补充微笑的finvalue可以超过targetvalue的逻辑
+                    updateTask.finValue = `${value}`;
+                }
+                else {
+                    updateTask.finValue = targetValue;
+                }
             }
             else {
+                // 2024-07-17 下面， 只有一个eatApple是按照步数来的
                 let value = Number(finValue) + step;
                 updateTask.isDone = updateTask.isDone || value >= Number(targetValue);
                 updateTask.finValue = updateTask.isDone ? targetValue : `${value}`;

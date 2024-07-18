@@ -9004,7 +9004,7 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\TaskInitList.ets": {
-      "mtimeMs": 1721301350289.795,
+      "mtimeMs": 1721316705019.343,
       "children": [
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\AchievementMapInfo.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\TaskInfo.ets",
@@ -9136,7 +9136,7 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\HomeComponent.ets": {
-      "mtimeMs": 1721311670304.569,
+      "mtimeMs": 1721316562058.191,
       "children": [
         "C:\\Users\\admin\\AppData\\Local\\Huawei\\DevEco Studio\\sdk\\HarmonyOS-NEXT-DB1\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\HealthTextComponent.ets",
@@ -9189,7 +9189,7 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\HomeViewModel.ets": {
-      "mtimeMs": 1721311584976.8628,
+      "mtimeMs": 1721317267228.3774,
       "children": [
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\AchieveModel.ets",
@@ -9484,7 +9484,7 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\view\\dialog\\AchievementDialog.ets": {
-      "mtimeMs": 1721312268928.577,
+      "mtimeMs": 1721315674336.7598,
       "children": [
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\common\\constants\\CommonConstants.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\TaskInitList.ets",
@@ -9561,7 +9561,7 @@
       "error": false
     },
     "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\AchievementViewModel.ets": {
-      "mtimeMs": 1721301322866.8582,
+      "mtimeMs": 1721316746456.191,
       "children": [
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\viewmodel\\CardInfo.ets",
         "C:\\Users\\admin\\Desktop\\DevEcoStudioProjects\\arcts_4\\entry\\src\\main\\ets\\model\\TaskInitList.ets"

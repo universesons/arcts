@@ -2,95 +2,74 @@ if (!("finalizeConstruction" in ViewPU.prototype)) {
     Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
 }
 interface MineIndex_Params {
-    nickname?: string;
-    signature?: string;
+    userInfo?: personInfo;
 }
 import { ListInfo } from "@bundle:com.example.healthy_life/entry/ets/view/ListInfo";
 import { UserBaseInfo } from "@bundle:com.example.healthy_life/entry/ets/view/UserBaseInfo";
 import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry/ets/common/constants/CommonConstants";
+import type personInfo from '../viewmodel/PersonInfo';
 export class MineIndex extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
         if (typeof paramsLambda === "function") {
             this.paramsGenerator_ = paramsLambda;
         }
-        this.__nickname = new ObservedPropertySimplePU(Const.NICK_NAME, this, "nickname");
-        this.__signature = new ObservedPropertySimplePU(Const.SIGNATURE, this, "signature");
+        this.__userInfo = new SynchedPropertyObjectTwoWayPU(params.userInfo, this, "userInfo");
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
     setInitiallyProvidedValue(params: MineIndex_Params) {
-        if (params.nickname !== undefined) {
-            this.nickname = params.nickname;
-        }
-        if (params.signature !== undefined) {
-            this.signature = params.signature;
-        }
     }
     updateStateVars(params: MineIndex_Params) {
     }
     purgeVariableDependenciesOnElmtId(rmElmtId) {
-        this.__nickname.purgeDependencyOnElmtId(rmElmtId);
-        this.__signature.purgeDependencyOnElmtId(rmElmtId);
+        this.__userInfo.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
-        this.__nickname.aboutToBeDeleted();
-        this.__signature.aboutToBeDeleted();
+        this.__userInfo.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
-    private __nickname: ObservedPropertySimplePU<string>;
-    get nickname() {
-        return this.__nickname.get();
+    private __userInfo: SynchedPropertySimpleOneWayPU<personInfo>;
+    get userInfo() {
+        return this.__userInfo.get();
     }
-    set nickname(newValue: string) {
-        this.__nickname.set(newValue);
-    }
-    private __signature: ObservedPropertySimplePU<string>;
-    get signature() {
-        return this.__signature.get();
-    }
-    set signature(newValue: string) {
-        this.__signature.set(newValue);
+    set userInfo(newValue: personInfo) {
+        this.__userInfo.set(newValue);
     }
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.debugLine("entry/src/main/ets/pages/MinePage.ets(26:5)");
+            Column.debugLine("entry/src/main/ets/pages/MinePage.ets(27:5)");
             Column.height(Const.FULL_HEIGHT);
             Column.backgroundColor({ "id": 16777382, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Column);
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new UserBaseInfo(this, {
-                        nickname: this.nickname,
-                        signature: this.signature
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 27 });
+                    let componentCall = new UserBaseInfo(this, { userInfo: this.__userInfo }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 28 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
-                            nickname: this.nickname,
-                            signature: this.signature
+                            userInfo: this.userInfo
                         };
                     };
                     componentCall.paramsGenerator_ = paramsLambda;
                 }
                 else {
-                    this.updateStateVarsOfChildByElmtId(elmtId, {
-                        nickname: this.nickname,
-                        signature: this.signature
-                    });
+                    this.updateStateVarsOfChildByElmtId(elmtId, {});
                 }
             }, { name: "UserBaseInfo" });
         }
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new ListInfo(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 32 });
+                    let componentCall = new ListInfo(this, { userInfo: this.__userInfo }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/MinePage.ets", line: 29 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
-                        return {};
+                        return {
+                            userInfo: this.userInfo
+                        };
                     };
                     componentCall.paramsGenerator_ = paramsLambda;
                 }

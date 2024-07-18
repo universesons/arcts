@@ -199,7 +199,7 @@ export const RemindContentMap: Array<RemindContentItem> = [
   }
 ];
 
-export const ACHIEVEMENT_LEVEL_LIST = [3, 7, 30, 50, 73, 99];
+export const ACHIEVEMENT_LEVEL_LIST = [3, 7, 30, 50, 73, 99, 101, 102, 103];
 
 export const SMILE_LEVEL_LIST = [1, 2, 3];
 

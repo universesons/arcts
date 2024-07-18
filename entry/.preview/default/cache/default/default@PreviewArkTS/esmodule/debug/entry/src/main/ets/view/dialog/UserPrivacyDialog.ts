@@ -60,32 +60,32 @@ export default class UserPrivacyDialog extends ViewPU {
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(39:5)");
+            Column.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(41:5)");
             Column.padding({ "id": 16777328, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777283, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(40:7)");
+            Text.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(42:7)");
             __Text__descStyle();
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777282, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(42:7)");
+            Text.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(44:7)");
             __Text__descStyle();
             Text.opacity(Const.OPACITY_6);
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(45:7)");
+            Row.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(47:7)");
             Row.width(Const.FULL_WIDTH);
             Row.margin({ top: { "id": 16777331, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } });
             Row.justifyContent(FlexAlign.SpaceEvenly);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Button.createWithLabel({ "id": 16777270, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Button.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(46:9)");
+            Button.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(48:9)");
             Button.backgroundColor(Color.White);
             Button.fontColor({ "id": 16777372, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Button.onClick(() => {
@@ -96,14 +96,14 @@ export default class UserPrivacyDialog extends ViewPU {
         Button.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Divider.create();
-            Divider.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(53:9)");
+            Divider.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(55:9)");
             Divider.vertical(true);
             Divider.height({ "id": 16777331, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Divider.opacity(Const.OPACITY_4);
         }, Divider);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Button.createWithLabel({ "id": 16777286, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Button.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(57:9)");
+            Button.debugLine("entry/src/main/ets/view/dialog/UserPrivacyDialog.ets(59:9)");
             Button.backgroundColor(Color.White);
             Button.fontColor({ "id": 16777372, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Button.onClick(() => {

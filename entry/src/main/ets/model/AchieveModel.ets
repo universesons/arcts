@@ -25,6 +25,7 @@ export const ACHIEVEMENT_LEVEL_KEY = 'AchievementLevelKey';
 export const SMILE_LEVEL_KEY = 'SmileLevelKey';
 
 
+
 export function getAchievementLevel() {
   GlobalInfoApi.query((res: GlobalInfo) => {
     let globalInfo: GlobalInfo = res;
@@ -37,8 +38,7 @@ export function getAchievementLevel() {
 
 }
 export function getSmileLevel(homeStore: HomeStore) {
-
-  const queryDate = homeStore.currentDate; // 获取当前日期
+  const queryDate = homeStore.currentDate // 获取当前日期
   const formattedDate = dateToStr(queryDate); // 使用dateToStr函数格式化日期
   TaskInfoApi.query(formattedDate, true, (res: TaskInfo) => {
 

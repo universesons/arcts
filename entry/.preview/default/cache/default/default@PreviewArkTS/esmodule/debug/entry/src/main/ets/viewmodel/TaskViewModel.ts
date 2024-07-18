@@ -224,3 +224,10 @@ export const createAppleRange = () => {
     }
     return appleRangeArr;
 };
+export const createRunRange = () => {
+    const runRangeArr: Array<string> = [];
+    for (let i = Const.RUN_STEP; i <= Const.RUN_MAX_RANGE; i += Const.RUN_STEP) {
+        runRangeArr.push(`${i} 公里`);
+    }
+    return runRangeArr;
+};

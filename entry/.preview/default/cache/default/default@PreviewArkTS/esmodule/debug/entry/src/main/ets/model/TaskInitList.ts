@@ -31,7 +31,8 @@ export const TaskList: TaskInfo[] = [
     new TaskInfo(2, '', 3, '3', true, '08: 00', '', '', false, '', true),
     new TaskInfo(3, '', 4, '1', true, '', ';', '', false, '', true),
     new TaskInfo(4, '', 5, '21:30', true, '', ';', '', false, '', true),
-    new TaskInfo(5, '', 6, '22:00', true, '', ';', '', false, '', true)
+    new TaskInfo(5, '', 6, '22:00', true, '', ';', '', false, '', true),
+    new TaskInfo(6, '', 7, '1', true, '', ';', '', false, '', true)
 ];
 let achievementMap = new AchievementMapInfo();
 export const AchievementMap = achievementMap;
@@ -125,6 +126,22 @@ export const TaskMapById: Array<ITaskItem> = [
         startTime: '08: 00',
         endTime: '00: 00',
         frequency: '1, 2, 3, 4, 5, 6, 7'
+    },
+    {
+        taskID: 7,
+        taskName: { "id": 16777441, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        // TODO： 修改 icon 和卡片背景
+        icon: { "id": 16777444, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        dialogBg: { "id": 16777369, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" },
+        targetValue: '1',
+        isOpen: false,
+        unit: '公里',
+        step: 0,
+        isInit: true,
+        isAlarm: false,
+        startTime: '08: 00',
+        endTime: '00: 00',
+        frequency: '1, 2, 3, 4, 5, 6, 7'
     }
 ];
 export const TaskItem = new TaskInfo(1, '', 0, '7:00', true, 'string', 'string;', '', true, '6:58', false);
@@ -152,6 +169,12 @@ export const RemindContentMap: Array<RemindContentItem> = [
     {
         title: Const.SLEEP_TASK_NAME,
         content: Const.SLEEP_CONTENT
+    },
+    {
+        title: Const.RUN_TASK_NAME,
+        content: Const.RUN_CONTENT
     }
 ];
 export const ACHIEVEMENT_LEVEL_LIST = [3, 7, 30, 50, 73, 99];
+export const SMILE_LEVEL_LIST = [1, 2, 3];
+export const SMILE_LEVEL_BADGE = ['微笑者', '微笑小将', '微笑大师'];

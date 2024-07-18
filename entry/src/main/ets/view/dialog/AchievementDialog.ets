@@ -48,6 +48,7 @@ export struct AchievementDialog {
       case 99:
         this.achievementMapValue = AchievementMap.on_99;
         break;
+        //补充成就
       case 101:
         this.achievementMapValue = AchievementMap.on_101;
         break;

@@ -157,8 +157,10 @@ export default class HomeIndex extends ViewPU {
     }
     //confirm clockL
     onConfirm(task: TaskInfo) {
+        // 首先先调用taskClock来更新一个新的task
         this.homeStore.taskClock(task).then((res: AchievementInfo) => {
             // 打卡成功后，根据连续打卡情况判断是否弹出成就勋章以及成就勋章级别
+            this.broadCast.emit(BroadCastType.SHOW_ACHIEVEMENT_DIALOG, 73); //尝试测试去弹出勋章，只需要打卡完成一次就会弹出
             if (res.showAchievement) {
                 let achievementLevel = res.achievementLevel;
                 // 触发弹出成就勋章SHOW_ACHIEVEMENT_DIALOG 事件， 并透传勋章类型级别
@@ -190,14 +192,14 @@ export default class HomeIndex extends ViewPU {
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Stack.create();
-            Stack.debugLine("entry/src/main/ets/view/HomeComponent.ets(125:5)");
+            Stack.debugLine("entry/src/main/ets/view/HomeComponent.ets(129:5)");
             Stack.width(Const.THOUSANDTH_1000);
             Stack.height(Const.THOUSANDTH_1000);
             Stack.backgroundColor({ "id": 16777385, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
         }, Stack);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Scroll.create(this.scroller);
-            Scroll.debugLine("entry/src/main/ets/view/HomeComponent.ets(126:7)");
+            Scroll.debugLine("entry/src/main/ets/view/HomeComponent.ets(130:7)");
             Scroll.scrollBar(BarState.Off);
             Scroll.width(Const.THOUSANDTH_1000);
             Scroll.height(Const.THOUSANDTH_1000);
@@ -208,12 +210,12 @@ export default class HomeIndex extends ViewPU {
         }, Scroll);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.debugLine("entry/src/main/ets/view/HomeComponent.ets(127:9)");
+            Column.debugLine("entry/src/main/ets/view/HomeComponent.ets(131:9)");
         }, Column);
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new HomeTopView(this, { homeStore: this.__homeStore }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 128 });
+                    let componentCall = new HomeTopView(this, { homeStore: this.__homeStore }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 132 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -229,7 +231,7 @@ export default class HomeIndex extends ViewPU {
         }
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777296, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/HomeComponent.ets(129:11)");
+            Text.debugLine("entry/src/main/ets/view/HomeComponent.ets(133:11)");
             __Text__titleTextStyle();
         }, Text);
         Text.pop();
@@ -239,7 +241,7 @@ export default class HomeIndex extends ViewPU {
                 this.ifElseBranchUpdateFunction(0, () => {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         Column.create({ space: Const.DEFAULT_8 });
-                        Column.debugLine("entry/src/main/ets/view/HomeComponent.ets(131:13)");
+                        Column.debugLine("entry/src/main/ets/view/HomeComponent.ets(135:13)");
                         Column.onAppear(() => {
                             this.scroller.scrollTo({ xOffset: 0, yOffset: this.yOffset });
                         });
@@ -265,7 +267,7 @@ export default class HomeIndex extends ViewPU {
                                         let componentCall = new TaskCard(this, {
                                             taskInfoStr: JSON.stringify(item),
                                             clickAction: (isClick: boolean) => this.taskItemAction(item, isClick)
-                                        }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 133 });
+                                        }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 137 });
                                         ViewPU.create(componentCall);
                                         let paramsLambda = () => {
                                             return {
@@ -294,12 +296,12 @@ export default class HomeIndex extends ViewPU {
                 this.ifElseBranchUpdateFunction(1, () => {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         Column.create({ space: Const.DEFAULT_8 });
-                        Column.debugLine("entry/src/main/ets/view/HomeComponent.ets(151:13)");
+                        Column.debugLine("entry/src/main/ets/view/HomeComponent.ets(155:13)");
                         Column.margin({ top: Const.DEFAULT_48 });
                     }, Column);
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         Image.create({ "id": 16777311, "type": 20000, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-                        Image.debugLine("entry/src/main/ets/view/HomeComponent.ets(152:15)");
+                        Image.debugLine("entry/src/main/ets/view/HomeComponent.ets(156:15)");
                         Image.width({ "id": 16777326, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                         Image.height({ "id": 16777323, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
                     }, Image);
@@ -310,7 +312,7 @@ export default class HomeIndex extends ViewPU {
                     {
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             if (isInitialRender) {
-                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777280, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 155 });
+                                let componentCall = new HealthText(this, { title: '', titleResource: { "id": 16777280, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }, fontSize: { "id": 16777327, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" } }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 159 });
                                 ViewPU.create(componentCall);
                                 let paramsLambda = () => {
                                     return {
@@ -343,7 +345,7 @@ export default class HomeIndex extends ViewPU {
                         clickAction: () => {
                             this.editTaskAction();
                         }
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 169 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 173 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
@@ -361,7 +363,7 @@ export default class HomeIndex extends ViewPU {
         }
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.debugLine("entry/src/main/ets/view/HomeComponent.ets(174:7)");
+            Row.debugLine("entry/src/main/ets/view/HomeComponent.ets(178:7)");
             Row.width(Const.THOUSANDTH_1000);
             Row.height(Const.DEFAULT_56);
             Row.position({ x: 0, y: 0 });
@@ -369,7 +371,7 @@ export default class HomeIndex extends ViewPU {
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777224, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/HomeComponent.ets(175:9)");
+            Text.debugLine("entry/src/main/ets/view/HomeComponent.ets(179:9)");
             __Text__titleTextStyle();
             Text.fontSize({ "id": 16777333, "type": 10002, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.padding({ left: Const.THOUSANDTH_66 });
@@ -379,7 +381,7 @@ export default class HomeIndex extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new CustomDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 185 });
+                    let componentCall = new CustomDialogView(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/view/HomeComponent.ets", line: 189 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {};

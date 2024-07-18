@@ -18,6 +18,7 @@ interface TargetSettingDialog_Params {
     controller?: CustomDialogController;
     drinkRange?: string[];
     appleRange?: string[];
+    runRange?: string[];
     brushAndSmileRange?: string[];
     currentValue?: string;
     currentTime?: string;
@@ -25,7 +26,7 @@ interface TargetSettingDialog_Params {
 import promptAction from "@ohos:promptAction";
 import type { ITaskItem } from '../../model/TaskInitList';
 import { frequencyRange } from "@bundle:com.example.healthy_life/entry/ets/common/utils/Utils";
-import { returnTimeStamp, createAppleRange, createDrinkRange, formatTime, createBrushTeethAndSmile } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/TaskViewModel";
+import { returnTimeStamp, createAppleRange, createDrinkRange, createRunRange, formatTime, createBrushTeethAndSmile } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/TaskViewModel";
 import { taskType } from "@bundle:com.example.healthy_life/entry/ets/viewmodel/TaskInfo";
 import { CommonConstants as Const } from "@bundle:com.example.healthy_life/entry/ets/common/constants/CommonConstants";
 import type { FrequencyContentType } from '../../model/TaskInitList';
@@ -41,6 +42,7 @@ export class TargetSettingDialog extends ViewPU {
         }, this);
         this.drinkRange = createDrinkRange();
         this.appleRange = createAppleRange();
+        this.runRange = createRunRange();
         this.brushAndSmileRange = createBrushTeethAndSmile();
         this.currentValue = this.settingParams.targetValue;
         this.currentTime = Const.DEFAULT_TIME;
@@ -56,6 +58,9 @@ export class TargetSettingDialog extends ViewPU {
         }
         if (params.appleRange !== undefined) {
             this.appleRange = params.appleRange;
+        }
+        if (params.runRange !== undefined) {
+            this.runRange = params.runRange;
         }
         if (params.brushAndSmileRange !== undefined) {
             this.brushAndSmileRange = params.brushAndSmileRange;
@@ -90,6 +95,7 @@ export class TargetSettingDialog extends ViewPU {
     }
     private drinkRange: string[];
     private appleRange: string[];
+    private runRange: string[];
     private brushAndSmileRange: string[];
     private currentValue: string;
     private currentTime: string;
@@ -123,20 +129,20 @@ export class TargetSettingDialog extends ViewPU {
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(65:5)");
+            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(72:5)");
             Column.justifyContent(FlexAlign.Center);
             Column.height(Const.THOUSANDTH_560);
             Column.padding(Const.DEFAULT_12);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(66:7)");
+            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(73:7)");
             Row.width(Const.THOUSANDTH_1000);
             Row.justifyContent(FlexAlign.Start);
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777291, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(67:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(74:9)");
             Text.fontSize(Const.DEFAULT_20);
             Text.margin({ right: Const.DEFAULT_12 });
         }, Text);
@@ -146,7 +152,7 @@ export class TargetSettingDialog extends ViewPU {
                 Const.GET_UP_TIME_RANGE :
                 this.settingParams?.taskID === taskType.sleepEarly ?
                     Const.SLEEP_TIME_RANGE : '');
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(68:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(75:9)");
             Text.fontSize(Const.DEFAULT_16);
         }, Text);
         Text.pop();
@@ -160,7 +166,7 @@ export class TargetSettingDialog extends ViewPU {
                         TimePicker.create({
                             selected: new Date(`${new Date().toDateString()} 8:00:00`)
                         });
-                        TimePicker.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(78:9)");
+                        TimePicker.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(86:9)");
                         TimePicker.height(Const.THOUSANDTH_800);
                         TimePicker.useMilitaryTime(true);
                         TimePicker.onChange((value: TimePickerResult) => {
@@ -173,8 +179,12 @@ export class TargetSettingDialog extends ViewPU {
             else {
                 this.ifElseBranchUpdateFunction(1, () => {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        TextPicker.create({ range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange : (taskType.brushTeeth || taskType.smile) ? this.brushAndSmileRange : this.appleRange });
-                        TextPicker.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(87:9)");
+                        TextPicker.create({
+                            range: this.settingParams?.taskID === taskType.drinkWater ? this.drinkRange :
+                                (this.settingParams?.taskID === taskType.brushTeeth || this.settingParams?.taskID === taskType.smile) ? this.brushAndSmileRange :
+                                    this.settingParams?.taskID === taskType.run ? this.runRange : this.appleRange
+                        });
+                        TextPicker.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(95:9)");
                         TextPicker.width(Const.THOUSANDTH_900);
                         TextPicker.height(Const.THOUSANDTH_800);
                         TextPicker.onChange((value: string | string[]) => {
@@ -188,7 +198,7 @@ export class TargetSettingDialog extends ViewPU {
         If.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(95:7)");
+            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(107:7)");
             Row.justifyContent(FlexAlign.SpaceAround);
             Row.width(Const.THOUSANDTH_1000);
             Row.height(Const.DEFAULT_28);
@@ -196,7 +206,7 @@ export class TargetSettingDialog extends ViewPU {
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777270, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(96:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(108:9)");
             Text.fontSize(Const.DEFAULT_20);
             Text.fontColor({ "id": 16777372, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
@@ -208,7 +218,7 @@ export class TargetSettingDialog extends ViewPU {
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777273, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(103:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(115:9)");
             Text.fontSize(Const.DEFAULT_20);
             Text.fontColor({ "id": 16777372, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
@@ -271,19 +281,19 @@ export class RemindTimeDialog extends ViewPU {
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(127:5)");
+            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(139:5)");
             Column.justifyContent(FlexAlign.Center);
             Column.height(Const.THOUSANDTH_560);
             Column.padding(Const.DEFAULT_12);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(128:7)");
+            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(140:7)");
             Column.width(Const.THOUSANDTH_900);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777284, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(129:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(141:9)");
             Text.fontSize(Const.DEFAULT_20);
             Text.margin({ top: Const.DEFAULT_10 });
             Text.width(Const.THOUSANDTH_1000);
@@ -295,7 +305,7 @@ export class RemindTimeDialog extends ViewPU {
             TimePicker.create({
                 selected: new Date(`${new Date().toDateString()} 8:00:00`)
             });
-            TimePicker.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(137:7)");
+            TimePicker.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(149:7)");
             TimePicker.height(Const.THOUSANDTH_800);
             TimePicker.useMilitaryTime(true);
             TimePicker.onChange((value: TimePickerResult) => {
@@ -305,7 +315,7 @@ export class RemindTimeDialog extends ViewPU {
         TimePicker.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(146:7)");
+            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(158:7)");
             Row.justifyContent(FlexAlign.SpaceAround);
             Row.width(Const.THOUSANDTH_1000);
             Row.height(Const.DEFAULT_28);
@@ -313,7 +323,7 @@ export class RemindTimeDialog extends ViewPU {
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777270, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(147:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(159:9)");
             Text.fontSize(Const.DEFAULT_20);
             Text.fontColor({ "id": 16777372, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
@@ -324,7 +334,7 @@ export class RemindTimeDialog extends ViewPU {
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777273, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(153:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(165:9)");
             Text.fontSize(Const.DEFAULT_20);
             Text.fontColor({ "id": 16777372, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
@@ -416,19 +426,19 @@ export class FrequencyDialog extends ViewPU {
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(194:5)");
+            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(206:5)");
             Column.justifyContent(FlexAlign.Center);
             Column.height(Const.THOUSANDTH_900);
             Column.padding(Const.DEFAULT_12);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
-            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(195:7)");
+            Column.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(207:7)");
             Column.width(Const.THOUSANDTH_900);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777285, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(196:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(208:9)");
             Text.fontSize(Const.DEFAULT_20);
             Text.margin({ top: Const.DEFAULT_10 });
             Text.width(Const.THOUSANDTH_1000);
@@ -438,7 +448,7 @@ export class FrequencyDialog extends ViewPU {
         Column.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             List.create();
-            List.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(204:7)");
+            List.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(216:7)");
             List.divider({
                 strokeWidth: Const.DEFAULT_2,
                 color: { "id": 16777374, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" }
@@ -462,26 +472,26 @@ export class FrequencyDialog extends ViewPU {
                     };
                     const itemCreation2 = (elmtId, isInitialRender) => {
                         ListItem.create(deepRenderFunction, true);
-                        ListItem.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(206:11)");
+                        ListItem.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(218:11)");
                     };
                     const deepRenderFunction = (elmtId, isInitialRender) => {
                         itemCreation(elmtId, isInitialRender);
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             Row.create();
-                            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(207:13)");
+                            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(219:13)");
                             Row.width(Const.THOUSANDTH_1000);
                             Row.justifyContent(FlexAlign.SpaceBetween);
                             Row.height(Const.DEFAULT_60);
                         }, Row);
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             Text.create(item?.label);
-                            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(208:15)");
+                            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(220:15)");
                             Text.fontSize(Const.DEFAULT_20);
                         }, Text);
                         Text.pop();
                         this.observeComponentCreation2((elmtId, isInitialRender) => {
                             Toggle.create({ type: ToggleType.Checkbox });
-                            Toggle.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(209:15)");
+                            Toggle.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(221:15)");
                             Toggle.onChange((isOn) => {
                                 item.isChecked = isOn;
                             });
@@ -500,7 +510,7 @@ export class FrequencyDialog extends ViewPU {
         List.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Row.create();
-            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(228:7)");
+            Row.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(240:7)");
             Row.justifyContent(FlexAlign.SpaceAround);
             Row.width(Const.THOUSANDTH_900);
             Row.height(Const.DEFAULT_28);
@@ -508,7 +518,7 @@ export class FrequencyDialog extends ViewPU {
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777270, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(229:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(241:9)");
             Text.fontSize(Const.DEFAULT_20);
             Text.fontColor({ "id": 16777372, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {
@@ -518,7 +528,7 @@ export class FrequencyDialog extends ViewPU {
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create({ "id": 16777273, "type": 10003, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
-            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(234:9)");
+            Text.debugLine("entry/src/main/ets/view/dialog/TaskSettingDialog.ets(246:9)");
             Text.fontSize(Const.DEFAULT_20);
             Text.fontColor({ "id": 16777372, "type": 10001, params: [], "bundleName": "com.example.healthy_life", "moduleName": "entry" });
             Text.onClick(() => {

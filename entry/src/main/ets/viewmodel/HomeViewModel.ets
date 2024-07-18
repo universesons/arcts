@@ -283,8 +283,8 @@ export class HomeStore {
         // 如果step 是0 那就表示一步到位 只有 完成和没完成两种
         updateTask.isDone = true;
         if(taskID === 4) {
-          let value = Number(finValue) + Number(targetValue)//补充微笑的finvalue可以超过targetvalue的逻辑
-          updateTask.finValue = `${value}`
+          let value = Number(finValue) + Number(targetValue)//补充finvalue可以超过targetvalue的逻辑
+          updateTask.finValue = value.toString()
         } else {
           updateTask.finValue = targetValue;
         }
@@ -295,9 +295,12 @@ export class HomeStore {
         updateTask.finValue = updateTask.isDone ? targetValue : `${value}`;
       }
       TaskInfoTableApi.updateDataByDate(updateTask, (res: number) => {
-        if (!res || hasExceed) {
-          Logger.error('taskClock-updateTask', JSON.stringify(res));
-          reject(res);
+        //除了单项任务的成就以外才需要去判断hasExceed
+        if(taskID != 4){
+          if (!res || hasExceed) {
+            Logger.error('taskClock-updateTask', JSON.stringify(res));
+            reject(res);
+          }
         }
         resolve(updateTask);
       })
@@ -360,4 +363,5 @@ export class HomeStore {
       })
     });
   }
+
 }

@@ -34,7 +34,7 @@ export class CommonConstants {
         columns: ['id', 'formId', 'formName', 'formDimension']
     } as CommonConstantsInfo;
     // TaskNum
-    static readonly TASK_NUM = 6;
+    static readonly TASK_NUM = 7;
     // THOUSANDTH
     static readonly THOUSANDTH_15: string = '1.5%'; // ‘1.5%’
     static readonly THOUSANDTH_12: string = '2.2%'; // ‘2.2%’
@@ -97,8 +97,8 @@ export class CommonConstants {
     static readonly SETTING_FINISHED_MESSAGE = '设置完成！！！';
     static readonly SETTING_FINISH_FAILED_MESSAGE = '网络连接错误';
     static readonly CHOOSE_TIME_OUT_RANGE: string = '选择时间超出范围';
-    static readonly NICK_NAME = 'JoIin';
-    static readonly SIGNATURE = '这是一条简短地个人签';
+    static readonly NICK_NAME = 'Zephyr';
+    static readonly SIGNATURE = '一杯敬白朝的奔波，一杯敬夜幕的漂泊';
     static readonly HOME_BTN_Z = 2;
     // time range
     static readonly DEFAULT_TIME: string = '08:00';
@@ -123,12 +123,14 @@ export class CommonConstants {
     static readonly SMILE_TASK_NAME: string = '每日微笑';
     static readonly BRUSH_TEETH_TASK_NAME: string = '每日刷牙';
     static readonly SLEEP_TASK_NAME: string = '早睡';
+    static readonly RUN_TASK_NAME: string = '跑步';
     static readonly GET_UP_CONTENT: string = '该早起啦';
     static readonly DRINK_CONTENT: string = '该喝水啦';
     static readonly EAT_APPLE_CONTENT: string = '该吃苹果啦';
     static readonly SMILE_CONTENT: string = '请保持微笑';
     static readonly BRUSH_TEETH_CONTENT: string = '每日刷牙';
     static readonly SLEEP_CONTENT: string = '早睡';
+    static readonly RUN_CONTENT: string = '该跑步啦';
     static readonly H_STORE: string = 'healthAppStore';
     static readonly REMINDER_AGENT_TAG: string = 'reminderAgent';
     static readonly PACKAGE_NAME: string = 'com.example.healthy_life';
@@ -145,6 +147,17 @@ export class CommonConstants {
     static readonly TIMES_100: number = 100;
     static readonly EAT_APPLE_RANGE: number = 100;
     static readonly BRUSH_TEETH_AND_SMILE_RANGE: number = 1;
+    static readonly RUN_STEP: number = 1;
+    static readonly RUN_MAX_RANGE: number = 20;
+    // user targetSetting Range
+    static readonly HEIGHT_MIN_RANGE: number = 120;
+    static readonly HEIGHT_MAX_RANGE: number = 220;
+    static readonly HEIGHT_STEP: number = 1;
+    static readonly WEIGHT_MIN_RANGE: number = 30;
+    static readonly WEIGHT_MAX_RANGE: number = 120;
+    static readonly WEIGHT_STEP: number = 1;
+    static readonly HEIGHT_UNIT: string = "cm";
+    static readonly WEIGHT_UNIT: string = "kg";
     // letter spacing
     static readonly LETTER_1: number = 0.1;
     static readonly LETTER_34: number = 3.4;
@@ -170,6 +183,9 @@ export class CommonConstants {
     static readonly WIDGET_NAME_PROGRESS = "progress";
     //任务一 每日刷牙 每日微笑 目标都是1-3次
     static readonly BRUSH_TEETH_AND_SMILE = 3;
+    // 用户信息保存
+    static readonly STORAGE_FILE = "user_file";
+    static readonly USER_INFO = "user_info";
 }
 export enum TaskType {
     Getup = "getup",
@@ -177,11 +193,13 @@ export enum TaskType {
     Apple = "apple",
     Smile = "smile",
     Clean = "clean",
-    Sleep = "sleep"
+    Sleep = "sleep",
+    Run = "run"
 }
 export enum Unit {
     Liter = "L",
     Pcs = "\u4E2A",
     Times = "\u6B21",
-    Empty = ""
+    Empty = "",
+    Dist = "\u516C\u91CC"
 }

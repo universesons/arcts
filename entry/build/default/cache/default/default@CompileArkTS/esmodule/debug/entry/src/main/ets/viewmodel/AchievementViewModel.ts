@@ -4,7 +4,7 @@ export function getBadgeCardItems(successiveDays: number): Array<CardInfo> {
     //获取奖章卡片信息
     let badgeMileStones = ACHIEVEMENT_LEVEL_LIST;
     let cardItems: Array<CardInfo> = [];
-    for (let i = 0; i < badgeMileStones.length; i++) {
+    for (let i = 0; i < badgeMileStones.length - 3; i++) {
         let onOrOff = successiveDays >= badgeMileStones[i] ? 'on' : 'off';
         let titleContent = String(badgeMileStones[i]);
         let cardInfo: CardInfo = new CardInfo();
