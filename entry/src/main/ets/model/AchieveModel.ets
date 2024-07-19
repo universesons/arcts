@@ -37,11 +37,39 @@ export function getAchievementLevel() {
   })
 
 }
-export function getSmileLevel(homeStore: HomeStore) {
-  const queryDate = homeStore.currentDate // 获取当前日期
+export function getSmileLevel() {
+  const queryDate = new Date();
+  queryDate.setDate(queryDate.getDate());
   const formattedDate = dateToStr(queryDate); // 使用dateToStr函数格式化日期
-  TaskInfoApi.query(formattedDate, true, (res: TaskInfo) => {
+  TaskInfoApi.query(formattedDate, true, (res: TaskInfo[]) => {//读取taskID为相应任务的数据，将数据推到AppStorage存储起来
+    for(let i = 0; i < res.length; i++){
+      if(res[i].taskID === 4) {
+        const targetValue = parseFloat(res[i].targetValue);
+        const finValue = parseFloat(res[i].finValue);
+        let completionTimes = finValue / targetValue;
+        AppStorage.set<Number>(SMILE_LEVEL_KEY, Number(completionTimes));
+      }
+    }
+    // 查找taskID为4的任务信息
+    // const task = res.find()
 
+    // if (task) {
+    //   const targetValue = parseFloat(task.targetValue);
+    //   const finValue = parseFloat(task.finValue);
+    //   let completionTimes = 0;
+    //
+    //   // 确保 finValue 不为 0
+    //   if (finValue !== 0) {
+    //     completionTimes = finValue / targetValue;
+    //   } else {
+    //     console.error('finValue 不能为 0');
+    //   }
+    //
+    //   this.smileTimes = completionTimes;
+    //
+    // } else {
+    //   console.log('没有找到符合条件的任务信息');
+    // }
   })
 }
 
